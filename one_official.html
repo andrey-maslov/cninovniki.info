@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<script src="https://use.fontawesome.com/db2503ab77.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content=""/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta property="og:type" content="website">
+	  <meta property="og:title" content="" />
+      <meta property="og:description" content="" />
+      <meta property="og:url" content="" />
+      <meta property="og:image" content="" />
+	
+	<title>Чиновники Инфо</title>
+	
+	<script src="libs/jquery-3.2.1.min.js"></script>
+	<link rel="shortcut icon" href="fav.ico" type="image/x-icon"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="css/lightbox.min.css"> -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/tippy.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+	<header>
+		<div class="headerwrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4"> 
+						<div class="headerwrap-logo">
+							<img class="img-responsive" src="img/logo.png" alt="logotype">
+							<p class="mt-30">Расскажите нам, где и с каким результатом вы получали государственные услуги</p>
+						</div>
+					</div>
+					<div class="col-sm-8 ">
+						<div class="headerwrap-right">
+							<div class="col-sm-9 col-xs-6">
+								<div class="headerwrap-social">
+									<a target="blank" href="#">
+										<i class="fa fa-vk" aria-hidden="true"></i>
+									</a>
+									<a target="blank" href="#">	
+										<i class="fa fa-facebook" aria-hidden="true"></i>
+									</a>
+<!-- 									<a target="blank" href="#">
+										<i class="fa fa-instagram" aria-hidden="true"></i>
+									</a>
+									<a target="blank" href="#">
+										<i class="fa fa-youtube" aria-hidden="true"></i>
+									</a> -->
+									<a target="blank" href="#">
+										<i class="fa fa-odnoklassniki" aria-hidden="true"></i>
+									</a>
+								</div>
+							</div>
+							<div class="col-sm-3 col-xs-6">
+								<div class="headerwrap-enter">
+									<a href="#" class="gagalin" data-toggle="modal" data-target="#login">войти</a>
+									<a href="#" class="btn" title="Авторизованный пользователь может ставить оценки госслужащим">&nbsp;&nbsp;<i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="col-md-8 col-sm-12">
+						<nav class="main-menu">
+							<ul class="main-menu-list">
+								<li class="main-menu-item"><a href="index.html">Главная</a></li>
+								<li class="main-menu-item"><a  href="#">Публикации</a></li>
+								<li class="main-menu-item"><a href="peoples.html">Госслужащие</a></li>
+								<li class="main-menu-item"><a href="peoples.html">Организации</a></li>
+								<li class="main-menu-item"><a class="active" href="#">О проекте</a></li>
+								<li class="main-menu-item"><a href="#">Контакты</a></li>
+								<li class="main-menu-search">
+									<a id="open"  href="#">
+										<i class="fa fa-search search" aria-hidden="true"></i>
+										<i class="fa fa-times" aria-hidden="true"></i>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+
+				<!-- MOBILE MENU -->
+			<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+			  <div class="container-fluid">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a href="#" data-toggle="modal" data-target="#login" class="mobile-login">войти</a>
+			    </div>
+
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav">
+			        <li><a href="index.html">ГЛАВНАЯ<span class="sr-only">(current)</span></a></li>
+			        <li><a href="#">ПУБЛИКАЦИИ</a></li>
+			        <li><a href="peoples.html">ГОССЛУЖАЩИЕ</a></li>
+			        <li><a class="active" href="#">О ПРОЕКТЕ</a></li>
+			        <li><a href="#">КОНТАКТЫ</a></li>
+			      </ul>
+			      <form class="navbar-form navbar-left">
+			        <div class="form-group">
+			          <input type="text" class="form-control" placeholder="Поиск">
+			        </div>
+			        <button type="submit" class="btn btn-default">Искать</button>
+			      </form>
+			      <ul class="nav navbar-nav navbar-right">
+			        <li class="dropdown">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Социальные сети <span class="caret"></span></a>
+			          <ul class="dropdown-menu">
+			            <li><a href="#">Вконтакте</a></li>
+			            <li><a href="#">Одноклассники</a></li>
+			            <li><a href="#">Инстаграм</a></li>
+			            <li><a href="#">Facebook</a></li>
+			            <li><a href="#">Yotube</a></li>
+			            <li role="separator" class="divider"></li>
+			            <li><a href="#">Наш Дом</a></li>
+			          </ul>
+			        </li>
+			      </ul>
+			    </div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>
+
+
+				</div>
+			</div>
+		</div><!--Headerwrap-->
+
+<!-- LOGIN -->
+<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title gagalin" id="myModalLabel">Вход</h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal" role="form">
+		  <div class="form-group">
+		    <div class="col-sm-12">
+		      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <div class="col-sm-12">
+		      <input type="password" class="form-control" id="inputPassword3" placeholder="Пароль">
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <div class="col-sm-12">
+		      <a class="dontRemember" href="#">Не помню пароль</a>
+		    </div>
+		  </div>
+  		  <div class="form-group">
+		    <div class="col-sm-6">
+		      <button type="submit" class="btn btn-default">Войти</button>
+		    </div>
+		    <div class="col-sm-6">
+		      <div class="checkbox">
+		        <label><input type="checkbox"> Запомнить</label>
+		      </div>
+		    </div>
+		  </div>
+		</form>
+      </div>
+      <div class="modal-footer">
+        <a type="button" class="btn btn-default" href="#">Регистрация</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- SEARCH -->
+<div class="container">
+	<div class="row">
+		<div class="col-md-12" id="search">
+			<div class="search-box" >
+			    <form role="search">
+			        <div class="input-group">
+			            <input type="text" class="form-control" placeholder="Искать" name="srch-term" id="srch-term">
+			            <div class="input-group-btn">
+			                <button class="btn btn-default" type="submit">
+			                	<i class="fa fa-search" aria-hidden="true"></i>
+			                </button>
+			            </div>
+			        </div>
+			    </form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- END SEARCH -->
+
+		<div class="container">
+			<div class="row ">
+				<div class="col-sm-12">
+					<h1 class="text-center gagalin">База данных белорусских чиновников</h1>
+				</div>
+			</div>
+		</div>
+	</header>
+
+<!-- Statistics -->
+	<div class="statistics">
+		<div class="container">
+			<div class="row statistics-wrapper main-block">
+				<div class="col-md-1">
+					<img class="statistics-header-img" src="img/statistics.png" alt="statistics">
+				</div>
+				<div class="col-md-3 text-center">
+					<div class="statistics-header">
+						<span class="gagalin">Всего на сайте</span>
+					</div>
+				</div>
+
+				<div class="col-md-8">
+					<div class="statistics-box">
+						<p class="statistics-box-number">25 638</p>
+						<p class="gagalin statistics-box-header">Госслужащих</p>
+					</div>					
+					<div class="statistics-box">
+						<p class="statistics-box-number">25 638</p>
+						<p class="gagalin statistics-box-header">Организаций</p>
+					</div>					
+					<div class="statistics-box">
+						<p class="statistics-box-number">25 638</p>
+						<p class="gagalin statistics-box-header">Публикаций</p>
+					</div>					
+					<div class="statistics-box">
+						<p class="statistics-box-number">25 638</p>
+						<p class="gagalin statistics-box-header">Документов</p>
+					</div>					
+					<div class="statistics-box">
+						<p class="statistics-box-number">25 638</p>
+						<p class="gagalin statistics-box-header">Оценок</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section class="content" >
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="official">
+						<div class="content-header main-block gagalin">
+							<h2>Макей Владимир Владимирович</h2>
+						</div> <!-- end заголовок блока -->
+						<div class="content-box main-block block-pd mb-30">
+							<div class="row">
+								<div class="col-md-3">
+									<div class="official-photo">
+										<img class="stapple" src="img/staple.png" alt="stapple">
+										<img src="img/Makej.jpg" class="img-responsive" alt="Макей">
+									</div>
+									<div class="contact-link">
+										<p>Знаете что-либо об  этом человеке?</p>
+										<a type="btn" href="contacts.html">Поделитесь</a>
+									</div>
+								</div>
+								<div class="col-md-9">
+									<div class="status-bar">
+										<div class="col-sm-4">
+											<img src="img/icons/Smile_120px.png" alt="smile">
+											<p>Выполняет <a href="">обещания</a></p>
+										</div>
+										<div class="col-sm-4">
+											<p>Рейтинг: <span class="rating">4.38</span>/5</p>
+										</div>
+										<div class="col-sm-4">
+											<a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i>Оценить</a>
+										</div>
+									</div>
+									<!-- Таблица -->
+									<ul class="table">
+										<li class="table-item">
+											<div class="col-sm-4 table-item-header">
+												<p>Дата рождения:</p>
+											</div>
+											<div class="col-sm-8 table-item-text">
+												<p>5 августа 1958</p>
+											</div>
+										</li>
+										<li class="table-item">
+											<div class="col-sm-4 table-item-header">
+												<p>Организация:</p>
+											</div>
+											<div class="col-sm-8 table-item-text">
+												<a href="#">Министерство внутренних дел</a>
+											</div>
+										</li>
+										<li class="table-item">
+											<div class="col-sm-4 table-item-header">
+												<p>Должность:</p>
+											</div>
+											<div class="col-sm-8 table-item-text">
+												<p>министр</p>
+											</div>
+										</li>
+										<li class="table-item">
+											<div class="col-sm-4 table-item-header">
+												<p>Вступление в должность:</p>
+											</div>
+											<div class="col-sm-8 table-item-text">
+												<p>20 августа 2012</p>
+											</div>
+										</li>
+										<li class="table-item">
+											<div class="col-sm-4 table-item-header">
+												<p>Дополнительная информация:</p>
+											</div>
+											<div class="col-sm-8 table-item-text">
+												<h5 class="table-additional-header">Образование:</h5>
+												<p>Окончил Минский государственный педагогический институт иностранных языков в 1980</p>
+												<p>В 1992-1993 годах проходил обучение в Дипломатической академии МИД, Австрия</p>
+												<h5 class="table-additional-header">Военная служба:</h5>
+												<p>С 1980 года по 1992 год у находился на службе в Вооруженных Силах СССР.  Полковник запаса</p>
+												<h5 class="table-additional-header">Семейное положение:</h5>
+												<p>Женат, имеет троих детей</p>
+											</div>
+										</li>
+
+										<li class="table-item">
+											<ul class="inner-table">
+												<li>
+													<div class="col-sm-4 table-item-header">
+														<p>Организация:</p>
+													</div>
+													<div class="col-sm-8 table-item-text">
+														<a href="#">Администрация президента Республики Беларусь</a>
+													</div>
+												</li>
+												<li>
+													<div class="col-sm-4 table-item-header">
+														<p>Должность:</p>
+													</div>
+													<div class="col-sm-8 table-item-text">
+														<p>Глава администрации</p>
+													</div>
+												</li>												
+												<li>
+													<div class="col-sm-4 table-item-header">
+														<p>Вступление в должность:</p>
+													</div>
+													<div class="col-sm-8 table-item-text">
+														<p>2008</p>
+													</div>
+												</li>												
+												<li>
+													<div class="col-sm-4 table-item-header">
+														<p>Увольнение с должности:</p>
+													</div>
+													<div class="col-sm-8 table-item-text">
+														<p>2012</p>
+													</div>
+												</li>
+
+											</ul>
+										</li>										
+										<li class="table-item">
+											<ul class="inner-table">
+												<li>
+													<div class="col-sm-4 table-item-header">
+														<p>Организация:</p>
+													</div>
+													<div class="col-sm-8 table-item-text">
+														<a href="#">Администрация президента Республики Беларусь</a>
+													</div>
+												</li>
+												<li>
+													<div class="col-sm-4 table-item-header">
+														<p>Должность:</p>
+													</div>
+													<div class="col-sm-8 table-item-text">
+														<p>Глава администрации</p>
+													</div>
+												</li>												
+												<li>
+													<div class="col-sm-4 table-item-header">
+														<p>Вступление в должность:</p>
+													</div>
+													<div class="col-sm-8 table-item-text">
+														<p>2008</p>
+													</div>
+												</li>												
+												<li>
+													<div class="col-sm-4 table-item-header">
+														<p>Увольнение с должности:</p>
+													</div>
+													<div class="col-sm-8 table-item-text">
+														<p>2012</p>
+													</div>
+												</li>
+
+											</ul>
+										</li>										
+										<li class="table-item">
+											<ul class="inner-table">
+												<li>
+													<div class="col-sm-4 table-item-header">
+														<p>Организация:</p>
+													</div>
+													<div class="col-sm-8 table-item-text">
+														<a href="#">Администрация президента Республики Беларусь</a>
+													</div>
+												</li>
+												<li>
+													<div class="col-sm-4 table-item-header">
+														<p>Должность:</p>
+													</div>
+													<div class="col-sm-8 table-item-text">
+														<p>Глава администрации</p>
+													</div>
+												</li>												
+												<li>
+													<div class="col-sm-4 table-item-header">
+														<p>Вступление в должность:</p>
+													</div>
+													<div class="col-sm-8 table-item-text">
+														<p>2008</p>
+													</div>
+												</li>												
+												<li>
+													<div class="col-sm-4 table-item-header">
+														<p>Увольнение с должности:</p>
+													</div>
+													<div class="col-sm-8 table-item-text">
+														<p>2012</p>
+													</div>
+												</li>
+
+											</ul>
+										</li>
+										<li class="table-item">
+											<div class="col-sm-4 table-item-header">
+												<p>Просмотров:</p>
+											</div>
+											<div class="col-sm-8 table-item-text">
+												<p>458</p>
+											</div>
+										</li>
+									</ul>
+
+								</div>
+							</div>
+						</div>
+					</div> 
+				</div> <!-- END блок одной организации -->
+			</div>
+		</div>
+	</section>
+
+	<section class="connected">
+		<div class="container">
+			<div class="row">
+				<!-- Связанные -->
+				<div class="col-md-8">					
+					<div class="top">
+						<div class="content-header main-block gagalin">
+							<h2>Связанные люди</h2>
+						</div> <!-- END заголовок блока -->
+						<div class="content-box main-block block-pd mb-30">
+							
+							<div class="civil ">
+								<div class="row">
+									<div class="col-sm-2 ">
+										<figure>
+											<a href="#"><img class="img-responsive" src="img/lukashenko.jpg" alt="фото"></a>
+										</figure>
+									</div>
+									<div class="col-sm-8">
+										<a href="#" class="civil-name"><span>Колесник</span> Раиса Павловна</a><br>
+										<p class="civil-position">Исполняющий обязанности главного бухгалтера отдела культуры</p>
+										<p class="civil-category army">Однополчанин</p>
+									</div>
+									<div class="col-sm-2">
+										<div class="rating-box">
+										<span class="rating">4.46</span>
+										<a href="#" class="tippy" title="Оценить этого госслужащего"> &nbsp;<i class="fa fa-star-half-o" aria-hidden="true" ></i></a>
+										<p class="rate-number">244 оценки</p>
+									</div>
+									</div>
+								</div>
+							</div> <!-- END строка одного госслужащего -->							
+							<div class="civil ">
+								<div class="row">
+									<div class="col-sm-2 ">
+										<figure>
+											<a href="#"><img class="img-responsive" src="img/lukashenko.jpg" alt="фото"></a>
+										</figure>
+									</div>
+									<div class="col-sm-8">
+										<a href="#" class="civil-name"><span>Колесник</span> Раиса Павловна</a><br>
+										<p class="civil-position">Исполняющий обязанности главного бухгалтера отдела культуры</p>
+										<p class="civil-category army">Однополчанин</p>
+									</div>
+									<div class="col-sm-2">
+										<div class="rating-box">
+										<span class="rating">4.46</span>
+										<a href="#" class="tippy" title="Оценить этого госслужащего"> &nbsp;<i class="fa fa-star-half-o" aria-hidden="true" ></i></a>
+										<p class="rate-number">244 оценки</p>
+									</div>
+									</div>
+								</div>
+							</div> <!-- END строка одного госслужащего -->							
+							<div class="civil ">
+								<div class="row">
+									<div class="col-sm-2 ">
+										<figure>
+											<a href="#"><img class="img-responsive" src="img/lukashenko.jpg" alt="фото"></a>
+										</figure>
+									</div>
+									<div class="col-sm-8">
+										<a href="#" class="civil-name"><span>Колесник</span> Раиса Павловна</a><br>
+										<p class="civil-position">Исполняющий обязанности главного бухгалтера отдела культуры</p>
+										<p class="civil-category army">Однополчанин</p>
+									</div>
+									<div class="col-sm-2">
+										<div class="rating-box">
+										<span class="rating">4.46</span>
+										<a href="#" class="tippy" title="Оценить этого госслужащего"> &nbsp;<i class="fa fa-star-half-o" aria-hidden="true" ></i></a>
+										<p class="rate-number">244 оценки</p>
+									</div>
+									</div>
+								</div>
+							</div> <!-- END строка одного госслужащего -->		
+
+						</div>
+					</div>
+				</div> <!-- END служащие организации -->
+				<!-- связанные случаи -->
+				<div class="col-md-4">
+					<div class="content-header main-block gagalin">
+						<h2>связанные случаи</h2>
+					</div> <!-- заголовок блока -->
+				
+					<div class="main-news">
+						<div class="content-box main-block block-pd mb-30 ">
+							
+							<div class="main-news-box">
+								<div class="meta">
+									<span class="date">20 марта 2017</span>,
+									<span class="time">19:18</span>, просмотров:
+									<span class="views-number">243</span>
+								</div>
+								<a href="#">
+									<div class="main-news-box-header">
+										<p>В Гомельском горисполкоме на предложение о переносе времени приема отказали.</p>
+									</div>
+								</a>	
+							</div> <!--end бокс одной публикации -->							
+							<div class="main-news-box">
+								<div class="main-news-box-meta">
+									<span class="date">20 марта 2017</span>,
+									<span class="time">19:18</span>, просмотров:
+									<span class="views-number">243</span>
+								</div>
+								<a href="#">
+									<div class="main-news-box-header">
+										<p>В Гомельском горисполкоме на предложение о переносе времени приема отказали.</p>
+									</div>
+								</a>	
+							</div> <!--end бокс одной публикации -->							
+							<div class="main-news-box">
+								<div class="main-news-box-meta">
+									<span class="date">20 марта 2017</span>,
+									<span class="time">19:18</span>, просмотров:
+									<span class="views-number">243</span>
+								</div>
+								<a href="#">
+									<div class="main-news-box-header">
+										<p>В Гомельском горисполкоме на предложение о переносе времени приема отказали.</p>
+									</div>
+								</a>	
+							</div> <!--end бокс одной публикации -->							
+						</div> 
+
+					</div><!-- Последние публикации -->
+				</div><!-- END связанные случаи -->
+			</div>
+		</div>
+	</section>
+	
+
+ 	<footer>
+ 		<div class="footer-big">
+ 			<div class="container">
+ 				<div class="row">
+ 					<div class="col-md-4 col-xs-6">
+ 						<div class="footer-sections">
+ 							<h3 class="gagalin">разделы</h3>
+ 							<ul>
+ 								<li><a href="#">Главная</a></li>
+ 								<li><a href="#">Госслужащие</a></li>
+ 								<li><a href="#">Публикации</a></li>
+ 								<li><a href="#">О нас</a></li>
+ 								<li><a href="#">Контакты</a></li>
+ 							</ul>
+ 						</div>
+ 					</div>
+ 					<div class="col-md-4 col-xs-6">
+ 						<div class="footer-socials">
+ 							<h3 class="gagalin">ссылки</h3>
+ 							<ul>
+ 								<li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i>Вконтакте</a></li>
+ 								<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;&nbsp;Facebook</a></li>
+ 								<li><a href="#"><i class="fa fa-odnoklassniki" aria-hidden="true"></i>&nbsp;Одноклассники</a></li>
+ 								<li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i>Youtube</a></li>
+ 								<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
+ 							</ul>
+ 						</div>
+ 					</div>
+ 					<div class="col-md-4">
+ 						<div class="footer-about">
+ 							<h3 class="gagalin">инициатива</h3>
+ 							<p><strong>«Наш дом»</strong> – белорусская гражданская кампания, зародившаяся в 2006 году.</p>
+ 							<p>Кампания ставит целью всемерное развитие гражданской активности в республике и защиту прав граждан</p>
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</div>
+ 		</div> <!-- большой футер -->
+
+ 		<div class="footer-small">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<p>© 2017 <strong>Чиновники.инфо</strong> | При использовании материалов - обратная, прямая и индексируемая гиперссылка обязательна.</p>
+			 			<p><i class="fa fa-envelope" aria-hidden="true"></i> Написть письмо <a href="#">редактору ресурса</a></p>
+					</div>
+				</div>
+			</div>
+ 		</div><!-- маленький футер -->
+	</footer>
+
+
+
+	<i class="fa fa-chevron-circle-up" id="go-top" aria-hidden="true"></i>
+	<script src="js/tippy.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/lightbox.min.js"></script>
+	<script src="js/common.js"></script>
+
+
+</body>
+</html>
