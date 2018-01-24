@@ -1,4 +1,7 @@
 tippy('.tippy')
+
+
+
 $(document).ready(function(){
    
     // scroll top
@@ -48,15 +51,14 @@ $(document).ready(function(){
     });
 
 
-    // lightbox
-    lightbox.option({
-      'resizeDuration': 300,
-      'wrapAround': true,
-      'alwaysShowNavOnTouchDevices' : true,
-      'albumLabel' : "Фото %1 из %2",
-       'wrapAround' : true,
-       'imageFadeDuration' : 400
-    })
+    // slick-slider
+    $('.slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
+    });
 
 // SEARCH
 

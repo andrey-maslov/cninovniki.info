@@ -55,10 +55,13 @@
         display: none;
     }
     .statistics {
-        text-align: justify;
+        text-align: center;
     }
     .statistics-box {
-        width: 33%
+        width: 45%
+    }
+    .statistics-box-last {
+        width: 100%
     }
     .top {
         text-align: center;
