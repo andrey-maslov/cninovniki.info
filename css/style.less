@@ -561,6 +561,9 @@ a.civil-organization {
 		font-weight: 600;
 		color: @black;
 	}
+.civil-position {
+
+}
 
 .rating {
 	font-size: 1.2rem;
@@ -653,7 +656,9 @@ ul.abc-list > li{
 		background-color: @green;
 	}
 }
-
+.search-list li:last-child {
+	border-bottom: none;
+}
 
 /*** FOOTER **/
 
@@ -763,15 +768,11 @@ footer {
     border-radius: 5px;
 }
 
-
 /*** ABOUT **/
 
 .padding-p p,  {
 	padding: 0 1rem 1rem;
 }
-
-
-
 
 /*** CONTACT FORM **/
 
@@ -940,13 +941,13 @@ div.status-bar {
 	color: @green;
 }
 .slick-prev, .slick-next {
-	top: 351px;
+	top: 322px;
 }
 .slick-prev {
-	left: 0
+	left: -15px;
 }
 .slick-next {
-	right: 0;
+	right: -15px;
 }
 .slick-dots {
 	position: relative;
@@ -963,6 +964,7 @@ div.status-bar {
 		font-size: .9rem;
 		display: inline-block;
 		padding: .3rem 1rem;
+		margin-top: .5rem;
 		-webkit-border-radius: 7px;
 		-moz-border-radius: 7px;
 		-ms-border-radius: 7px;
@@ -986,6 +988,10 @@ div.status-bar {
 	& a {
 		font-size: 1.8rem;
 		color: @green;
+	}	
+	& a:hover {
+		font-size: 1.8rem;
+		color: @orange;
 	}
 	& p.rate-number {
 		font-size: 12px;
@@ -1023,12 +1029,23 @@ div.publication-content a {
 	color: @green;
 	text-decoration: underline;
 }
+div.publication-content a:hover {
+	color: @orange;
+}
 
 .criterion {
 	display: inline-block;
 	padding: 0 1rem;
 	margin: 1rem 0;
-	background-color: #ff9393;
+	.criterion-name {
+		background-color: #ff9393;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		-ms-border-radius: 5px;
+		-o-border-radius: 5px;
+		border-radius: 5px;
+	}
+
 }
 
 .connected-adress {
@@ -1066,10 +1083,14 @@ div.publication-content a {
 	margin-top: 0;
 }
 .news-box:last-child {
-	padding-bottom: 0;
 	border-bottom: none;
 }
-
+.content-box div.organization-box:last-child {
+	padding-bottom: 0;
+}
+.content-box div.organization-box:first-child {
+	margin: 0;
+}
 
 /*** TABS-PILLS **/
 
@@ -1153,8 +1174,11 @@ a.news-box-header {
 		padding: .5rem;
 	}
 }
-
-
+.search_filter {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 1.2rem;
+	font-weight: 700;
+}
 /*** GO TOP **/
 #go-top {
   position: fixed;

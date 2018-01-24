@@ -24,7 +24,8 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&amp;subset=cyrillic" rel="stylesheet">
-	<!-- <link rel="stylesheet" href="css/lightbox.min.css"> -->
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/slick/slick-theme.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/tippy.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -74,11 +75,11 @@
 						<nav class="main-menu">
 							<ul class="main-menu-list">
 								<li class="main-menu-item"><a class="active" href="index.html">Главная</a></li>
-								<li class="main-menu-item"><a  href="search_result.html">Публикации</a></li>
-								<li class="main-menu-item"><a href="peoples.html">Госслужащие</a></li>
-								<li class="main-menu-item"><a href="search_result.html">Организации</a></li>
-								<li class="main-menu-item"><a href="about.html">О проекте</a></li>
-								<li class="main-menu-item"><a href="contacts.html">Контакты</a></li>
+								<li class="main-menu-item"><a href="peoples.html#content">Госслужащие</a></li>
+								<li class="main-menu-item"><a href="organizations.html#content">Организации</a></li>
+								<li class="main-menu-item"><a  href="publications.html#content">Публикации</a></li>
+								<li class="main-menu-item"><a href="about.html#content">О проекте</a></li>
+								<li class="main-menu-item"><a href="contacts.html#content">Контакты</a></li>
 								<li class="main-menu-search">
 									<a id="open"  href="#">
 										<i class="fa fa-search search" aria-hidden="true"></i>
@@ -255,6 +256,8 @@
 			</div>
 		</div>
 	</div>
+
+<!--     CONTENT    -->
 
 	<section id="content" class="content">
 		<div class="container">
@@ -506,6 +509,11 @@
 						<div class="content-box main-block block-pd mb-30 ">
 							<!--боксы с публикациями - короткие и правильные!!! -->	
 							<div class="news-box">
+								<div class="meta">
+									<span class="date">20 марта 2017</span>,
+									<span class="time">19:18</span>, просмотров:
+									<span class="views-number">243</span>
+								</div>
 								<a href="one_publication.html#content" class="news-box-header">
 									В Гомельском горисполкоме на предложение о переносе времени приема отказали.
 								</a>
@@ -513,6 +521,11 @@
 								</p>
 							</div> <!--end бокс одной публикации -->							
 							<div class="news-box">
+								<div class="meta">
+									<span class="date">20 марта 2017</span>,
+									<span class="time">19:18</span>, просмотров:
+									<span class="views-number">243</span>
+								</div>
 								<a href="one_publication.html#content class="news-box-header">
 									В Гомельском горисполкоме на предложение о переносе времени приема отказали.
 								</a>
@@ -520,6 +533,11 @@
 								</p>
 							</div> <!--end бокс одной публикации -->							
 							<div class="news-box">
+								<div class="meta">
+									<span class="date">20 марта 2017</span>,
+									<span class="time">19:18</span>, просмотров:
+									<span class="views-number">243</span>
+								</div>
 								<a href="one_publication.html#content" class="news-box-header">
 									В Гомельском горисполкоме на предложение о переносе времени приема отказали.
 								</a>
@@ -527,6 +545,11 @@
 								</p>
 							</div> <!--end бокс одной публикации -->							
 							<div class="news-box">
+								<div class="meta">
+									<span class="date">20 марта 2017</span>,
+									<span class="time">19:18</span>, просмотров:
+									<span class="views-number">243</span>
+								</div>
 								<a href="one_publication.html#content" class="news-box-header">
 									В Гомельском горисполкоме на предложение о переносе времени приема отказали.
 								</a>
@@ -534,6 +557,11 @@
 								</p>
 							</div> <!--end бокс одной публикации -->							
 							<div class="news-box">
+								<div class="meta">
+									<span class="date">20 марта 2017</span>,
+									<span class="time">19:18</span>, просмотров:
+									<span class="views-number">243</span>
+								</div>
 								<a href="one_publication.html#content" class="news-box-header">
 									В Гомельском горисполкоме на предложение о переносе времени приема отказали.
 								</a>
@@ -562,6 +590,8 @@
 		</div>
 	</section>
 
+<!--    FOOTER    -->
+
  	<footer>
  		<div class="footer-big">
  			<div class="container">
@@ -578,22 +608,22 @@
  							</ul>
  						</div>
  					</div>
- 					<div class="col-md-4 col-xs-6">
+ 					<div class="col-md-4 col-xs-12">
  						<div class="footer-socials">
  							<h3 class="gagalin">ссылки</h3>
  							<ul>
- 								<li><a href="https://vk.com/club152437259"><i class="fa fa-vk" aria-hidden="true"></i>Вконтакте</a></li>
- 								<li><a href="https://www.facebook.com/groups/chinovniki.info/"><i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;&nbsp;Facebook</a></li>
- 								<li><a href="https://ok.ru/group/53359593652364"><i class="fa fa-odnoklassniki" aria-hidden="true"></i>&nbsp;Одноклассники</a></li>
+ 								<li><a href="https://vk.com/club152437259" target="blank"><i class="fa fa-vk" aria-hidden="true"></i><span class="md-visible">Вконтакте</span></a></li>
+ 								<li><a href="https://www.facebook.com/groups/chinovniki.info/" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;&nbsp;<span class="md-visible">Facebook</span></a></li>
+ 								<li><a href="https://ok.ru/group/53359593652364" target="blank"><i class="fa fa-odnoklassniki" aria-hidden="true"></i>&nbsp;<span class="md-visible">Одноклассники</span></a></li>
 <!--  							<li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i>Youtube</a></li>
  								<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li> -->
  							</ul>
  						</div>
  					</div>
- 					<div class="col-md-4">
+ 					<div class="col-md-4 col-xs-12">
  						<div class="footer-about">
  							<h3 class="gagalin">инициатива</h3>
- 							<p><a href="https://ok.ru/group/53359593652364"><strong>«Наш дом»</strong></a> – белорусская гражданская кампания, зародившаяся в 2006 году.</p>
+ 							<p><a href="https://nash-dom.info" target="blank"><strong>«Наш дом»</strong></a> – белорусская гражданская кампания, зародившаяся в 2006 году.</p>
  							<p>Кампания ставит целью всемерное развитие гражданской активности в республике и защиту прав граждан</p>
  						</div>
  					</div>
@@ -616,7 +646,7 @@
 
 	<script src="js/tippy.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/lightbox.min.js"></script>
+	<script src="libs/slick/slick.js"></script>
 	<script src="js/common.js"></script>
 
 

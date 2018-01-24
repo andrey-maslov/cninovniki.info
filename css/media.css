@@ -73,7 +73,16 @@
         text-align: center;
         padding-top: 1.5rem;
     }
-    .footer-sections, .footer-socials {
+    .footer-sections {
+        display: none;
+    }
+    .footer-socials li {
+        display: inline-block;
+    }
+    .footer-socials ul {
+        margin: 1rem 0;
+    }
+    .md-visible {
         display: none;
     }
     button.orange-btn {

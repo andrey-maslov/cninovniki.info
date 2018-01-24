@@ -23,6 +23,7 @@
 	<link rel="shortcut icon" href="fav.ico" type="image/x-icon"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&amp;subset=cyrillic" rel="stylesheet">
 	<!-- <link rel="stylesheet" href="css/lightbox.min.css"> -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/tippy.css">
@@ -36,7 +37,7 @@
 				<div class="row">
 					<div class="col-sm-4"> 
 						<div class="headerwrap-logo">
-							<a href="index.html"><img class="img-responsive" src="img/logo.png" alt="logotype"></a>
+							<img class="img-responsive" src="img/logo.png" alt="logotype">
 							<p class="mt-30">Расскажите нам, где и с каким результатом вы получали государственные услуги</p>
 						</div>
 					</div>
@@ -44,19 +45,19 @@
 						<div class="headerwrap-right">
 							<div class="col-sm-9 col-xs-6">
 								<div class="headerwrap-social">
-									<a target="blank" href="#">
+									<a target="blank" href="https://vk.com/club152437259">
 										<i class="fa fa-vk" aria-hidden="true"></i>
 									</a>
-									<a target="blank" href="#">	
+									<a target="blank" href="https://www.facebook.com/groups/chinovniki.info/">	
 										<i class="fa fa-facebook" aria-hidden="true"></i>
 									</a>
 <!-- 									<a target="blank" href="#">
 										<i class="fa fa-instagram" aria-hidden="true"></i>
-									</a>
-									<a target="blank" href="#">
+									</a> -->
+<!-- 									<a target="blank" href="#">
 										<i class="fa fa-youtube" aria-hidden="true"></i>
 									</a> -->
-									<a target="blank" href="#">
+									<a target="blank" href="https://ok.ru/group/53359593652364">
 										<i class="fa fa-odnoklassniki" aria-hidden="true"></i>
 									</a>
 								</div>
@@ -64,21 +65,20 @@
 							<div class="col-sm-3 col-xs-6">
 								<div class="headerwrap-enter">
 									<a href="#" class="gagalin" data-toggle="modal" data-target="#login">войти</a>
-									<a href="#" class="btn" title="Авторизованный пользователь может ставить оценки госслужащим">&nbsp;&nbsp;<i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+									<a href="#" class="tippy" title="Авторизованный пользователь может ставить оценки госслужащим">&nbsp;&nbsp;<i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
 								</div>
 							</div>
 						</div>
-
 					</div>
 					<div class="col-md-8 col-sm-12">
 						<nav class="main-menu">
 							<ul class="main-menu-list">
 								<li class="main-menu-item"><a href="index.html">Главная</a></li>
-								<li class="main-menu-item"><a href="#">Публикации</a></li>
-								<li class="main-menu-item"><a class="active" href="#">Госслужащие</a></li>
-								<li class="main-menu-item"><a href="peoples.html">Организации</a></li>
-								<li class="main-menu-item"><a href="about.html">О проекте</a></li>
-								<li class="main-menu-item"><a href="#">Контакты</a></li>
+								<li class="main-menu-item"><a class="active" href="peoples.html#content">Госслужащие</a></li>
+								<li class="main-menu-item"><a href="organizations.html#content">Организации</a></li>
+								<li class="main-menu-item"><a  href="publications.html#content">Публикации</a></li>
+								<li class="main-menu-item"><a href="about.html#content">О проекте</a></li>
+								<li class="main-menu-item"><a href="contacts.html#content">Контакты</a></li>
 								<li class="main-menu-search">
 									<a id="open"  href="#">
 										<i class="fa fa-search search" aria-hidden="true"></i>
@@ -89,124 +89,124 @@
 						</nav>
 					</div>
 
-				<!-- MOBILE MENU -->
-			<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
-			  <div class="container-fluid">
-			    <!-- Brand and toggle get grouped for better mobile display -->
-			    <div class="navbar-header">
-			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-			        <span class="sr-only">Toggle navigation</span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			      </button>
-			      <a href="#" data-toggle="modal" data-target="#login" class="mobile-login">войти</a>
-			    </div>
+						<!-- MOBILE MENU -->
+					<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+					  <div class="container-fluid">
+					    <!-- Brand and toggle get grouped for better mobile display -->
+					    <div class="navbar-header">
+					      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					      </button>
+					      <a href="#" data-toggle="modal" data-target="#login" class="mobile-login">войти</a>
+					    </div>
 
-			    <!-- Collect the nav links, forms, and other content for toggling -->
-			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			      <ul class="nav navbar-nav">
-			        <li class="active"><a href="#">ГЛАВНАЯ<span class="sr-only">(current)</span></a></li>
-			        <li><a href="#">ПУБЛИКАЦИИ</a></li>
-			        <li><a href="peoples.html">ГОССЛУЖАЩИЕ</a></li>
-			        <li><a href="#">О ПРОЕКТЕ</a></li>
-			        <li><a href="#">КОНТАКТЫ</a></li>
-			      </ul>
-			      <form class="navbar-form navbar-left">
-			        <div class="form-group">
-			          <input type="text" class="form-control" placeholder="Поиск">
-			        </div>
-			        <button type="submit" class="btn btn-default">Искать</button>
-			      </form>
-			      <ul class="nav navbar-nav navbar-right">
-			        <li class="dropdown">
-			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Социальные сети <span class="caret"></span></a>
-			          <ul class="dropdown-menu">
-			            <li><a href="#">Вконтакте</a></li>
-			            <li><a href="#">Одноклассники</a></li>
-			            <li><a href="#">Инстаграм</a></li>
-			            <li><a href="#">Facebook</a></li>
-			            <li><a href="#">Yotube</a></li>
-			            <li role="separator" class="divider"></li>
-			            <li><a href="#">Наш Дом</a></li>
-			          </ul>
-			        </li>
-			      </ul>
-			    </div><!-- /.navbar-collapse -->
-			  </div><!-- /.container-fluid -->
-			</nav>
-
-
+					    <!-- Collect the nav links, forms, and other content for toggling -->
+					    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					      <ul class="nav navbar-nav">
+					        <li><a href="index.html">ГЛАВНАЯ<span class="sr-only">(current)</span></a></li>
+					        <li><a href="search_result.html">ПУБЛИКАЦИИ</a></li>
+					        <li><a href="peoples.html">ГОССЛУЖАЩИЕ</a></li>
+					        <li><a href="about.html">О ПРОЕКТЕ</a></li>
+					        <li><a href="contacts.html">КОНТАКТЫ</a></li>
+					      </ul>
+					      <form class="navbar-form navbar-left">
+					        <div class="form-group">
+					          <input type="text" class="form-control" placeholder="Поиск">
+					        </div>
+					        <button type="submit" class="btn btn-default">Искать</button>
+					      </form>
+					      <ul class="nav navbar-nav navbar-right">
+<!-- 					        <li class="dropdown">
+					          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Социальные сети <span class="caret"></span></a>
+					          <ul class="dropdown-menu">
+					            <li><a href="#">Вконтакте</a></li>
+					            <li><a href="#">Одноклассники</a></li>
+					            <li><a href="#">Инстаграм</a></li>
+					            <li><a href="#">Facebook</a></li>
+					            <li><a href="#">Yotube</a></li>
+					            <li role="separator" class="divider"></li>
+					            <li><a href="#">Наш Дом</a></li>
+					          </ul>
+					        </li> -->
+					      </ul>
+					    </div><!-- /.navbar-collapse -->
+					  </div><!-- /.container-fluid -->
+					</nav><!-- /.mobile menu -->
 				</div>
 			</div>
 		</div><!--Headerwrap-->
 
-<!-- LOGIN -->
-<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title gagalin" id="myModalLabel">Вход</h4>
-      </div>
-      <div class="modal-body">
-        <form class="form-horizontal" role="form">
-		  <div class="form-group">
-		    <div class="col-sm-12">
-		      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-		    </div>
-		  </div>
-		  <div class="form-group">
-		    <div class="col-sm-12">
-		      <input type="password" class="form-control" id="inputPassword3" placeholder="Пароль">
-		    </div>
-		  </div>
-		  <div class="form-group">
-		    <div class="col-sm-12">
-		      <a class="dontRemember" href="#">Не помню пароль</a>
-		    </div>
-		  </div>
-  		  <div class="form-group">
-		    <div class="col-sm-6">
-		      <button type="submit" class="btn btn-default">Войти</button>
-		    </div>
-		    <div class="col-sm-6">
-		      <div class="checkbox">
-		        <label><input type="checkbox"> Запомнить</label>
+		<!-- LOGIN -->
+		<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header text-center">
+		        <button type="button" class="close" data-dismiss="modal" ><i class="fa fa-times" aria-hidden="true"  data-dismiss="modal"></i></button>
+		        <h4 class="modal-title gagalin" id="myModalLabel">Вход</h4>
+		      </div>
+		      <div class="modal-body">
+		        <form class="form-horizontal" role="form">
+				  <div class="form-group">
+				    <div class="col-sm-12">
+				      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <div class="col-sm-12">
+				      <input type="password" class="form-control" id="inputPassword3" placeholder="Пароль">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <div class="col-sm-12">
+				      <a class="dontRemember" href="#">Не помню пароль</a>
+				    </div>
+				  </div>
+		  		  <div class="form-group">
+				    <div class="col-sm-6">
+				      <button type="submit" class="btn btn-primary orange-btn">Войти</button>
+				    </div>
+				    <div class="col-sm-6">
+				      <div class="checkbox">
+				        <label><input type="checkbox"> Запомнить</label>
+				      </div>
+				    </div>
+				  </div>
+				</form>
+		      </div>
+				<div class="ulogin-container">
+					<h4 class="conde">Войти через социальную сеть</h4>
+					<script src="//ulogin.ru/js/ulogin.js"></script>
+					<div id="uLogin" data-ulogin="display=panel;theme=classic;fields=first_name,last_name;providers=vkontakte,odnoklassniki,mailru,facebook;hidden=other;redirect_uri=http%3A%2F%2F;mobilebuttons=0;"></div>
+				</div>
+		      <div class="modal-footer">
+		        <a type="button" class="btn btn-default" href="register.html">Регистрация</a>
 		      </div>
 		    </div>
 		  </div>
-		</form>
-      </div>
-      <div class="modal-footer">
-        <a type="button" class="btn btn-default" href="#">Регистрация</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- SEARCH -->
-<div class="container">
-	<div class="row">
-		<div class="col-md-12" id="search">
-			<div class="search-box" >
-			    <form role="search">
-			        <div class="input-group">
-			            <input type="text" class="form-control" placeholder="Искать" name="srch-term" id="srch-term">
-			            <div class="input-group-btn">
-			                <button class="btn btn-default" type="submit">
-			                	<i class="fa fa-search" aria-hidden="true"></i>
-			                </button>
-			            </div>
-			        </div>
-			    </form>
-			</div>
 		</div>
-	</div>
-</div>
 
-<!-- END SEARCH -->
+		<!-- SEARCH -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12" id="search">
+					<div class="search-box" >
+					    <form role="search">
+					        <div class="input-group">
+					            <input type="text" class="form-control" placeholder="Искать" name="srch-term" id="srch-term">
+					            <div class="input-group-btn">
+					                <button class="btn btn-default" type="submit">
+					                	<i class="fa fa-search" aria-hidden="true"></i>
+					                </button>
+					            </div>
+					        </div>
+					    </form>
+					</div>
+				</div>
+			</div>
+		</div><!-- END SEARCH -->
 
 		<div class="container">
 			<div class="row ">
@@ -217,7 +217,7 @@
 		</div>
 	</header>
 
-<!-- Statistics -->
+	<!-- Statistics -->
 	<div class="statistics">
 		<div class="container">
 			<div class="row statistics-wrapper main-block">
@@ -247,28 +247,28 @@
 						<p class="statistics-box-number">25 638</p>
 						<p class="gagalin statistics-box-header">Документов</p>
 					</div>					
-					<div class="statistics-box">
+					<div class="statistics-box statistics-box-last">
 						<p class="statistics-box-number">25 638</p>
 						<p class="gagalin statistics-box-header">Оценок</p>
 					</div>
-
 				</div>
 			</div>
 		</div>
 	</div>
 
+<!--     CONTENT    -->
+
 	<section id="content" class="content">
 		<div class="container">
 			<div class="row">
-
+				<!-- левая боковая колонка  -->
 				<div class="col-md-4 aside">
-					
 					<div class="content-header main-block ">
-						<h2 class="gagalin">Регион</h2>
+						<h2 class="gagalin">Регион
+							<span class="search_filter"> </span>
+						</h2>
 					</div> <!-- заголовок блока -->
-					
 						<div class="content-box main-block block-pd mb-30 ">
-							
 							<!-- форма выбора региона -->
 							<form role="form" class="region-select">
 								<a href="#">Беларусь</a>
@@ -294,21 +294,18 @@
 							        <option selected>Выберите населенный пункт</option>
 							      </select>	
 							    </div>  								      
-
 							    <button type="submit" class="btn btn-primary orange-btn">Выбрать</button>
 							</form> <!--Конец формы выбора региона -->
 						</div> 
-				</div> <!-- боковая колонка -->
-
+				</div> <!-- END левая боковая колонка -->
+				<!-- Госслужащие -->
 				<div class="col-md-8">
-
 					<div class="peoples">
 						<div class="content-header main-block gagalin">
 							<h2>Госслужащие </h2>
 						</div> <!-- Конец заголовка блока -->
 						<div class="content-box main-block block-pd mb-30">
 							<!-- алфавит -->
-
 							<div class="abc">
 								<ul class="abc-list">
 									<li class="abc-item"><a href="#">А</a></li>
@@ -342,128 +339,168 @@
 								</ul>
 							</div>
 
-							<ol class="peoples-list">
+							<ol class="search-list">
 								<!-- блок одного госслужащего -->
-								<li class="peoples-list-item civil civil-padding">
-								<div class="row">
+								<li class="search-list-item civil civil-padding">
+									<div class="row">
+										<div class="col-sm-2">
+											<a href="one_official.html#content"><img src="img/lukashenko.jpg" alt="Lu"></a>
+										</div>
+										<div class="col-sm-10">
+											<a href="one_official.html#content" class="peoples-name civil-name"><span>Адамович</span> Адам Алексеевич</a>
+											<a href="one_organization.html#content" class="civil-organization">Минский мясокомбинат №4</a>
+											<p class="contacts">
+												<a href="tel:+375224332033" class="civil-phone">+375(2243)3-20-33</a>
+												<a href="tel:+375224332033" class="civil-mobile">+375(2243)3-20-33</a>
+												<a href="mailto:baranova_v@mail.ru" class="civil-email">baranova_v@mail.ru</a>
+											</p>
+										</div>
+									</div>	
+								</li>								
+								<li class="search-list-item civil civil-padding">
+									<div class="row">
+										<div class="col-sm-2">
+											<a href="one_official.html#content"><img src="img/lukashenko.jpg" alt="Lu"></a>
+										</div>
+										<div class="col-sm-10">
+											<a href="one_official.html#content" class="peoples-name civil-name"><span>Адамович</span> Адам Алексеевич</a>
+											<a href="one_organization.html#content" class="civil-organization">Минский мясокомбинат №4</a>
+											<p class="contacts">
+												<a href="tel:+375224332033" class="civil-phone">+375(2243)3-20-33</a>
+												<a href="tel:+375224332033" class="civil-mobile">+375(2243)3-20-33</a>
+												<a href="mailto:baranova_v@mail.ru" class="civil-email">baranova_v@mail.ru</a>
+											</p>
+										</div>
+									</div>	
+								</li>								
+								<li class="search-list-item civil civil-padding">
+									<div class="row">
+										<div class="col-sm-2">
+											<a href="one_official.html#content"><img src="img/lukashenko.jpg" alt="Lu"></a>
+										</div>
+										<div class="col-sm-10">
+											<a href="one_official.html#content" class="peoples-name civil-name"><span>Адамович</span> Адам Алексеевич</a>
+											<a href="one_organization.html#content" class="civil-organization">Минский мясокомбинат №4</a>
+											<p class="contacts">
+												<a href="tel:+375224332033" class="civil-phone">+375(2243)3-20-33</a>
+												<a href="tel:+375224332033" class="civil-mobile">+375(2243)3-20-33</a>
+												<a href="mailto:baranova_v@mail.ru" class="civil-email">baranova_v@mail.ru</a>
+											</p>
+										</div>
+									</div>	
+								</li>								
+								<li class="search-list-item civil civil-padding">
+									<div class="row">
 										<div class="col-sm-2">
 											<a href="#"><img src="img/lukashenko.jpg" alt="Lu"></a>
 										</div>
 										<div class="col-sm-10">
-											<a href="#" class="peoples-name civil-name"><span>Адамович</span> Адам Алексеевич</a><br>
-											<a href="#" class="peoples-position civil-organization">Заместитель директора</a><br>
-											<a href="#" class="peoples-phone civil-organization">+375297131313</a>
+											<a href="#" class="peoples-name civil-name"><span>Адамович</span> Адам Алексеевич</a>
+											<a href="#" class="civil-organization">Минский мясокомбинат №4</a>
+											<p class="contacts">
+												<a href="tel:+375224332033" class="civil-phone">+375(2243)3-20-33</a>
+												<a href="tel:+375224332033" class="civil-mobile">+375(2243)3-20-33</a>
+												<a href="mailto:baranova_v@mail.ru" class="civil-email">baranova_v@mail.ru</a>
+											</p>
 										</div>
-								</div>	
+									</div>	
+								</li>								
+								<li class="search-list-item civil civil-padding">
+									<div class="row">
+										<div class="col-sm-2">
+											<a href="#"><img src="img/lukashenko.jpg" alt="Lu"></a>
+										</div>
+										<div class="col-sm-10">
+											<a href="#" class="peoples-name civil-name"><span>Адамович</span> Адам Алексеевич</a>
+											<a href="#" class="civil-organization">Минский мясокомбинат №4</a>
+											<p class="contacts">
+												<a href="tel:+375224332033" class="civil-phone">+375(2243)3-20-33</a>
+												<a href="tel:+375224332033" class="civil-mobile">+375(2243)3-20-33</a>
+												<a href="mailto:baranova_v@mail.ru" class="civil-email">baranova_v@mail.ru</a>
+											</p>
+										</div>
+									</div>	
+								</li>								
+								<li class="search-list-item civil civil-padding">
+									<div class="row">
+										<div class="col-sm-2">
+											<a href="#"><img src="img/lukashenko.jpg" alt="Lu"></a>
+										</div>
+										<div class="col-sm-10">
+											<a href="#" class="peoples-name civil-name"><span>Адамович</span> Адам Алексеевич</a>
+											<a href="#" class="civil-organization">Минский мясокомбинат №4</a>
+											<p class="contacts">
+												<a href="tel:+375224332033" class="civil-phone">+375(2243)3-20-33</a>
+												<a href="tel:+375224332033" class="civil-mobile">+375(2243)3-20-33</a>
+												<a href="mailto:baranova_v@mail.ru" class="civil-email">baranova_v@mail.ru</a>
+											</p>
+										</div>
+									</div>	
+								</li>								
+								<li class="search-list-item civil civil-padding">
+									<div class="row">
+										<div class="col-sm-2">
+											<a href="#"><img src="img/lukashenko.jpg" alt="Lu"></a>
+										</div>
+										<div class="col-sm-10">
+											<a href="#" class="peoples-name civil-name"><span>Адамович</span> Адам Алексеевич</a>
+											<a href="#" class="civil-organization">Минский мясокомбинат №4</a>
+											<p class="contacts">
+												<a href="tel:+375224332033" class="civil-phone">+375(2243)3-20-33</a>
+												<a href="tel:+375224332033" class="civil-mobile">+375(2243)3-20-33</a>
+												<a href="mailto:baranova_v@mail.ru" class="civil-email">baranova_v@mail.ru</a>
+											</p>
+										</div>
+									</div>	
+								</li>								
+								<li class="search-list-item civil civil-padding">
+									<div class="row">
+										<div class="col-sm-2">
+											<a href="#"><img src="img/lukashenko.jpg" alt="Lu"></a>
+										</div>
+										<div class="col-sm-10">
+											<a href="#" class="peoples-name civil-name"><span>Адамович</span> Адам Алексеевич</a>
+											<a href="#" class="civil-organization">Минский мясокомбинат №4</a>
+											<p class="contacts">
+												<a href="tel:+375224332033" class="civil-phone">+375(2243)3-20-33</a>
+												<a href="tel:+375224332033" class="civil-mobile">+375(2243)3-20-33</a>
+												<a href="mailto:baranova_v@mail.ru" class="civil-email">baranova_v@mail.ru</a>
+											</p>
+										</div>
+									</div>	
+								</li>								
+								<li class="search-list-item civil civil-padding">
+									<div class="row">
+										<div class="col-sm-2">
+											<a href="#"><img src="img/lukashenko.jpg" alt="Lu"></a>
+										</div>
+										<div class="col-sm-10">
+											<a href="#" class="peoples-name civil-name"><span>Адамович</span> Адам Алексеевич</a>
+											<a href="#" class="civil-organization">Минский мясокомбинат №4</a>
+											<p class="contacts">
+												<a href="tel:+375224332033" class="civil-phone">+375(2243)3-20-33</a>
+												<a href="tel:+375224332033" class="civil-mobile">+375(2243)3-20-33</a>
+												<a href="mailto:baranova_v@mail.ru" class="civil-email">baranova_v@mail.ru</a>
+											</p>
+										</div>
+									</div>	
+								</li>								
+								<li class="search-list-item civil civil-padding">
+									<div class="row">
+										<div class="col-sm-2">
+											<a href="#"><img src="img/lukashenko.jpg" alt="Lu"></a>
+										</div>
+										<div class="col-sm-10">
+											<a href="#" class="peoples-name civil-name"><span>Адамович</span> Адам Алексеевич</a>
+											<a href="#" class="civil-organization">Минский мясокомбинат №4</a>
+											<p class="contacts">
+												<a href="tel:+375224332033" class="civil-phone">+375(2243)3-20-33</a>
+												<a href="tel:+375224332033" class="civil-mobile">+375(2243)3-20-33</a>
+												<a href="mailto:baranova_v@mail.ru" class="civil-email">baranova_v@mail.ru</a>
+											</p>
+										</div>
+									</div>	
 								</li>
-								<li class="peoples-list-item civil civil-padding">
-									<div class="row">
-										<div class="col-sm-2">
-											<a href="#"><img src="img/lukashenko.jpg" alt="Lu"></a>
-										</div>
-										<div class="col-sm-10">
-											<a href="#" class="peoples-name civil-name"><span>Адамович</span> Петр Сергеевич</a><br>
-											<a href="#" class="peoples-position civil-organization">Заместитель директора</a><br>
-											<a href="#" class="peoples-phone civil-organization">+375297131313</a>
-										</div>
-									</div>
-								</li> <!-- конец блока одного госслужащего -->							
-								<li class="peoples-list-item civil civil-padding">
-									<div class="row">
-										<div class="col-sm-2">
-											<a href="#"><img src="img/lukashenko.jpg" alt="Lu"></a>
-										</div>
-										<div class="col-sm-10">
-											<a href="#" class="peoples-name civil-name"><span>Адамович</span> Петр Сергеевич</a><br>
-											<a href="#" class="peoples-position civil-organization">Заместитель директора</a><br>
-											<a href="#" class="peoples-phone civil-organization">+375297131313</a>
-										</div>
-									</div>
-								</li> <!-- конец блока одного госслужащего -->							
-								<li class="peoples-list-item civil civil-padding">
-									<div class="row">
-										<div class="col-sm-2">
-											<a href="#"><img src="img/lukashenko.jpg" alt="Lu"></a>
-										</div>
-										<div class="col-sm-10">
-											<a href="#" class="peoples-name civil-name"><span>Адамович</span> Петр Сергеевич</a><br>
-											<a href="#" class="peoples-position civil-organization">Заместитель директора</a><br>
-											<a href="#" class="peoples-phone civil-organization">+375297131313</a>
-										</div>
-									</div>
-								</li> <!-- конец блока одного госслужащего -->							
-								<li class="peoples-list-item civil civil-padding">
-									<div class="row">
-										<div class="col-sm-2">
-											<a href="#"><img src="img/lukashenko.jpg" alt="Lu"></a>
-										</div>
-										<div class="col-sm-10">
-											<a href="#" class="peoples-name civil-name"><span>Адамович</span> Петр Сергеевич</a><br>
-											<a href="#" class="peoples-position civil-organization">Заместитель директора</a><br>
-											<a href="#" class="peoples-phone civil-organization">+375297131313</a>
-										</div>
-									</div>
-								</li> <!-- конец блока одного госслужащего -->								
-								<li class="peoples-list-item civil civil-padding">
-								<div class="row">
-										<div class="col-sm-2">
-											<a href="#"><img src="img/lukashenko.jpg" alt="Lu"></a>
-										</div>
-										<div class="col-sm-10">
-											<a href="#" class="peoples-name civil-name"><span>Адамович</span> Адам Алексеевич</a><br>
-											<a href="#" class="peoples-position civil-organization">Заместитель директора</a><br>
-											<a href="#" class="peoples-phone civil-organization">+375297131313</a>
-										</div>
-								</div>	
-								</li>
-								<li class="peoples-list-item civil civil-padding">
-									<div class="row">
-										<div class="col-sm-2">
-											<a href="#"><img src="img/lukashenko.jpg" alt="Lu"></a>
-										</div>
-										<div class="col-sm-10">
-											<a href="#" class="peoples-name civil-name"><span>Адамович</span> Петр Сергеевич</a><br>
-											<a href="#" class="peoples-position civil-organization">Заместитель директора</a><br>
-											<a href="#" class="peoples-phone civil-organization">+375297131313</a>
-										</div>
-									</div>
-								</li> <!-- конец блока одного госслужащего -->							
-								<li class="peoples-list-item civil civil-padding">
-									<div class="row">
-										<div class="col-sm-2">
-											<a href="#"><img src="img/lukashenko.jpg" alt="Lu"></a>
-										</div>
-										<div class="col-sm-10">
-											<a href="#" class="peoples-name civil-name"><span>Адамович</span> Петр Сергеевич</a><br>
-											<a href="#" class="peoples-position civil-organization">Заместитель директора</a><br>
-											<a href="#" class="peoples-phone civil-organization">+375297131313</a>
-										</div>
-									</div>
-								</li> <!-- конец блока одного госслужащего -->							
-								<li class="peoples-list-item civil civil-padding">
-									<div class="row">
-										<div class="col-sm-2">
-											<a href="#"><img src="img/lukashenko.jpg" alt="Lu"></a>
-										</div>
-										<div class="col-sm-10">
-											<a href="#" class="peoples-name civil-name"><span>Адамович</span> Петр Сергеевич</a><br>
-											<a href="#" class="peoples-position civil-organization">Заместитель директора</a><br>
-											<a href="#" class="peoples-phone civil-organization">+375297131313</a>
-										</div>
-									</div>
-								</li> <!-- конец блока одного госслужащего -->							
-								<li class="peoples-list-item civil civil-padding">
-									<div class="row">
-										<div class="col-sm-2">
-											<a href="#"><img src="img/lukashenko.jpg" alt="Lu"></a>
-										</div>
-										<div class="col-sm-10">
-											<a href="#" class="peoples-name civil-name"><span>Адамович</span> Петр Сергеевич</a><br>
-											<a href="#" class="peoples-position civil-organization">Заместитель директора</a><br>
-											<a href="#" class="peoples-phone civil-organization">+375297131313</a>
-										</div>
-									</div>
-								</li> <!-- конец блока одного госслужащего -->
 							</ol>
 							<!-- Пагинация -->
 							<div class="pagination-wrapper text-center">
@@ -481,16 +518,12 @@
 							
 						</div>
 					</div> <!--  -->
-					
 				</div> <!-- Контент -->
-				
-
-
-
 			</div>
 		</div>
 	</section>
 
+<!--    FOOTER    -->
 
  	<footer>
  		<div class="footer-big">
@@ -500,11 +533,11 @@
  						<div class="footer-sections">
  							<h3 class="gagalin">разделы</h3>
  							<ul>
- 								<li><a href="#">Главная</a></li>
- 								<li><a href="#">Госслужащие</a></li>
- 								<li><a href="#">Публикации</a></li>
- 								<li><a href="#">О нас</a></li>
- 								<li><a href="#">Контакты</a></li>
+ 								<li><a href="index.html">Главная</a></li>
+ 								<li><a href="search_result.html">Госслужащие</a></li>
+ 								<li><a href="search_result.html">Публикации</a></li>
+ 								<li><a href="about.html">О нас</a></li>
+ 								<li><a href="contacts.html">Контакты</a></li>
  							</ul>
  						</div>
  					</div>
@@ -512,40 +545,38 @@
  						<div class="footer-socials">
  							<h3 class="gagalin">ссылки</h3>
  							<ul>
- 								<li><a href="#"><i class="fa fa-vk" aria-hidden="true"></i>Вконтакте</a></li>
- 								<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;&nbsp;Facebook</a></li>
- 								<li><a href="#"><i class="fa fa-odnoklassniki" aria-hidden="true"></i>&nbsp;Одноклассники</a></li>
- 								<li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i>Youtube</a></li>
- 								<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
+ 								<li><a href="https://vk.com/club152437259" target="blank"><i class="fa fa-vk" aria-hidden="true"></i>Вконтакте</a></li>
+ 								<li><a href="https://www.facebook.com/groups/chinovniki.info/" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;&nbsp;Facebook</a></li>
+ 								<li><a href="https://ok.ru/group/53359593652364" target="blank"><i class="fa fa-odnoklassniki" aria-hidden="true"></i>&nbsp;Одноклассники</a></li>
+<!--  							<li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i>Youtube</a></li>
+ 								<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li> -->
  							</ul>
  						</div>
  					</div>
  					<div class="col-md-4">
  						<div class="footer-about">
  							<h3 class="gagalin">инициатива</h3>
- 							<p><strong>«Наш дом»</strong> – белорусская гражданская кампания, зародившаяся в 2006 году.</p>
+ 							<p><a href="https://nash-dom.info" target="blank"><strong>«Наш дом»</strong></a> – белорусская гражданская кампания, зародившаяся в 2006 году.</p>
  							<p>Кампания ставит целью всемерное развитие гражданской активности в республике и защиту прав граждан</p>
  						</div>
  					</div>
  				</div>
  			</div>
- 		</div> <!-- большой футер -->
-
+		</div> <!-- большой футер -->
  		<div class="footer-small">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12">
 						<p>© 2017 <strong>Чиновники.инфо</strong> | При использовании материалов - обратная, прямая и индексируемая гиперссылка обязательна.</p>
-			 			<p><i class="fa fa-envelope" aria-hidden="true"></i> Написть письмо <a href="#">редактору ресурса</a></p>
+			 			<p><i class="fa fa-envelope" aria-hidden="true"></i> Написть письмо <a href="mailto:#">редактору ресурса</a></p>
 					</div>
 				</div>
 			</div>
  		</div><!-- маленький футер -->
 	</footer>
 
-
-
 	<i class="fa fa-chevron-circle-up" id="go-top" aria-hidden="true"></i>
+
 	<script src="js/tippy.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/lightbox.min.js"></script>
