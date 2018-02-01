@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<script src="https://use.fontawesome.com/db2503ab77.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content=""/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta property="og:type" content="website">
+	  <meta property="og:title" content="" />
+      <meta property="og:description" content="" />
+      <meta property="og:url" content="" />
+      <meta property="og:image" content="" />
+	
+	<title>Чиновники Инфо</title>
+	
+	<script src="libs/jquery-3.2.1.min.js"></script>
+	<link rel="shortcut icon" href="fav.ico" type="image/x-icon"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/slick/slick-theme.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/tippy.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+	<header>
+		<div class="headerwrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4"> 
+						<div class="headerwrap-logo">
+							<img class="img-responsive" src="img/logo.png" alt="logotype">
+							<p class="mt-30">Расскажите нам, где и с каким результатом вы получали государственные услуги</p>
+						</div>
+					</div>
+					<div class="col-sm-8 ">
+						<div class="headerwrap-right">
+							<div class="col-sm-9 col-xs-6">
+								<div class="headerwrap-social">
+									<a target="blank" href="https://vk.com/club152437259">
+										<i class="fa fa-vk" aria-hidden="true"></i>
+									</a>
+									<a target="blank" href="https://www.facebook.com/groups/chinovniki.info/">	
+										<i class="fa fa-facebook" aria-hidden="true"></i>
+									</a>
+<!-- 									<a target="blank" href="#">
+										<i class="fa fa-instagram" aria-hidden="true"></i>
+									</a> -->
+<!-- 									<a target="blank" href="#">
+										<i class="fa fa-youtube" aria-hidden="true"></i>
+									</a> -->
+									<a target="blank" href="https://ok.ru/group/53359593652364">
+										<i class="fa fa-odnoklassniki" aria-hidden="true"></i>
+									</a>
+								</div>
+							</div>
+							<div class="col-sm-3 col-xs-6">
+								<div class="headerwrap-enter">
+									<a href="#" class="gagalin" data-toggle="modal" data-target="#login">войти</a>
+									<a href="#" class="tippy" title="Авторизованный пользователь может ставить оценки госслужащим">&nbsp;&nbsp;<i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-8 col-sm-12">
+						<nav class="main-menu">
+							<ul class="main-menu-list">
+								<li class="main-menu-item"><a href="index.html">Главная</a></li>
+								<li class="main-menu-item"><a href="peoples.html#content">Госслужащие</a></li>
+								<li class="main-menu-item"><a href="organizations.html#content">Организации</a></li>
+								<li class="main-menu-item"><a  href="publications.html#content">Публикации</a></li>
+								<li class="main-menu-item"><a href="about.html#content">О проекте</a></li>
+								<li class="main-menu-item"><a href="contacts.html#content">Контакты</a></li>
+								<li class="main-menu-search">
+									<a id="open"  href="#">
+										<i class="fa fa-search search" aria-hidden="true"></i>
+										<i class="fa fa-times" aria-hidden="true"></i>
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+
+						<!-- MOBILE MENU -->
+					<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+					  <div class="container-fluid">
+					    <!-- Brand and toggle get grouped for better mobile display -->
+					    <div class="navbar-header">
+					      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					        <span class="sr-only">Toggle navigation</span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					        <span class="icon-bar"></span>
+					      </button>
+					      <a href="#" data-toggle="modal" data-target="#login" class="mobile-login">войти</a>
+					    </div>
+
+					    <!-- Collect the nav links, forms, and other content for toggling -->
+					    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					      <ul class="nav navbar-nav">
+					        <li><a href="index.html">ГЛАВНАЯ<span class="sr-only">(current)</span></a></li>
+					        <li><a href="search_result.html">ПУБЛИКАЦИИ</a></li>
+					        <li><a href="peoples.html">ГОССЛУЖАЩИЕ</a></li>
+					        <li><a href="about.html">О ПРОЕКТЕ</a></li>
+					        <li><a href="contacts.html">КОНТАКТЫ</a></li>
+					      </ul>
+					      <form class="navbar-form navbar-left">
+					        <div class="form-group">
+					          <input type="text" class="form-control" placeholder="Поиск">
+					        </div>
+					        <button type="submit" class="btn btn-default">Искать</button>
+					      </form>
+					      <ul class="nav navbar-nav navbar-right">
+<!-- 					        <li class="dropdown">
+					          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Социальные сети <span class="caret"></span></a>
+					          <ul class="dropdown-menu">
+					            <li><a href="#">Вконтакте</a></li>
+					            <li><a href="#">Одноклассники</a></li>
+					            <li><a href="#">Инстаграм</a></li>
+					            <li><a href="#">Facebook</a></li>
+					            <li><a href="#">Yotube</a></li>
+					            <li role="separator" class="divider"></li>
+					            <li><a href="#">Наш Дом</a></li>
+					          </ul>
+					        </li> -->
+					      </ul>
+					    </div><!-- /.navbar-collapse -->
+					  </div><!-- /.container-fluid -->
+					</nav><!-- /.mobile menu -->
+				</div>
+			</div>
+		</div><!--Headerwrap-->
+
+		<!-- LOGIN -->
+		<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header text-center">
+		        <button type="button" class="close" data-dismiss="modal" ><i class="fa fa-times" aria-hidden="true"  data-dismiss="modal"></i></button>
+		        <h4 class="modal-title gagalin" id="myModalLabel">Вход</h4>
+		      </div>
+		      <div class="modal-body">
+		        <form class="form-horizontal" role="form">
+				  <div class="form-group">
+				    <div class="col-sm-12">
+				      <input type="text" class="form-control" id="inputEmail3" placeholder="логин">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <div class="col-sm-12">
+				      <input type="password" class="form-control" id="inputPassword3" placeholder="Пароль">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    <div class="col-sm-12">
+				      <a class="dontRemember" href="#">Не помню пароль</a>
+				    </div>
+				  </div>
+		  		  <div class="form-group">
+				    <div class="col-sm-6">
+				      <button type="submit" class="btn btn-primary orange-btn">Войти</button>
+				    </div>
+				    <div class="col-sm-6">
+				      <div class="checkbox">
+				        <label><input type="checkbox"> Запомнить</label>
+				      </div>
+				    </div>
+				  </div>
+				</form>
+		      </div>
+				<div class="ulogin-container">
+					<h4 class="conde">Войти через социальную сеть</h4>
+					<script src="//ulogin.ru/js/ulogin.js"></script>
+					<div id="uLogin" data-ulogin="display=panel;theme=classic;fields=first_name,last_name;providers=vkontakte,odnoklassniki,mailru,facebook;hidden=other;redirect_uri=http%3A%2F%2F;mobilebuttons=0;"></div>
+				</div>
+		      <div class="modal-footer">
+		        <a type="button" class="btn btn-default" href="register.html">Регистрация</a>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<!-- SEARCH -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12" id="search">
+					<div class="search-box" >
+					    <form role="search">
+					        <div class="input-group">
+					            <input type="text" class="form-control" placeholder="Искать" name="srch-term" id="srch-term">
+					            <div class="input-group-btn">
+					                <button class="btn btn-default" type="submit">
+					                	<i class="fa fa-search" aria-hidden="true"></i>
+					                </button>
+					            </div>
+					        </div>
+					    </form>
+					</div>
+				</div>
+			</div>
+		</div><!-- END SEARCH -->
+
+		<div class="container">
+			<div class="row ">
+				<div class="col-sm-12">
+					<h1 class="text-center gagalin">База данных белорусских чиновников</h1>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Statistics -->
+	<div class="statistics">
+		<div class="container">
+			<div class="row statistics-wrapper main-block">
+				<div class="col-md-1">
+					<img class="statistics-header-img" src="img/statistics.png" alt="statistics">
+				</div>
+				<div class="col-md-3 text-center">
+					<div class="statistics-header">
+						<span class="gagalin">Всего на сайте</span>
+					</div>
+				</div>
+
+				<div class="col-md-8">
+					<div class="statistics-box">
+						<p class="statistics-box-number">25 638</p>
+						<p class="gagalin statistics-box-header">Госслужащих</p>
+					</div>					
+					<div class="statistics-box">
+						<p class="statistics-box-number">25 638</p>
+						<p class="gagalin statistics-box-header">Организаций</p>
+					</div>					
+					<div class="statistics-box">
+						<p class="statistics-box-number">25 638</p>
+						<p class="gagalin statistics-box-header">Публикаций</p>
+					</div>					
+					<div class="statistics-box">
+						<p class="statistics-box-number">25 638</p>
+						<p class="gagalin statistics-box-header">Документов</p>
+					</div>					
+					<div class="statistics-box statistics-box-last">
+						<p class="statistics-box-number">25 638</p>
+						<p class="gagalin statistics-box-header">Оценок</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!--     CONTENT    -->
+
+	<section class="content" id="content">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="official">
+						<div class="content-header main-block gagalin">
+							<h2>Макей Владимир Владимирович</h2>
+						</div> <!-- end заголовок блока -->
+						<div class="content-box main-block block-pd mb-30">
+							<div class="row">
+								<div class="col-md-3">
+									<div class="official-photo">
+										<img class="stapple" src="img/staple.png" alt="stapple">
+										<div class="slider">
+											<img src="img/Makej.jpg" alt="1">
+											<img src="img/Makej2.jpg" alt="1">
+											<img src="img/Makej3.jpg" alt="1">
+											<img src="img/Makej4.jpg" alt="1">
+											<img src="img/Makej5.jpg" alt="1">
+										</div>
+									</div>
+
+									<div class="contact-link">
+										<p>Знаете что-либо об  этом человеке?</p>
+										<a type="btn" href="contacts.html#content">Поделитесь</a>
+									</div>
+								</div>
+								<div class="col-md-9">
+									<div class="status-bar">
+										<div class="col-sm-6">
+											<img src="img/icons/Smile_120px.png" alt="smile">
+											<p>Выполняет <a href="one_publication.html#content">обещания</a></p>
+										</div>
+										<div class="col-sm-6">
+											<p>Рейтинг: <span class="rating">4.38</span>/5</p>
+										</div>
+									</div>
+									<!-- оценка госслужащего -->
+									<div class="rate">
+										<!-- шапка таблицы -->
+<!-- 										<div class="row">
+											<div class="col-sm-5 col-xs-12">
+												<h5>Критерий</h5>
+											</div>
+											<div class="col-sm-6 col-xs-10">
+												<div class="radio-box">
+													не знаю
+												</div>
+												<div class="radio-box">
+													
+												</div>
+												<div class="radio-box">
+													
+												</div>
+												<div class="radio-box">
+													
+												</div>
+												<div class="radio-box">
+													
+												</div>
+												</div>
+											<div class="col-sm-1 col-xs-2">
+												<p>оценка</p>
+											</div>
+										</div>	 -->									
+										<!-- одна полоска оценивания -->
+										<div class="civil">
+											<div class="row">
+												<div class="col-sm-5 col-xs-12">
+													<h5>Профессионализм</h5>
+													<span>Уровень профессиональных знаний в зависимости от специализации</span>
+												</div>
+												<div class="col-sm-5 col-xs-9 radio-row">
+													<div class="radio-box">
+														<input class="rate-radio" type="radio" name="rb" id="rb1" checked> <label for="rb1" class="tippy" title="Не знаю"></label>
+													</div>
+													<div class="radio-box">
+														<input class="rate-radio" type="radio" name="rb" id="rb2"> <label for="rb2" class="tippy" title="Плохо"></label>
+													</div>
+													<div class="radio-box">
+														<input class="rate-radio" type="radio" name="rb" id="rb3"> <label for="rb3" class="tippy" title="Удовлетворительно"></label>
+													</div>
+													<div class="radio-box">
+														<input class="rate-radio" type="radio" name="rb" id="rb4"> <label for="rb4" class="tippy" title="Хорошо"></label>
+													</div>
+													<div class="radio-box">
+														<input class="rate-radio" type="radio" name="rb" id="rb5"> <label for="rb5" class="tippy" title="Очень хорошо"></label>
+													</div>
+													</div>
+												<div class="col-sm-2 col-xs-3 ">
+													<p class="rate-current tippy" title="Оценка">4.46</p>
+												</div>
+											</div>
+										</div><!-- END одна полоска оценивания -->										
+										<!-- одна полоска оценивания -->
+										<div class="civil">
+											<div class="row">
+												<div class="col-sm-5 col-xs-12">
+													<h5>Коммуникабельность</h5>
+													<span>Умение корректно разговаривать и сотрудничать с другими людьми</span>
+												</div>
+												<div class="col-sm-5 col-xs-9">
+													<div class="radio-box">
+														<input class="rate-radio" type="radio" name="rb-2" id="rb6" checked> <label for="rb6"></label>
+													</div>
+													<div class="radio-box">
+														<input class="rate-radio" type="radio" name="rb-2" id="rb7"> <label for="rb7"></label>
+													</div>
+													<div class="radio-box">
+														<input class="rate-radio" type="radio" name="rb-2" id="rb8"> <label for="rb8"></label>
+													</div>
+													<div class="radio-box">
+														<input class="rate-radio" type="radio" name="rb-2" id="rb9"> <label for="rb9"></label>
+													</div>
+													<div class="radio-box">
+														<input class="rate-radio" type="radio" name="rb-2" id="rb10"> <label for="rb10"></label>
+													</div>
+													</div>
+												<div class="col-sm-2 col-xs-3">
+													<p class="rate-current">4.46</p>
+												</div>
+											</div>
+										</div><!-- END одна полоска оценивания -->										
+										<!-- одна полоска оценивания -->
+										<div class="civil"><div class="row">
+												<div class="col-sm-5 col-xs-12">
+													<h5>Инициативность</h5>
+													<span>Стремление делать больше, чем предписано должностной инструкцией</span>
+												</div>
+												<div class="col-sm-5 col-xs-9">
+													<div class="radio-box">
+														<input class="rate-radio" type="radio" name="rb-3" id="rb11" checked> <label for="rb11"></label>
+													</div>
+													<div class="radio-box">
+														<input class="rate-radio" type="radio" name="rb-3" id="rb12"> <label for="rb12"></label>
+													</div>
+													<div class="radio-box">
+														<input class="rate-radio" type="radio" name="rb-3" id="rb13"> <label for="rb13"></label>
+													</div>
+													<div class="radio-box">
+														<input class="rate-radio" type="radio" name="rb-3" id="rb14"> <label for="rb14"></label>
+													</div>
+													<div class="radio-box">
+														<input class="rate-radio" type="radio" name="rb-3" id="rb15"> <label for="rb15"></label>
+													</div>
+													</div>
+												<div class="col-sm-2 col-xs-3">
+													<p class="rate-current">4.46</p>
+												</div>
+											</div>
+										</div><!-- END одна полоска оценивания -->	
+										<!-- одна полоска оценивания -->
+										<div class="civil">
+											<div class="row">
+												<div class="col-sm-5 col-xs-12">
+													<h5>Исполнительность</h5>
+													<span>Своевременное и качественное выполнение взятых обязательств</span>
+												</div>
+												<div class="col-sm-5 col-xs-9">
+													<div class="radio-box">
+														<input class="rate-radio" type="radio" name="rb-4" id="rb16" checked> <label for="rb16"></label>
+													</div>
+													<div class="radio-box">
+														<input class="rate-radio" type="radio" name="rb-4" id="rb17"> <label for="rb17"></label>
+													</div>
+													<div class="radio-box">
+														<input class="rate-radio" type="radio" name="rb-4" id="rb18"> <label for="rb18"></label>
+													</div>
+													<div class="radio-box">
+														<input class="rate-radio" type="radio" name="rb-4" id="rb19"> <label for="rb19"></label>
+													</div>
+													<div class="radio-box">
+														<input class="rate-radio" type="radio" name="rb-4" id="rb20"> <label for="rb20"></label>
+													</div>
+													</div>
+												<div class="col-sm-2 col-xs-3">
+													<p class="rate-current">4.46</p>
+												</div>
+											</div>										
+										</div><!-- END одна полоска оценивания -->
+										<!-- одна полоска оценивания -->
+										<div class="civil">
+											<div class="row">
+												<div class="col-sm-5 col-xs-12 ">
+													<h5>Отзывчивость</h5>
+													<span>Готовность вникать в проблемы и вопросы людей и решать их по мере своих должностных возможностей</span>
+												</div>
+												<div class="col-sm-5 col-xs-9">
+													<div class="radio-box">
+														<input class="rate-radio" type="radio" name="rb-5" id="rb21" checked> <label for="rb21"></label>
+													</div>
+													<div class="radio-box">
+														<input class="rate-radio" type="radio" name="rb-5" id="rb22"> <label for="rb22"></label>
+													</div>
+													<div class="radio-box">
+														<input class="rate-radio" type="radio" name="rb-5" id="rb23"> <label for="rb23"></label>
+													</div>
+													<div class="radio-box">
+														<input class="rate-radio" type="radio" name="rb-5" id="rb24"> <label for="rb24"></label>
+													</div>
+													<div class="radio-box">
+														<input class="rate-radio" type="radio" name="rb-5" id="rb25"> <label for="rb25"></label>
+													</div>
+													</div>
+												<div class="col-sm-2 col-xs-3">
+													<p class="rate-current">4.46</p>
+												</div>
+											</div>
+										</div><!-- END одна полоска оценивания -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div> 
+				</div> 
+			</div>
+		</div>
+	</section>
+
+	<section class="connected">
+		<div class="container">
+			<div class="row">
+				<!-- Связанные -->
+				<div class="col-md-8">					
+					<div class="top">
+						<div class="content-header main-block gagalin">
+							<h2>Связанные люди</h2>
+						</div> <!-- END заголовок блока -->
+						<div class="content-box main-block block-pd mb-30">
+							<div class="civil ">
+								<div class="row">
+									<div class="col-sm-2 ">
+										<a href="#"><img class="img-responsive" src="img/lukashenko.jpg" alt="фото"></a>
+									</div>
+									<div class="col-sm-8">
+										<a href="#" class="civil-name"><span>Колесник</span> Раиса Павловна</a>
+										<p class="civil-position">Исполняющий обязанности главного бухгалтера отдела культуры</p>
+										<p class="civil-category army">Однополчанин</p>
+									</div>
+									<div class="col-sm-2">
+										<div class="rating-box">
+											<span class="rating">4.46</span>
+											<a href="#" class="tippy" title="Оценить этого госслужащего"> &nbsp;<i class="fa fa-star-half-o" aria-hidden="true" ></i></a>
+											<p class="rate-number">244 оценки</p>
+										</div>
+									</div>
+								</div>
+							</div> <!-- END строка одного госслужащего -->						
+							<div class="civil ">
+								<div class="row">
+									<div class="col-sm-2 ">
+										<a href="#"><img class="img-responsive" src="img/lukashenko.jpg" alt="фото"></a>
+									</div>
+									<div class="col-sm-8">
+										<a href="#" class="civil-name"><span>Колесник</span> Раиса Павловна</a>
+										<p class="civil-position">Исполняющий обязанности главного бухгалтера отдела культуры</p>
+										<p class="civil-category study">Сокурсник</p>
+									</div>
+									<div class="col-sm-2">
+										<div class="rating-box">
+											<span class="rating">4.46</span>
+											<a href="#" class="tippy" title="Оценить этого госслужащего"> &nbsp;<i class="fa fa-star-half-o" aria-hidden="true" ></i></a>
+											<p class="rate-number">244 оценки</p>
+										</div>
+									</div>
+								</div>
+							</div> <!-- END строка одного госслужащего -->						
+							<div class="civil ">
+								<div class="row">
+									<div class="col-sm-2 ">
+										<a href="#"><img class="img-responsive" src="img/lukashenko.jpg" alt="фото"></a>
+									</div>
+									<div class="col-sm-8">
+										<a href="#" class="civil-name"><span>Колесник</span> Раиса Павловна</a>
+										<p class="civil-position">Исполняющий обязанности главного бухгалтера отдела культуры</p>
+										<p class="civil-category family">Родственник</p>
+									</div>
+									<div class="col-sm-2">
+										<div class="rating-box">
+											<span class="rating">4.46</span>
+											<a href="#" class="tippy" title="Оценить этого госслужащего"> &nbsp;<i class="fa fa-star-half-o" aria-hidden="true" ></i></a>
+											<p class="rate-number">244 оценки</p>
+										</div>
+									</div>
+								</div>
+							</div> <!-- END строка одного госслужащего -->	
+							<div class="civil ">
+								<div class="row">
+									<div class="col-sm-2 ">
+										<a href="#"><img class="img-responsive" src="img/lukashenko.jpg" alt="фото"></a>
+									</div>
+									<div class="col-sm-8">
+										<a href="#" class="civil-name"><span>Колесник</span> Раиса Павловна</a>
+										<p class="civil-position">Исполняющий обязанности главного бухгалтера отдела культуры</p>
+										<p class="civil-category colleague">Коллега</p>
+									</div>
+									<div class="col-sm-2">
+										<div class="rating-box">
+											<span class="rating">4.46</span>
+											<a href="#" class="tippy" title="Оценить этого госслужащего"> &nbsp;<i class="fa fa-star-half-o" aria-hidden="true" ></i></a>
+											<p class="rate-number">244 оценки</p>
+										</div>
+									</div>
+								</div>
+							</div> <!-- END строка одного госслужащего -->		
+						</div><!-- END служащие организации -->
+					</div>
+				</div> 
+				<!-- связанные случаи -->
+				<div class="col-md-4">
+					<div class="content-header main-block gagalin">
+						<h2>связанные публикации</h2>
+					</div> <!-- заголовок блока -->
+				
+				<!--связанные случаи -->
+					<div class="news">
+						<div class="content-box main-block block-pd mb-30 ">
+							
+							<div class="news-box">
+								<div class="meta">
+									<span class="date">20 марта 2017</span>,
+									<span class="time">19:18</span>, просмотров:
+									<span class="views-number">243</span>
+								</div>
+								<a class="news-box-header" href="one_publication.html#content">В Гомельском горисполкоме на предложение о переносе времени приема отказали.</a>
+							</div> <!--end бокс одной публикации -->							
+							<div class="news-box">
+								<div class="meta">
+									<span class="date">20 марта 2017</span>,
+									<span class="time">19:18</span>, просмотров:
+									<span class="views-number">243</span>
+								</div>
+								<a class="news-box-header" href="one_publication.html#content">В Гомельском горисполкоме на предложение о переносе времени приема отказали.</a>
+							</div> <!--end бокс одной публикации -->
+							<div class="news-box">
+								<div class="meta">
+									<span class="date">20 марта 2017</span>,
+									<span class="time">19:18</span>, просмотров:
+									<span class="views-number">243</span>
+								</div>
+								<a class="news-box-header" href="one_publication.html#content">В Гомельском горисполкоме на предложение о переносе времени приема отказали.</a>
+							</div> <!--end бокс одной публикации -->							
+						</div> 
+					</div><!--END связанные случаи -->
+				</div>
+			</div>
+		</div>
+	</section>
+
+<!--    FOOTER    -->
+
+ 	<footer>
+ 		<div class="footer-big">
+ 			<div class="container">
+ 				<div class="row">
+ 					<div class="col-md-4 col-xs-6">
+ 						<div class="footer-sections">
+ 							<h3 class="gagalin">разделы</h3>
+ 							<ul>
+ 								<li><a href="index.html">Главная</a></li>
+ 								<li><a href="search_result.html">Госслужащие</a></li>
+ 								<li><a href="search_result.html">Публикации</a></li>
+ 								<li><a href="about.html">О нас</a></li>
+ 								<li><a href="contacts.html">Контакты</a></li>
+ 							</ul>
+ 						</div>
+ 					</div>
+ 					<div class="col-md-4 col-xs-6">
+ 						<div class="footer-socials">
+ 							<h3 class="gagalin">ссылки</h3>
+ 							<ul>
+ 								<li><a href="https://vk.com/club152437259" target="blank"><i class="fa fa-vk" aria-hidden="true"></i>Вконтакте</a></li>
+ 								<li><a href="https://www.facebook.com/groups/chinovniki.info/" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;&nbsp;Facebook</a></li>
+ 								<li><a href="https://ok.ru/group/53359593652364" target="blank"><i class="fa fa-odnoklassniki" aria-hidden="true"></i>&nbsp;Одноклассники</a></li>
+<!--  							<li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i>Youtube</a></li>
+ 								<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li> -->
+ 							</ul>
+ 						</div>
+ 					</div>
+ 					<div class="col-md-4">
+ 						<div class="footer-about">
+ 							<h3 class="gagalin">инициатива</h3>
+ 							<p><a href="https://nash-dom.info" target="blank"><strong>«Наш дом»</strong></a> – белорусская гражданская кампания, зародившаяся в 2006 году.</p>
+ 							<p>Кампания ставит целью всемерное развитие гражданской активности в республике и защиту прав граждан</p>
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</div>
+		</div> <!-- большой футер -->
+ 		<div class="footer-small">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<p>© 2017 <strong>Чиновники.инфо</strong> | При использовании материалов - обратная, прямая и индексируемая гиперссылка обязательна.</p>
+			 			<p><i class="fa fa-envelope" aria-hidden="true"></i> Написть письмо <a href="mailto:#">редактору ресурса</a></p>
+					</div>
+				</div>
+			</div>
+ 		</div><!-- маленький футер -->
+	</footer>
+
+	<i class="fa fa-chevron-circle-up" id="go-top" aria-hidden="true"></i>
+
+	<script src="js/tippy.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="libs/slick/slick.js"></script>
+	<script src="js/common.js"></script>
+
+
+</body>
+</html>
