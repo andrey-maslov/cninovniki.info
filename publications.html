@@ -23,8 +23,9 @@
 	<link rel="shortcut icon" href="fav.ico" type="image/x-icon"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&amp;subset=cyrillic" rel="stylesheet">
-	<!-- <link rel="stylesheet" href="css/lightbox.min.css"> -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/slick/slick-theme.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/tippy.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -43,7 +44,7 @@
 					</div>
 					<div class="col-sm-8 ">
 						<div class="headerwrap-right">
-							<div class="col-sm-9 col-xs-6">
+							<div class="col-sm-8 col-xs-6">
 								<div class="headerwrap-social">
 									<a target="blank" href="https://vk.com/club152437259">
 										<i class="fa fa-vk" aria-hidden="true"></i>
@@ -51,21 +52,17 @@
 									<a target="blank" href="https://www.facebook.com/groups/chinovniki.info/">	
 										<i class="fa fa-facebook" aria-hidden="true"></i>
 									</a>
-<!-- 									<a target="blank" href="#">
-										<i class="fa fa-instagram" aria-hidden="true"></i>
-									</a> -->
-<!-- 									<a target="blank" href="#">
-										<i class="fa fa-youtube" aria-hidden="true"></i>
-									</a> -->
 									<a target="blank" href="https://ok.ru/group/53359593652364">
 										<i class="fa fa-odnoklassniki" aria-hidden="true"></i>
 									</a>
 								</div>
 							</div>
-							<div class="col-sm-3 col-xs-6">
+							<div class="col-sm-4 col-xs-6">
 								<div class="headerwrap-enter">
+									<p class="logged"><!-- Здравствуйте, <span>Череззаборногузадерищенко</span> --></p>
 									<a href="#" class="gagalin" data-toggle="modal" data-target="#login">войти</a>
 									<a href="#" class="tippy" title="Авторизованный пользователь может ставить оценки госслужащим">&nbsp;&nbsp;<i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+
 								</div>
 							</div>
 						</div>
@@ -73,11 +70,11 @@
 					<div class="col-md-8 col-sm-12">
 						<nav class="main-menu">
 							<ul class="main-menu-list">
-								<li class="main-menu-item"><a href="index.html">Главная</a></li>
+								<li class="main-menu-item"><a  href="index.html">Главная</a></li>
 								<li class="main-menu-item"><a href="peoples.html#content">Госслужащие</a></li>
 								<li class="main-menu-item"><a href="organizations.html#content">Организации</a></li>
 								<li class="main-menu-item"><a class="active" href="publications.html#content">Публикации</a></li>
-								<li class="main-menu-item"><a href="about.html#content">О проекте</a></li>
+								<li class="main-menu-item"><a href="about.html#content">О нас</a></li>
 								<li class="main-menu-item"><a href="contacts.html#content">Контакты</a></li>
 								<li class="main-menu-search">
 									<a id="open"  href="#">
@@ -100,7 +97,7 @@
 					        <span class="icon-bar"></span>
 					        <span class="icon-bar"></span>
 					      </button>
-					      <a href="#" data-toggle="modal" data-target="#login" class="mobile-login">войти</a>
+					      <a href="#" data-toggle="modal" data-target="#login" class="mobile-login">войти</a><span class="mobile_logged"><!-- Череззаборногузадерищенко --></span>
 					    </div>
 
 					    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -118,20 +115,6 @@
 					        </div>
 					        <button type="submit" class="btn btn-default">Искать</button>
 					      </form>
-					      <ul class="nav navbar-nav navbar-right">
-<!-- 					        <li class="dropdown">
-					          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Социальные сети <span class="caret"></span></a>
-					          <ul class="dropdown-menu">
-					            <li><a href="#">Вконтакте</a></li>
-					            <li><a href="#">Одноклассники</a></li>
-					            <li><a href="#">Инстаграм</a></li>
-					            <li><a href="#">Facebook</a></li>
-					            <li><a href="#">Yotube</a></li>
-					            <li role="separator" class="divider"></li>
-					            <li><a href="#">Наш Дом</a></li>
-					          </ul>
-					        </li> -->
-					      </ul>
 					    </div><!-- /.navbar-collapse -->
 					  </div><!-- /.container-fluid -->
 					</nav><!-- /.mobile menu -->
@@ -151,7 +134,7 @@
 		        <form class="form-horizontal" role="form">
 				  <div class="form-group">
 				    <div class="col-sm-12">
-				      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+				      <input type="text" class="form-control" id="inputEmail3" placeholder="Имя">
 				    </div>
 				  </div>
 				  <div class="form-group">
@@ -755,24 +738,26 @@
  							</ul>
  						</div>
  					</div>
- 					<div class="col-md-4 col-xs-6">
+ 					<div class="col-md-4 col-xs-12">
  						<div class="footer-socials">
  							<h3 class="gagalin">ссылки</h3>
  							<ul>
- 								<li><a href="https://vk.com/club152437259" target="blank"><i class="fa fa-vk" aria-hidden="true"></i>Вконтакте</a></li>
- 								<li><a href="https://www.facebook.com/groups/chinovniki.info/" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;&nbsp;Facebook</a></li>
- 								<li><a href="https://ok.ru/group/53359593652364" target="blank"><i class="fa fa-odnoklassniki" aria-hidden="true"></i>&nbsp;Одноклассники</a></li>
-<!--  							<li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i>Youtube</a></li>
- 								<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li> -->
+ 								<li><a href="https://vk.com/club152437259" target="blank"><i class="fa fa-vk" aria-hidden="true"></i><span class="md-visible">Вконтакте</span></a></li>
+ 								<li><a href="https://www.facebook.com/groups/chinovniki.info/" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;&nbsp;<span class="md-visible">Facebook</span></a></li>
+ 								<li><a href="https://ok.ru/group/53359593652364" target="blank"><i class="fa fa-odnoklassniki" aria-hidden="true"></i>&nbsp;<span class="md-visible">Одноклассники</span></a></li>
  							</ul>
  						</div>
  					</div>
- 					<div class="col-md-4">
+ 					<div class="col-md-4 col-xs-12">
  						<div class="footer-about">
  							<h3 class="gagalin">инициатива</h3>
- 							<p><a href="https://nash-dom.info" target="blank"><strong>«Наш дом»</strong></a> – белорусская гражданская кампания, зародившаяся в 2006 году.</p>
- 							<p>Кампания ставит целью всемерное развитие гражданской активности в республике и защиту прав граждан</p>
+ 							<p><a href="https://nash-dom.info" target="blank"><strong>«Наш дом»</strong></a> &mdash;&nbsp;это международная общественная организация, зародившаяся в&nbsp;Беларуси в&nbsp;2002 году как гражданская кампания.</p>
+ 							<p>Гражданская Кампания поставила целью всемерное развитие гражданской активности в&nbsp;республике и&nbsp;защиту прав граждан, организация продолжает начатое дело.</p>
  						</div>
+ 						<div class="share-info">
+ 							<p>Хотите поделиться информацией?</p>
+ 							<a href="contacts.html#content">Поделиться!</a>
+ 							</div>
  					</div>
  				</div>
  			</div>
@@ -782,7 +767,7 @@
 				<div class="row">
 					<div class="col-sm-12">
 						<p>© 2017 <strong>Чиновники.инфо</strong> | При использовании материалов - обратная, прямая и индексируемая гиперссылка обязательна.</p>
-			 			<p><i class="fa fa-envelope" aria-hidden="true"></i> Написть письмо <a href="mailto:#">редактору ресурса</a></p>
+			 			<p><i class="fa fa-envelope" aria-hidden="true"></i> Написать письмо <a href="mailto:info@chinovniki.info">администратору ресурса</a></p>
 					</div>
 				</div>
 			</div>

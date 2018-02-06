@@ -44,7 +44,7 @@
 					</div>
 					<div class="col-sm-8 ">
 						<div class="headerwrap-right">
-							<div class="col-sm-9 col-xs-6">
+							<div class="col-sm-8 col-xs-6">
 								<div class="headerwrap-social">
 									<a target="blank" href="https://vk.com/club152437259">
 										<i class="fa fa-vk" aria-hidden="true"></i>
@@ -52,21 +52,17 @@
 									<a target="blank" href="https://www.facebook.com/groups/chinovniki.info/">	
 										<i class="fa fa-facebook" aria-hidden="true"></i>
 									</a>
-<!-- 									<a target="blank" href="#">
-										<i class="fa fa-instagram" aria-hidden="true"></i>
-									</a> -->
-<!-- 									<a target="blank" href="#">
-										<i class="fa fa-youtube" aria-hidden="true"></i>
-									</a> -->
 									<a target="blank" href="https://ok.ru/group/53359593652364">
 										<i class="fa fa-odnoklassniki" aria-hidden="true"></i>
 									</a>
 								</div>
 							</div>
-							<div class="col-sm-3 col-xs-6">
+							<div class="col-sm-4 col-xs-6">
 								<div class="headerwrap-enter">
+									<p class="logged"><!-- Здравствуйте, <span>Череззаборногузадерищенко</span> --></p>
 									<a href="#" class="gagalin" data-toggle="modal" data-target="#login">войти</a>
 									<a href="#" class="tippy" title="Авторизованный пользователь может ставить оценки госслужащим">&nbsp;&nbsp;<i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+
 								</div>
 							</div>
 						</div>
@@ -74,11 +70,11 @@
 					<div class="col-md-8 col-sm-12">
 						<nav class="main-menu">
 							<ul class="main-menu-list">
-								<li class="main-menu-item"><a href="index.html">Главная</a></li>
+								<li class="main-menu-item"><a class="active" href="index.html">Главная</a></li>
 								<li class="main-menu-item"><a href="peoples.html#content">Госслужащие</a></li>
 								<li class="main-menu-item"><a href="organizations.html#content">Организации</a></li>
 								<li class="main-menu-item"><a  href="publications.html#content">Публикации</a></li>
-								<li class="main-menu-item"><a href="about.html#content">О проекте</a></li>
+								<li class="main-menu-item"><a href="about.html#content">О нас</a></li>
 								<li class="main-menu-item"><a href="contacts.html#content">Контакты</a></li>
 								<li class="main-menu-search">
 									<a id="open"  href="#">
@@ -101,7 +97,7 @@
 					        <span class="icon-bar"></span>
 					        <span class="icon-bar"></span>
 					      </button>
-					      <a href="#" data-toggle="modal" data-target="#login" class="mobile-login">войти</a>
+					      <a href="#" data-toggle="modal" data-target="#login" class="mobile-login">войти</a><span class="mobile_logged"><!-- Череззаборногузадерищенко --></span>
 					    </div>
 
 					    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -119,20 +115,6 @@
 					        </div>
 					        <button type="submit" class="btn btn-default">Искать</button>
 					      </form>
-					      <ul class="nav navbar-nav navbar-right">
-<!-- 					        <li class="dropdown">
-					          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Социальные сети <span class="caret"></span></a>
-					          <ul class="dropdown-menu">
-					            <li><a href="#">Вконтакте</a></li>
-					            <li><a href="#">Одноклассники</a></li>
-					            <li><a href="#">Инстаграм</a></li>
-					            <li><a href="#">Facebook</a></li>
-					            <li><a href="#">Yotube</a></li>
-					            <li role="separator" class="divider"></li>
-					            <li><a href="#">Наш Дом</a></li>
-					          </ul>
-					        </li> -->
-					      </ul>
 					    </div><!-- /.navbar-collapse -->
 					  </div><!-- /.container-fluid -->
 					</nav><!-- /.mobile menu -->
@@ -152,7 +134,7 @@
 		        <form class="form-horizontal" role="form">
 				  <div class="form-group">
 				    <div class="col-sm-12">
-				      <input type="text" class="form-control" id="inputEmail3" placeholder="логин">
+				      <input type="text" class="form-control" id="inputEmail3" placeholder="Имя">
 				    </div>
 				  </div>
 				  <div class="form-group">
@@ -298,176 +280,172 @@
 									</div>
 									<!-- оценка госслужащего -->
 									<div class="rate">
-										<!-- шапка таблицы -->
-<!-- 										<div class="row">
-											<div class="col-sm-5 col-xs-12">
-												<h5>Критерий</h5>
-											</div>
-											<div class="col-sm-6 col-xs-10">
-												<div class="radio-box">
-													не знаю
+										<p>Здесь Вы&nbsp;можете оценить госслужащего в&nbsp;каждой из&nbsp;категорий по&nbsp;шкале от&nbsp;1&nbsp;до&nbsp;5, где 1&nbsp;это самая низкая оценка, а&nbsp;5&nbsp;&mdash; самая высокая</p>
+										<form action="">
+											<!-- одна полоска оценивания -->
+											<div class="civil">
+												<div class="row">
+													<div class="col-sm-5 col-xs-12">
+														<h5>Профессионализм</h5>
+														<span>Уровень профессиональных знаний в зависимости от специализации</span>
+													</div>
+													<div class="col-sm-5 col-xs-9 radio-row">
+														<div class="radio-boxes-wrapper">
+															<div class="radio-box">
+																<input class="rate-radio" type="radio" name="rb-1" id="rb1" checked> <label for="rb1" class="tippy" title="Очень плохо"></label>
+															</div>
+															<div class="radio-box">
+																<input class="rate-radio" type="radio" name="rb-1" id="rb2"> <label for="rb2" class="tippy" title="Плохо"></label>
+															</div>
+															<div class="radio-box">
+																<input class="rate-radio" type="radio" name="rb-1" id="rb3"> <label for="rb3" class="tippy" title="Удовлетворительно"></label>
+															</div>
+															<div class="radio-box">
+																<input class="rate-radio" type="radio" name="rb-1" id="rb4"> <label for="rb4" class="tippy" title="Хорошо"></label>
+															</div>
+															<div class="radio-box">
+																<input class="rate-radio" type="radio" name="rb-1" id="rb5"> <label for="rb5" class="tippy" title="Очень хорошо"></label>
+															</div>
+														</div>
+													</div>
+													<div class="col-sm-2 col-xs-3 ">
+														<p class="rate-current tippy" title="Оценка">4.46</p>
+													</div>
 												</div>
-												<div class="radio-box">
-													
+											</div><!-- END одна полоска оценивания -->										
+											<!-- одна полоска оценивания -->
+											<div class="civil">
+												<div class="row">
+													<div class="col-sm-5 col-xs-12">
+														<h5>Коммуникабельность</h5>
+														<span>Умение корректно разговаривать и сотрудничать с другими людьми</span>
+													</div>
+													<div class="col-sm-5 col-xs-9 radio-row">
+														<div class="radio-boxes-wrapper">
+															<div class="radio-box">
+																<input class="rate-radio" type="radio" name="rb-2" id="rb6" checked> <label for="rb6" class="tippy" title="Очень плохо"></label>
+															</div>
+															<div class="radio-box">
+																<input class="rate-radio" type="radio" name="rb-2" id="rb7"> <label for="rb7" class="tippy" title="Плохо"></label>
+															</div>
+															<div class="radio-box">
+																<input class="rate-radio" type="radio" name="rb-2" id="rb8"> <label for="rb8" class="tippy" title="Удовлетворительно"></label>
+															</div>
+															<div class="radio-box">
+																<input class="rate-radio" type="radio" name="rb-2" id="rb9"> <label for="rb9" class="tippy" title="Хорошо"></label>
+															</div>
+															<div class="radio-box">
+																<input class="rate-radio" type="radio" name="rb-2" id="rb10"> <label for="rb10" class="tippy" title="Очень хорошо"></label>
+															</div>
+														</div>
+													</div>
+													<div class="col-sm-2 col-xs-3">
+														<p class="rate-current tippy" title="Оценка">4.46</p>
+													</div>
 												</div>
-												<div class="radio-box">
-													
+											</div><!-- END одна полоска оценивания -->										
+											<!-- одна полоска оценивания -->
+											<div class="civil">
+												<div class="row">
+													<div class="col-sm-5 col-xs-12">
+														<h5>Инициативность</h5>
+														<span>Стремление делать больше, чем предписано должностной инструкцией</span>
+													</div>
+													<div class="col-sm-5 col-xs-9 radio-row">
+														<div class="radio-boxes-wrapper">
+															<div class="radio-box">
+																<input class="rate-radio" type="radio" name="rb-3" id="rb11" checked> <label for="rb11" class="tippy" title="Очень плохо"></label>
+															</div>
+															<div class="radio-box">
+																<input class="rate-radio" type="radio" name="rb-3" id="rb12"> <label for="rb12" class="tippy" title="Плохо"></label>
+															</div>
+															<div class="radio-box">
+																<input class="rate-radio" type="radio" name="rb-3" id="rb13"> <label for="rb13" class="tippy" title="Удовлетворительно"></label>
+															</div>
+															<div class="radio-box">
+																<input class="rate-radio" type="radio" name="rb-3" id="rb14"> <label for="rb14" class="tippy" title="Хорошо"></label>
+															</div>
+															<div class="radio-box">
+																<input class="rate-radio" type="radio" name="rb-3" id="rb15"> <label for="rb15" class="tippy" title="Очень хорошо"></label>
+															</div>
+														</div>
+													</div>
+													<div class="col-sm-2 col-xs-3">
+														<p class="rate-current tippy" title="Оценка">4.46</p>
+													</div>
 												</div>
-												<div class="radio-box">
-													
+											</div><!-- END одна полоска оценивания -->	
+											<!-- одна полоска оценивания -->
+											<div class="civil">
+												<div class="row">
+													<div class="col-sm-5 col-xs-12">
+														<h5>Исполнительность</h5>
+														<span>Своевременное и качественное выполнение взятых обязательств</span>
+													</div>
+													<div class="col-sm-5 col-xs-9 radio-row">
+														<div class="radio-boxes-wrapper">
+															<div class="radio-box">
+																<input class="rate-radio" type="radio" name="rb-4" id="rb16" checked> <label for="rb16" class="tippy" title="Очень плохо"></label>
+															</div>
+															<div class="radio-box">
+																<input class="rate-radio" type="radio" name="rb-4" id="rb17"> <label for="rb17" class="tippy" title="Плохо"></label>
+															</div>
+															<div class="radio-box">
+																<input class="rate-radio" type="radio" name="rb-4" id="rb18"> <label for="rb18" class="tippy" title="Удовлетворительно"></label>
+															</div>
+															<div class="radio-box">
+																<input class="rate-radio" type="radio" name="rb-4" id="rb19"> <label for="rb19" class="tippy" title="Хорошо"></label>
+															</div>
+															<div class="radio-box">
+																<input class="rate-radio" type="radio" name="rb-4" id="rb20"> <label for="rb20" class="tippy" title="Очень хорошо"></label>
+															</div>
+														</div>
+													</div>
+													<div class="col-sm-2 col-xs-3">
+														<p class="rate-current tippy" title="Оценка">4.46</p>
+													</div>
+												</div>										
+											</div><!-- END одна полоска оценивания -->
+											<!-- одна полоска оценивания -->
+											<div class="civil">
+												<div class="row">
+													<div class="col-sm-5 col-xs-12 ">
+														<h5>Отзывчивость</h5>
+														<span>Готовность вникать в проблемы и вопросы людей и решать их по мере своих должностных возможностей</span>
+													</div>
+													<div class="col-sm-5 col-xs-9 radio-row">
+														<div class="radio-boxes-wrapper">
+															<div class="radio-box">
+																<input class="rate-radio" type="radio" name="rb-5" id="rb21" checked> <label for="rb21" class="tippy" title="Очень плохо"></label>
+															</div>
+															<div class="radio-box">
+																<input class="rate-radio" type="radio" name="rb-5" id="rb22"> <label for="rb22" class="tippy" title="Плохо"></label>
+															</div>
+															<div class="radio-box">
+																<input class="rate-radio" type="radio" name="rb-5" id="rb23"> <label for="rb23" class="tippy" title="Удовлетворительно"></label>
+															</div>
+															<div class="radio-box">
+																<input class="rate-radio" type="radio" name="rb-5" id="rb24"> <label for="rb24" class="tippy" title="Хорошо"></label>
+															</div>
+															<div class="radio-box">
+																<input class="rate-radio" type="radio" name="rb-5" id="rb25"> <label for="rb25" class="tippy" title="Очень хорошо"></label>
+															</div>
+														</div>
+													</div>
+													<div class="col-sm-2 col-xs-3">
+														<p class="rate-current tippy" title="Оценка">4.46</p>
+													</div>
 												</div>
-												<div class="radio-box">
-													
-												</div>
-												</div>
-											<div class="col-sm-1 col-xs-2">
-												<p>оценка</p>
-											</div>
-										</div>	 -->									
-										<!-- одна полоска оценивания -->
-										<div class="civil">
+											</div><!-- END одна полоска оценивания -->
 											<div class="row">
-												<div class="col-sm-5 col-xs-12">
-													<h5>Профессионализм</h5>
-													<span>Уровень профессиональных знаний в зависимости от специализации</span>
+												<div class="col-sm-7">
+													<p class="rate-description">Работу госслужащего оценило: <span>815 пользователей</span></p>
 												</div>
-												<div class="col-sm-5 col-xs-9 radio-row">
-													<div class="radio-box">
-														<input class="rate-radio" type="radio" name="rb" id="rb1" checked> <label for="rb1" class="tippy" title="Не знаю"></label>
-													</div>
-													<div class="radio-box">
-														<input class="rate-radio" type="radio" name="rb" id="rb2"> <label for="rb2" class="tippy" title="Плохо"></label>
-													</div>
-													<div class="radio-box">
-														<input class="rate-radio" type="radio" name="rb" id="rb3"> <label for="rb3" class="tippy" title="Удовлетворительно"></label>
-													</div>
-													<div class="radio-box">
-														<input class="rate-radio" type="radio" name="rb" id="rb4"> <label for="rb4" class="tippy" title="Хорошо"></label>
-													</div>
-													<div class="radio-box">
-														<input class="rate-radio" type="radio" name="rb" id="rb5"> <label for="rb5" class="tippy" title="Очень хорошо"></label>
-													</div>
-													</div>
-												<div class="col-sm-2 col-xs-3 ">
-													<p class="rate-current tippy" title="Оценка">4.46</p>
+												<div class="col-sm-5 text-right">
+													<button type="submit" class="btn btn-primary orange-btn">Оценить работу госслужащего</button>
 												</div>
 											</div>
-										</div><!-- END одна полоска оценивания -->										
-										<!-- одна полоска оценивания -->
-										<div class="civil">
-											<div class="row">
-												<div class="col-sm-5 col-xs-12">
-													<h5>Коммуникабельность</h5>
-													<span>Умение корректно разговаривать и сотрудничать с другими людьми</span>
-												</div>
-												<div class="col-sm-5 col-xs-9">
-													<div class="radio-box">
-														<input class="rate-radio" type="radio" name="rb-2" id="rb6" checked> <label for="rb6"></label>
-													</div>
-													<div class="radio-box">
-														<input class="rate-radio" type="radio" name="rb-2" id="rb7"> <label for="rb7"></label>
-													</div>
-													<div class="radio-box">
-														<input class="rate-radio" type="radio" name="rb-2" id="rb8"> <label for="rb8"></label>
-													</div>
-													<div class="radio-box">
-														<input class="rate-radio" type="radio" name="rb-2" id="rb9"> <label for="rb9"></label>
-													</div>
-													<div class="radio-box">
-														<input class="rate-radio" type="radio" name="rb-2" id="rb10"> <label for="rb10"></label>
-													</div>
-													</div>
-												<div class="col-sm-2 col-xs-3">
-													<p class="rate-current">4.46</p>
-												</div>
-											</div>
-										</div><!-- END одна полоска оценивания -->										
-										<!-- одна полоска оценивания -->
-										<div class="civil"><div class="row">
-												<div class="col-sm-5 col-xs-12">
-													<h5>Инициативность</h5>
-													<span>Стремление делать больше, чем предписано должностной инструкцией</span>
-												</div>
-												<div class="col-sm-5 col-xs-9">
-													<div class="radio-box">
-														<input class="rate-radio" type="radio" name="rb-3" id="rb11" checked> <label for="rb11"></label>
-													</div>
-													<div class="radio-box">
-														<input class="rate-radio" type="radio" name="rb-3" id="rb12"> <label for="rb12"></label>
-													</div>
-													<div class="radio-box">
-														<input class="rate-radio" type="radio" name="rb-3" id="rb13"> <label for="rb13"></label>
-													</div>
-													<div class="radio-box">
-														<input class="rate-radio" type="radio" name="rb-3" id="rb14"> <label for="rb14"></label>
-													</div>
-													<div class="radio-box">
-														<input class="rate-radio" type="radio" name="rb-3" id="rb15"> <label for="rb15"></label>
-													</div>
-													</div>
-												<div class="col-sm-2 col-xs-3">
-													<p class="rate-current">4.46</p>
-												</div>
-											</div>
-										</div><!-- END одна полоска оценивания -->	
-										<!-- одна полоска оценивания -->
-										<div class="civil">
-											<div class="row">
-												<div class="col-sm-5 col-xs-12">
-													<h5>Исполнительность</h5>
-													<span>Своевременное и качественное выполнение взятых обязательств</span>
-												</div>
-												<div class="col-sm-5 col-xs-9">
-													<div class="radio-box">
-														<input class="rate-radio" type="radio" name="rb-4" id="rb16" checked> <label for="rb16"></label>
-													</div>
-													<div class="radio-box">
-														<input class="rate-radio" type="radio" name="rb-4" id="rb17"> <label for="rb17"></label>
-													</div>
-													<div class="radio-box">
-														<input class="rate-radio" type="radio" name="rb-4" id="rb18"> <label for="rb18"></label>
-													</div>
-													<div class="radio-box">
-														<input class="rate-radio" type="radio" name="rb-4" id="rb19"> <label for="rb19"></label>
-													</div>
-													<div class="radio-box">
-														<input class="rate-radio" type="radio" name="rb-4" id="rb20"> <label for="rb20"></label>
-													</div>
-													</div>
-												<div class="col-sm-2 col-xs-3">
-													<p class="rate-current">4.46</p>
-												</div>
-											</div>										
-										</div><!-- END одна полоска оценивания -->
-										<!-- одна полоска оценивания -->
-										<div class="civil">
-											<div class="row">
-												<div class="col-sm-5 col-xs-12 ">
-													<h5>Отзывчивость</h5>
-													<span>Готовность вникать в проблемы и вопросы людей и решать их по мере своих должностных возможностей</span>
-												</div>
-												<div class="col-sm-5 col-xs-9">
-													<div class="radio-box">
-														<input class="rate-radio" type="radio" name="rb-5" id="rb21" checked> <label for="rb21"></label>
-													</div>
-													<div class="radio-box">
-														<input class="rate-radio" type="radio" name="rb-5" id="rb22"> <label for="rb22"></label>
-													</div>
-													<div class="radio-box">
-														<input class="rate-radio" type="radio" name="rb-5" id="rb23"> <label for="rb23"></label>
-													</div>
-													<div class="radio-box">
-														<input class="rate-radio" type="radio" name="rb-5" id="rb24"> <label for="rb24"></label>
-													</div>
-													<div class="radio-box">
-														<input class="rate-radio" type="radio" name="rb-5" id="rb25"> <label for="rb25"></label>
-													</div>
-													</div>
-												<div class="col-sm-2 col-xs-3">
-													<p class="rate-current">4.46</p>
-												</div>
-											</div>
-										</div><!-- END одна полоска оценивания -->
+										</form>
 									</div>
 								</div>
 							</div>
@@ -626,23 +604,25 @@
  							</ul>
  						</div>
  					</div>
- 					<div class="col-md-4 col-xs-6">
+ 					<div class="col-md-4 col-xs-12">
  						<div class="footer-socials">
  							<h3 class="gagalin">ссылки</h3>
  							<ul>
- 								<li><a href="https://vk.com/club152437259" target="blank"><i class="fa fa-vk" aria-hidden="true"></i>Вконтакте</a></li>
- 								<li><a href="https://www.facebook.com/groups/chinovniki.info/" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;&nbsp;Facebook</a></li>
- 								<li><a href="https://ok.ru/group/53359593652364" target="blank"><i class="fa fa-odnoklassniki" aria-hidden="true"></i>&nbsp;Одноклассники</a></li>
-<!--  							<li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i>Youtube</a></li>
- 								<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li> -->
+ 								<li><a href="https://vk.com/club152437259" target="blank"><i class="fa fa-vk" aria-hidden="true"></i><span class="md-visible">Вконтакте</span></a></li>
+ 								<li><a href="https://www.facebook.com/groups/chinovniki.info/" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;&nbsp;<span class="md-visible">Facebook</span></a></li>
+ 								<li><a href="https://ok.ru/group/53359593652364" target="blank"><i class="fa fa-odnoklassniki" aria-hidden="true"></i>&nbsp;<span class="md-visible">Одноклассники</span></a></li>
  							</ul>
  						</div>
  					</div>
- 					<div class="col-md-4">
+ 					<div class="col-md-4 col-xs-12">
  						<div class="footer-about">
  							<h3 class="gagalin">инициатива</h3>
- 							<p><a href="https://nash-dom.info" target="blank"><strong>«Наш дом»</strong></a> – белорусская гражданская кампания, зародившаяся в 2006 году.</p>
- 							<p>Кампания ставит целью всемерное развитие гражданской активности в республике и защиту прав граждан</p>
+ 							<p><a href="https://nash-dom.info" target="blank"><strong>«Наш дом»</strong></a> &mdash;&nbsp;это международная общественная организация, зародившаяся в&nbsp;Беларуси в&nbsp;2002 году как гражданская кампания.</p>
+ 							<p>Гражданская Кампания поставила целью всемерное развитие гражданской активности в&nbsp;республике и&nbsp;защиту прав граждан, организация продолжает начатое дело.</p>
+ 						</div>
+ 						<div class="share-info">
+ 							<p>Хотите поделиться информацией?</p>
+ 							<a href="contacts.html#content">Поделиться!</a>
  						</div>
  					</div>
  				</div>
@@ -653,7 +633,7 @@
 				<div class="row">
 					<div class="col-sm-12">
 						<p>© 2017 <strong>Чиновники.инфо</strong> | При использовании материалов - обратная, прямая и индексируемая гиперссылка обязательна.</p>
-			 			<p><i class="fa fa-envelope" aria-hidden="true"></i> Написть письмо <a href="mailto:#">редактору ресурса</a></p>
+			 			<p><i class="fa fa-envelope" aria-hidden="true"></i> Написать письмо <a href="mailto:info@chinovniki.info">администратору ресурса</a></p>
 					</div>
 				</div>
 			</div>

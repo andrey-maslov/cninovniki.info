@@ -23,8 +23,9 @@
 	<link rel="shortcut icon" href="fav.ico" type="image/x-icon"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&amp;subset=cyrillic" rel="stylesheet">
-	<!-- <link rel="stylesheet" href="css/lightbox.min.css"> -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="libs/slick/slick.css">
+	<link rel="stylesheet" href="libs/slick/slick-theme.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/tippy.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -43,7 +44,7 @@
 					</div>
 					<div class="col-sm-8 ">
 						<div class="headerwrap-right">
-							<div class="col-sm-9 col-xs-6">
+							<div class="col-sm-8 col-xs-6">
 								<div class="headerwrap-social">
 									<a target="blank" href="https://vk.com/club152437259">
 										<i class="fa fa-vk" aria-hidden="true"></i>
@@ -51,21 +52,17 @@
 									<a target="blank" href="https://www.facebook.com/groups/chinovniki.info/">	
 										<i class="fa fa-facebook" aria-hidden="true"></i>
 									</a>
-<!-- 									<a target="blank" href="#">
-										<i class="fa fa-instagram" aria-hidden="true"></i>
-									</a> -->
-<!-- 									<a target="blank" href="#">
-										<i class="fa fa-youtube" aria-hidden="true"></i>
-									</a> -->
 									<a target="blank" href="https://ok.ru/group/53359593652364">
 										<i class="fa fa-odnoklassniki" aria-hidden="true"></i>
 									</a>
 								</div>
 							</div>
-							<div class="col-sm-3 col-xs-6">
+							<div class="col-sm-4 col-xs-6">
 								<div class="headerwrap-enter">
+									<p class="logged"><!-- Здравствуйте, <span>Череззаборногузадерищенко</span> --></p>
 									<a href="#" class="gagalin" data-toggle="modal" data-target="#login">войти</a>
 									<a href="#" class="tippy" title="Авторизованный пользователь может ставить оценки госслужащим">&nbsp;&nbsp;<i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
+
 								</div>
 							</div>
 						</div>
@@ -76,8 +73,8 @@
 								<li class="main-menu-item"><a href="index.html">Главная</a></li>
 								<li class="main-menu-item"><a href="peoples.html#content">Госслужащие</a></li>
 								<li class="main-menu-item"><a href="organizations.html#content">Организации</a></li>
-								<li class="main-menu-item"><a href="publications.html#content">Публикации</a></li>
-								<li class="main-menu-item"><a class="active" href="about.html#content">О проекте</a></li>
+								<li class="main-menu-item"><a  href="publications.html#content">Публикации</a></li>
+								<li class="main-menu-item"><a class="active"  href="about.html#content">О нас</a></li>
 								<li class="main-menu-item"><a href="contacts.html#content">Контакты</a></li>
 								<li class="main-menu-search">
 									<a id="open"  href="#">
@@ -100,7 +97,7 @@
 					        <span class="icon-bar"></span>
 					        <span class="icon-bar"></span>
 					      </button>
-					      <a href="#" data-toggle="modal" data-target="#login" class="mobile-login">войти</a>
+					      <a href="#" data-toggle="modal" data-target="#login" class="mobile-login">войти</a><span class="mobile_logged"><!-- Череззаборногузадерищенко --></span>
 					    </div>
 
 					    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -118,20 +115,6 @@
 					        </div>
 					        <button type="submit" class="btn btn-default">Искать</button>
 					      </form>
-					      <ul class="nav navbar-nav navbar-right">
-<!-- 					        <li class="dropdown">
-					          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Социальные сети <span class="caret"></span></a>
-					          <ul class="dropdown-menu">
-					            <li><a href="#">Вконтакте</a></li>
-					            <li><a href="#">Одноклассники</a></li>
-					            <li><a href="#">Инстаграм</a></li>
-					            <li><a href="#">Facebook</a></li>
-					            <li><a href="#">Yotube</a></li>
-					            <li role="separator" class="divider"></li>
-					            <li><a href="#">Наш Дом</a></li>
-					          </ul>
-					        </li> -->
-					      </ul>
 					    </div><!-- /.navbar-collapse -->
 					  </div><!-- /.container-fluid -->
 					</nav><!-- /.mobile menu -->
@@ -151,7 +134,7 @@
 		        <form class="form-horizontal" role="form">
 				  <div class="form-group">
 				    <div class="col-sm-12">
-				      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+				      <input type="text" class="form-control" id="inputEmail3" placeholder="Имя">
 				    </div>
 				  </div>
 				  <div class="form-group">
@@ -217,7 +200,7 @@
 		</div>
 	</header>
 
-<!-- Statistics -->
+	<!-- Statistics -->
 	<div class="statistics">
 		<div class="container">
 			<div class="row statistics-wrapper main-block">
@@ -247,7 +230,7 @@
 						<p class="statistics-box-number">25 638</p>
 						<p class="gagalin statistics-box-header">Документов</p>
 					</div>					
-					<div class="statistics-box">
+					<div class="statistics-box statistics-box-last">
 						<p class="statistics-box-number">25 638</p>
 						<p class="gagalin statistics-box-header">Оценок</p>
 					</div>
@@ -256,24 +239,27 @@
 		</div>
 	</div>
 
+<!--     CONTENT    -->
+
 	<section id="content" class="content">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8">
 					<div class="about padding-p">
 						<div class="content-header main-block gagalin">
-							<h2>О проекте</h2>
+							<h2>О нас</h2>
 						</div> <!-- заголовок блока -->
 						<div class="content-box main-block block-pd mb-30">
 							<div class="row">
-								<p><strong>«Chinovniki.info»</strong> — это народная википедия гражданского мониторинга и демократического аудита белорусской власти путем опубликования непредвзятой и объективной информации о работе государственных служащих и государственных организаций Беларуси. Проект строится на основе специальной интернет-платформы с адресом <a href="https://chinovniki.info">Chinovniki.info</a>, где выкладывается пубичная и официальная информация о государственных служащих, а также документы о работе всей системы государственной власти Беларуси (местных администраций, правохранительных и силовых органов, судебной власти и т.д.). По своей сути данная интернет-платформа имеет принцип википедии, которую заполняют простые граждане, внося не только официальные данные (имена-фамилии-контакты), но еще и описание деятельности данного представителя власти вместе с официальными документами, а именно корреспонденцией, обращениями граждан, ответами на обращения граждан, судебными решениями и т.д. На сайте предусмотрено голосование, в том числе с целью оценить (позитивно или негативно) работу того или иного государственного служащего, а также отметить как позитивные качества государственных служащих Беларуси как “работа для граждан”, “устойчивость” и “профессионализм”, так и негативные качества (если они случаются).</p>
-								<p>Наш сайт создан для того, чтобы помочь государственным служащим реализовать один из основных принципов государственной службы, заложенных в Законе Республики Беларусь <a href="http://www.pravo.by/document/?guid=3871&p0=h10300204" target="blank">«О государственной службе»</a> - принцип гласности, а также дать стимул к реализации других принципов – законности, служения народу, гуманности и справедливости, приоритета прав и свобод человека, профессионализма и компетенции.</p>
-								<p>Мы не ставим перед собой каких-либо деструктивных политических целей. Мы не собираемся кого-либо очернить или оклеветать. Мы не являемся чьим-либо инструментом или рупором. Мы фиксируем все: и хорошее, и плохое в деятельности государственных организаций. Наши принципы – ответственность, непредвзятость и объективность.</p>
-								<p>Все размещаемые сведения получены из официальных и публичных источников. Мы не публикуем слухи и доносы, не формируем «черные списки» и не оскорбляем государственных служащих, которые находятся у нас в базе. На нашем сайте размещаются только нейтральные, достоверные и задокументированные материалы.</p>
-								<p>Сайт <strong>«Чиновники.инфо»</strong> — свободная площадка, где может высказаться каждый желающий. Все материалы, вывешенные у нас, проходят тщательную проверку на достоверность изложенных фактов. Среди наших авторов — не только неравнодушные граждане, но и те государственные служащие, для которых небезразлично будущее нашей страны.</p>
-								<p>Любой посетитель сайта может разместить информацию на сайте через <a href="contacts.html/#content">специальную форму</a> на сайте или прислать нам статьи и фотографии. Мы автоматически блокируем любые унизительные или оскорбительные высказывания в адрес любого государственного служащего. Мы готовы ответить на любые вопросы и всегда рассматриваем все без исключения присланные посетителями материалы, проверенные материалы вывешиваются на всеобщее обозрение, обсуждение и оценку. Авторы материалов имеют полное право не ставить свою подпись под текстами.</p>
-								<p>Мы обеспечиваем информационную безопасность и конфиденциальность нашим авторам. Сайт размещен на отдельном защищенном сервере. В целях обеспечения наиболее качественной защиты – предлагаем ознакомиться с инструкцией по информационной безопасности.</p>
-								<p>За дополнительной информацией Вы можете обратиться к <a href="mailto:">администратору сайта</a>.</p>
+								<p><strong>&laquo;Chinovniki.info&raquo;</strong>&nbsp;&mdash; это народная википедия гражданского мониторинга и&nbsp;демократического аудита белорусской власти путем опубликования непредвзятой и&nbsp;объективной информации о&nbsp;работе государственных служащих и&nbsp;государственных организаций Беларуси. Проект строится на&nbsp;основе специальной интернет-платформы с&nbsp;адресом <a href="https://chinovniki.info">Chinovniki.info</a>, где аккумулируется пубичная и&nbsp;официальная информация о&nbsp;государственных служащих, а&nbsp;также документы о&nbsp;работе всей системы государственной власти Беларуси (местных администраций, правохранительных и&nbsp;силовых органов, судебной власти и&nbsp;т.д.). По&nbsp;своей сути данная интернет-платформа имеет принцип википедии, которую заполняют простые граждане, внося не&nbsp;только официальные данные (имена-фамилии-контакты), но&nbsp;еще и&nbsp;описание деятельности данного представителя власти вместе с&nbsp;официальными документами, а&nbsp;именно корреспонденцией, обращениями граждан, ответами на&nbsp;обращения граждан, судебными решениями и&nbsp;т.д. На&nbsp;сайте предусмотрено голосование, в&nbsp;том числе с&nbsp;целью оценить (позитивно или негативно) работу того или иного государственного служащего, а&nbsp;также отметить как позитивные качества государственных служащих Беларуси как &laquo;работа для граждан&raquo;, &laquo;устойчивость&raquo; и&nbsp;&laquo;профессионализм&raquo;, так и&nbsp;негативные качества (если они случаются).</p>
+								<p>Наш сайт создан для того, чтобы помочь государственным служащим реализовать один из&nbsp;основных принципов государственной службы, заложенных в&nbsp;Законе Республики Беларусь <a href="http://www.pravo.by/document/?guid=3871&p0=h10300204" target="blank">&laquo;О&nbsp;государственной службе&raquo;</a>&nbsp;&mdash; принцип гласности, а&nbsp;также дать стимул к&nbsp;реализации других принципов&nbsp;&mdash; законности, служения народу, гуманности и&nbsp;справедливости, приоритета прав и&nbsp;свобод человека, профессионализма и&nbsp;компетенции.</p>
+								<p>Мы&nbsp;не&nbsp;ставим перед собой каких-либо деструктивных политических целей. Мы&nbsp;не&nbsp;собираемся кого-либо очернить или оклеветать. Мы&nbsp;не&nbsp;являемся чьим-либо инструментом или рупором. Мы&nbsp;фиксируем все: и&nbsp;хорошее, и&nbsp;плохое в&nbsp;деятельности государственных организаций. Наши принципы&nbsp;&mdash; ответственность, непредвзятость и&nbsp;объективность.</p>
+								<p>Все размещаемые сведения получены из&nbsp;официальных и&nbsp;публичных источников. Мы&nbsp;не&nbsp;публикуем слухи и&nbsp;доносы, не&nbsp;формируем &laquo;черные списки&raquo; и&nbsp;не&nbsp;оскорбляем государственных служащих, которые находятся у&nbsp;нас в&nbsp;базе. На&nbsp;нашем сайте размещаются только нейтральные, достоверные и&nbsp;задокументированные материалы.</p>
+								<p>Сайт <strong>&laquo;Чиновники.инфо&raquo;</strong>&nbsp;&mdash; свободная площадка, где может высказаться каждый желающий. Все материалы, вывешенные у&nbsp;нас, проходят тщательную проверку на&nbsp;достоверность изложенных фактов. Среди наших авторов&nbsp;&mdash; не&nbsp;только неравнодушные граждане, но&nbsp;и&nbsp;те&nbsp;государственные служащие, для которых небезразлично будущее нашей страны.</p>
+								<p>Любой посетитель сайта может разместить информацию на&nbsp;сайте через <a href="contacts.html/#content">специальную форму</a> на&nbsp;сайте или прислать нам статьи и&nbsp;фотографии. Мы&nbsp;автоматически блокируем любые унизительные или оскорбительные высказывания в&nbsp;адрес любого государственного служащего. Мы&nbsp;готовы ответить на&nbsp;любые вопросы и&nbsp;всегда рассматриваем все без исключения присланные посетителями материалы, проверенные материалы вывешиваются на&nbsp;всеобщее обозрение, обсуждение и&nbsp;оценку. Авторы материалов имеют полное право не&nbsp;ставить свою подпись под текстами.</p>
+								<p>Мы&nbsp;обеспечиваем информационную безопасность и&nbsp;конфиденциальность нашим авторам. Сайт размещен на&nbsp;отдельном защищенном сервере. В&nbsp;целях обеспечения наиболее качественной защиты&nbsp;&mdash; предлагаем ознакомиться с&nbsp;инструкцией по&nbsp;информационной безопасности.</p>
+								<p>За&nbsp;дополнительной информацией&nbsp;Вы можете обратиться к&nbsp;<a href="mailto:info@chinovniki.info">администратору сайта</a>.</p>
+								<p>Если&nbsp;же у&nbsp;Вас есть информация, которой&nbsp;Вы хотели&nbsp;бы поделиться, то&nbsp;воспользуйтесь <a href="contacts.html#content">формой на&nbsp;странице контактов</a></p>
 							</div>
 						</div>
 					</div> <!-- Карта -->
@@ -309,12 +295,12 @@
 									<span class="time">19:18</span>, просмотров:
 									<span class="views-number">243</span>
 								</div>
-								<a href="one_publication.html#content class="news-box-header">
+								<a href="one_publication.html#content" class="news-box-header">
 									В Гомельском горисполкоме на предложение о переносе времени приема отказали.
 								</a>
 								<p class="news-box-content">Проведение приема в Гомельском горисполкоме у председателя, а также у других начальников проводится прием только в первой половине дня. Что не удобно для граждан.
 								</p>
-							</div> <!--end бокс одной публикации -->							
+							</div> <!--end бокс одной публикации -->						
 							<div class="news-box">
 								<div class="meta">
 									<span class="date">20 марта 2017</span>,
@@ -373,6 +359,8 @@
 		</div>
 	</section>
 
+<!--    FOOTER    -->
+
  	<footer>
  		<div class="footer-big">
  			<div class="container">
@@ -389,24 +377,26 @@
  							</ul>
  						</div>
  					</div>
- 					<div class="col-md-4 col-xs-6">
+ 					<div class="col-md-4 col-xs-12">
  						<div class="footer-socials">
  							<h3 class="gagalin">ссылки</h3>
  							<ul>
- 								<li><a href="https://vk.com/club152437259" target="blank"><i class="fa fa-vk" aria-hidden="true"></i>Вконтакте</a></li>
- 								<li><a href="https://www.facebook.com/groups/chinovniki.info/" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;&nbsp;Facebook</a></li>
- 								<li><a href="https://ok.ru/group/53359593652364" target="blank"><i class="fa fa-odnoklassniki" aria-hidden="true"></i>&nbsp;Одноклассники</a></li>
-<!--  							<li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i>Youtube</a></li>
- 								<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li> -->
+ 								<li><a href="https://vk.com/club152437259" target="blank"><i class="fa fa-vk" aria-hidden="true"></i><span class="md-visible">Вконтакте</span></a></li>
+ 								<li><a href="https://www.facebook.com/groups/chinovniki.info/" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;&nbsp;<span class="md-visible">Facebook</span></a></li>
+ 								<li><a href="https://ok.ru/group/53359593652364" target="blank"><i class="fa fa-odnoklassniki" aria-hidden="true"></i>&nbsp;<span class="md-visible">Одноклассники</span></a></li>
  							</ul>
  						</div>
  					</div>
- 					<div class="col-md-4">
+ 					<div class="col-md-4 col-xs-12">
  						<div class="footer-about">
  							<h3 class="gagalin">инициатива</h3>
- 							<p><a href="https://nash-dom.info" target="blank"><strong>«Наш дом»</strong></a> – белорусская гражданская кампания, зародившаяся в 2006 году.</p>
- 							<p>Кампания ставит целью всемерное развитие гражданской активности в республике и защиту прав граждан</p>
+ 							<p><a href="https://nash-dom.info" target="blank"><strong>«Наш дом»</strong></a> &mdash;&nbsp;это международная общественная организация, зародившаяся в&nbsp;Беларуси в&nbsp;2002 году как гражданская кампания.</p>
+ 							<p>Гражданская Кампания поставила целью всемерное развитие гражданской активности в&nbsp;республике и&nbsp;защиту прав граждан, организация продолжает начатое дело.</p>
  						</div>
+ 						<div class="share-info">
+ 							<p>Хотите поделиться информацией?</p>
+ 							<a href="contacts.html#content">Поделиться!</a>
+ 							</div>
  					</div>
  				</div>
  			</div>
@@ -416,7 +406,7 @@
 				<div class="row">
 					<div class="col-sm-12">
 						<p>© 2017 <strong>Чиновники.инфо</strong> | При использовании материалов - обратная, прямая и индексируемая гиперссылка обязательна.</p>
-			 			<p><i class="fa fa-envelope" aria-hidden="true"></i> Написть письмо <a href="mailto:#">редактору ресурса</a></p>
+			 			<p><i class="fa fa-envelope" aria-hidden="true"></i> Написать письмо <a href="mailto:info@chinovniki.info">администратору ресурса</a></p>
 					</div>
 				</div>
 			</div>
