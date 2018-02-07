@@ -2,13 +2,24 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-	html {
-        font-size: 13px;
-    }
     .main-menu:before {
         display: none;
     }
-
+    .main-menu {
+        margin-left: -20px;
+    }
+    .main-menu a{
+        padding: 1.5rem .7rem .5rem .7rem;
+    }
+    h1 {
+        margin-left: 1rem;
+    }
+    .civil img {
+        height: 90px;
+    }
+    .statistics-header-img {
+      left: 1rem;
+    }
 }
 
 /* Medium Devices, Desktops */
@@ -26,19 +37,30 @@
     }
     h1 {
         text-align: center;
+        margin-left: 0;
     }
     .meta {
         font-size: 12px;
     }
+
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-/*    html {
-    	font-size: 13px;
-    }*/
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
     .main-menu {
         display: none;
+    }
+    .logo-img {
+        display: none;
+    }
+    .logo-img-mobile {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
     }
     .headerwrap-right {
         display: none;
@@ -51,6 +73,7 @@
     }
     .headerwrap-logo {
         width: 100%;
+        height: 100%;
         text-align: center;
     }
     .headerwrap-logo {
@@ -61,24 +84,34 @@
     }
     .statistics {
         display: none;
-        text-align: center;
-    }
-    .statistics-box {
-        width: 45%;
-    }
-    .statistics-box-last {
-        width: 100%
     }
     .top {
+        text-align: center;
+    }
+    .civil {
         text-align: center;
     }
     .civil img {
         display: inline-block;
         text-align: center;
-
+        margin-bottom: 5px;
+    }
+    .civil-phone, .civil-mobile,.civil-email {
+        display: block;
+        padding: 5px 0;
+    }
+    .search-list ol{
+        text-align: center;
+    }
+    .search-list img {
+        margin-bottom: 5px;
     }
     footer {
         text-align: center;
+    }
+    .footer-big {
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
     .footer-sections {
         display: none;
@@ -91,16 +124,45 @@
     }
     .share-info a {
         width: 100%;
+        max-width: 400px;
     }
     .md-visible {
         display: none;
     }
     button.orange-btn {
         width: 100%;
+        max-width: 400px;
+        margin-top: 20px;
     }
     .rate {
     padding-left: 0;
     padding-right: 0;
+    }
+    .search ol .search-list-item {
+        padding-left: 5px;
+        text-align: left;
+    }
+    ul.nav-pills li {
+        width: 30%;
+    }
+    .status-bar {
+        padding-left: 0;
+    }
+    .status-bar-box:first-of-type {
+        width: 100%;
+    }
+    .status-bar-box img {
+        position: relative;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    .status-bar-box:last-of-type {
+        width: 23%;
+        text-align: right;
+    }
+    .share {
+        text-align: center;
+        margin-bottom: 0;
     }
 }
 
@@ -121,6 +183,19 @@
     }
     .main-menu {
         display: none;
+    }
+    ul.nav-pills {
+        margin-left: 0;
+    }
+    ul.nav-pills li {
+        width: 100%;
+    }
+    div.status-bar-box {
+        width: 100%;
+    }
+    div.status-bar-box:last-of-type {
+        width: 100%;
+        text-align: center;
     }
 }
 

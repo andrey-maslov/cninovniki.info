@@ -9,15 +9,16 @@
 	<script src="https://use.fontawesome.com/db2503ab77.js"></script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
-	<meta name="description" content=""/>
+	<meta name="description" content="База данных белорусских государственных служащих и  организаций. Электронные документы, актуальные комментарии, публикации."/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta property="og:type" content="website">
-	  <meta property="og:title" content="" />
-      <meta property="og:description" content="" />
-      <meta property="og:url" content="" />
-      <meta property="og:image" content="" />
+	 	<meta property="og:title" content="Беларусь :: база данны белорусских госслужащих" />
+	    <meta property="og:description" content="База данных белорусских государственных служащих и  организаций. Электронные документы, актуальные комментарии, публикации." />
+	    <meta property="og:url" content="https://chinovniki.info/" />
+	    <meta property="og:image" content="social_img" />
+	    <link rel="shortcut icon" type="image/png" href="fav.ico">
 	
-	<title>Чиновники Инфо</title>
+	<title>Беларусь :: база данны белорусских госслужащих</title>
 	
 	<script src="libs/jquery-3.2.1.min.js"></script>
 	<link rel="shortcut icon" href="fav.ico" type="image/x-icon"/>
@@ -38,7 +39,8 @@
 				<div class="row">
 					<div class="col-sm-4"> 
 						<div class="headerwrap-logo">
-							<img class="img-responsive" src="img/logo.png" alt="logotype">
+							<img class="img-responsive logo-img" src="img/logo.png" alt="logotype">
+							<img class="img-responsive logo-img-mobile" src="img/logo_mobile.png" alt="logotype">
 							<p class="mt-30">Расскажите нам, где и с каким результатом вы получали государственные услуги</p>
 						</div>
 					</div>
@@ -46,13 +48,13 @@
 						<div class="headerwrap-right">
 							<div class="col-sm-8 col-xs-6">
 								<div class="headerwrap-social">
-									<a target="blank" href="https://vk.com/club152437259">
+									<a target="_blank" rel="noopener" href="https://vk.com/club152437259">
 										<i class="fa fa-vk" aria-hidden="true"></i>
 									</a>
-									<a target="blank" href="https://www.facebook.com/groups/chinovniki.info/">	
+									<a target="_blank" rel="noopener" href="https://www.facebook.com/groups/chinovniki.info/">	
 										<i class="fa fa-facebook" aria-hidden="true"></i>
 									</a>
-									<a target="blank" href="https://ok.ru/group/53359593652364">
+									<a target="_blank" rel="noopener" href="https://ok.ru/group/53359593652364">
 										<i class="fa fa-odnoklassniki" aria-hidden="true"></i>
 									</a>
 								</div>
@@ -67,11 +69,7 @@
 						</div>
 					</div>
 					<div class="col-md-8 col-sm-12">
-
-
 					<h1 class="gagalin">База данных белорусских госслужащих</h1>
-
-
 						<nav class="main-menu">
 							<ul class="main-menu-list">
 								<li class="main-menu-item"><a class="active" href="index.html">Главная</a></li>
@@ -83,8 +81,7 @@
 							</ul>
 						</nav>
 					</div>
-
-						<!-- MOBILE MENU -->
+					<!-- MOBILE MENU -->
 					<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
 					  <div class="container-fluid">
 					    <!-- Brand and toggle get grouped for better mobile display -->
@@ -97,7 +94,6 @@
 					      </button>
 					      <a href="#" data-toggle="modal" data-target="#login" class="mobile-login">войти</a><span class="mobile_logged"><!-- Череззаборногузадерищенко --></span>
 					    </div>
-
 					    <!-- Collect the nav links, forms, and other content for toggling -->
 					    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					      <ul class="nav navbar-nav">
@@ -114,7 +110,6 @@
 				</div>
 			</div>
 		</div><!--Headerwrap-->
-
 		<!-- LOGIN -->
 		<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		  <div class="modal-dialog">
@@ -125,6 +120,7 @@
 		      </div>
 		      <div class="modal-body">
 		        <form class="form-horizontal" role="form">
+		        	<p>Для того, чтобы иметь возможность оценить госслужащего, вам необходимо войти или зарегистрироваться на сайте.</p>
 				  <div class="form-group">
 				    <div class="col-sm-12">
 				      <input type="text" class="form-control" id="inputEmail3" placeholder="Имя">
@@ -132,14 +128,14 @@
 				  </div>
 				  <div class="form-group">
 				    <div class="col-sm-12">
-				      <input type="password" class="form-control" id="inputPassword3" placeholder="Пароль">
+				      <input type="password" class="form-control" id="inputPassword" placeholder="Пароль">
 				    </div>
 				  </div>
-				  <div class="form-group">
+<!-- 				  <div class="form-group">
 				    <div class="col-sm-12">
 				      <a class="dontRemember" href="#">Не помню пароль</a>
 				    </div>
-				  </div>
+				  </div> -->
 		  		  <div class="form-group">
 				    <div class="col-sm-6">
 				      <button type="submit" class="btn btn-primary orange-btn">Войти</button>
@@ -152,18 +148,18 @@
 				  </div>
 				</form>
 		      </div>
-				<div class="ulogin-container">
-					<h4 class="conde">Войти через социальную сеть</h4>
-					<script src="//ulogin.ru/js/ulogin.js"></script>
-					<div id="uLogin" data-ulogin="display=panel;theme=classic;fields=first_name,last_name;providers=vkontakte,odnoklassniki,mailru,facebook;hidden=other;redirect_uri=http%3A%2F%2F;mobilebuttons=0;"></div>
-				</div>
+		      <!-- ulogin -->
+			<div class="ulogin-container">
+				<h4 class="conde">Войти через социальную сеть</h4>
+				<script src="//ulogin.ru/js/ulogin.js"></script>
+				<div id="uLogin" data-ulogin="display=panel;theme=classic;fields=first_name,last_name;providers=vkontakte,odnoklassniki,mailru,facebook;hidden=other;redirect_uri=http%3A%2F%2F;mobilebuttons=0;"></div>
+			</div>
 		      <div class="modal-footer">
 		        <a type="button" class="btn btn-default" href="register.html">Регистрация</a>
 		      </div>
 		    </div>
 		  </div>
 		</div>
-
 		<!-- SEARCH -->
 		<div class="container">
 			<div class="row">
@@ -183,7 +179,6 @@
 				</div>
 			</div>
 		</div><!-- END SEARCH -->
-
 	</header>
 
 	<!-- Statistics -->
@@ -198,7 +193,6 @@
 						<span class="gagalin">Всего на сайте</span>
 					</div>
 				</div>
-
 				<div class="col-md-8">
 					<div class="statistics-box">
 						<p class="statistics-box-number">25 638</p>
@@ -258,207 +252,204 @@
 							</div>
 						</div>
 					</div> <!-- Карта -->
-
 					<div class="top" id="top-best">
 						<div class="content-header main-block gagalin">
 							<h2>Топ 5 лучших госслужащих </h2>
 						</div> <!-- заголовок блока -->
 						<div class="content-box main-block block-pd mb-30">
-							
-						<div class="civil "> <!-- первый пункт отличается от остальных -->
-							<div class="row">
-								<div class="col-sm-2 ">
-									<a href="one_official.html"><img class="img-responsive" src="img/lukashenko.jpg" alt="фото"></a>
-								</div>
-								<div class="col-sm-8">
-									<a href="one_official.html" class="civil-name"><span>Колесник</span> Раиса Павловна</a>
-									<a href="one_organization.html" class="civil-organization">ГУЗ "Гродненский областной дом ребенка”</a>
-									<p class="civil-position">Воспитатель</p>
-								</div>
-								<div class="col-sm-2">
-									<div class="rating-box">
-										<span class="rating">4.46</span>
-										<a href="#" class="tippy" title="Оценить этого госслужащего"> &nbsp;<i class="fa fa-star-half-o" aria-hidden="true" ></i></a>
-										<p class="rate-number">245 оценки</p>
+							<div class="civil ">
+								<div class="row">
+									<div class="col-sm-2">
+										<a href="one_official.html"><img class="img-responsive" src="img/lukashenko.jpg" alt="фото"></a>
+									</div>
+									<div class="col-lg-8 col-md-7 col-sm-8">
+										<a href="one_official.html" class="civil-name"><span>Колесник</span> Раиса Павловна</a>
+										<a href="one_organization.html" class="civil-organization">ГУЗ "Гродненский областной дом ребенка”</a>
+										<p class="civil-position">Воспитатель</p>
+									</div>
+									<div class="col-lg-2 col-md-3 col-sm-2">
+										<div class="rating-box">
+											<span class="rating">4.46</span>
+											<a href="#" class="tippy" title="Оценить этого госслужащего"> &nbsp;<i class="fa fa-star-half-o" aria-hidden="true" ></i></a>
+											<p class="rate-number">245 оценки</p>
+										</div>
 									</div>
 								</div>
-							</div>
-						</div> <!-- END строка одного госслужащего -->
-						<div class="civil "> <!-- первый пункт отличается от остальных -->
-							<div class="row">
-								<div class="col-sm-2 ">
-									<a href="one_official.html"><img class="img-responsive" src="img/lukashenko.jpg" alt="фото"></a>
-								</div>
-								<div class="col-sm-8">
-									<a href="one_official.html" class="civil-name"><span>Колесник</span> Раиса Павловна</a>
-									<a href="one_organization.html" class="civil-organization">ГУЗ "Гродненский областной дом ребенка”</a>
-									<p class="civil-position">Воспитатель</p>
-								</div>
-								<div class="col-sm-2">
-									<div class="rating-box">
-										<span class="rating">4.46</span>
-										<a href="#" class="tippy" title="Оценить этого госслужащего"> &nbsp;<i class="fa fa-star-half-o" aria-hidden="true" ></i></a>
-										<p class="rate-number">244 оценки</p>
+							</div> <!-- END строка одного госслужащего -->
+							<div class="civil "> 
+								<div class="row">
+									<div class="col-sm-2">
+										<a href="one_official.html"><img class="img-responsive" src="img/lukashenko.jpg" alt="фото"></a>
+									</div>
+									<div class="col-lg-8 col-md-7 col-sm-8">
+										<a href="one_official.html" class="civil-name"><span>Колесник</span> Раиса Павловна</a>
+										<a href="one_organization.html" class="civil-organization">ГУЗ "Гродненский областной дом ребенка Гродненский областной дом ребенка”</a>
+										<p class="civil-position">Воспитатель</p>
+									</div>
+									<div class="col-lg-2 col-md-3 col-sm-2">
+										<div class="rating-box">
+											<span class="rating">4.46</span>
+											<a href="#" class="tippy" title="Оценить этого госслужащего"> &nbsp;<i class="fa fa-star-half-o" aria-hidden="true" ></i></a>
+											<p class="rate-number">245 оценки</p>
+										</div>
 									</div>
 								</div>
-							</div>
-						</div> <!-- END строка одного госслужащего -->
-						<div class="civil "> 
-							<div class="row">
-								<div class="col-sm-2 ">
-									<a href="one_official.html"><img class="img-responsive" src="img/lukashenko.jpg" alt="фото"></a>
-								</div>
-								<div class="col-sm-8">
-									<a href="one_official.html" class="civil-name"><span>Колесник</span> Раиса Павловна</a>
-									<a href="one_organization.html" class="civil-organization">ГУЗ "Гродненский областной дом ребенка”</a>
-									<p class="civil-position">Воспитатель</p>
-								</div>
-								<div class="col-sm-2">
-									<div class="rating-box">
-										<span class="rating">4.46</span>
-										<a href="#" class="tippy" title="Оценить этого госслужащего"> &nbsp;<i class="fa fa-star-half-o" aria-hidden="true" ></i></a>
-										<p class="rate-number">244 оценки</p>
+							</div> <!-- END строка одного госслужащего -->
+							<div class="civil "> 
+								<div class="row">
+									<div class="col-sm-2">
+										<a href="one_official.html"><img class="img-responsive" src="img/lukashenko.jpg" alt="фото"></a>
+									</div>
+									<div class="col-lg-8 col-md-7 col-sm-8">
+										<a href="one_official.html" class="civil-name"><span>Колесник</span> Раиса Павловна</a>
+										<a href="one_organization.html" class="civil-organization">ГУЗ "Гродненский областной дом ребенка ”</a>
+										<p class="civil-position">Воспитатель</p>
+									</div>
+									<div class="col-lg-2 col-md-3 col-sm-2">
+										<div class="rating-box">
+											<span class="rating">4.46</span>
+											<a href="#" class="tippy" title="Оценить этого госслужащего"> &nbsp;<i class="fa fa-star-half-o" aria-hidden="true" ></i></a>
+											<p class="rate-number">245 оценки</p>
+										</div>
 									</div>
 								</div>
-							</div>
-						</div> <!-- END строка одного госслужащего -->
-						<div class="civil "> 
-							<div class="row">
-								<div class="col-sm-2 ">
-									<a href="one_official.html"><img class="img-responsive" src="img/lukashenko.jpg" alt="фото"></a>
-								</div>
-								<div class="col-sm-8">
-									<a href="one_official.html" class="civil-name"><span>Колесник</span> Раиса Павловна</a>
-									<a href="one_organization.html" class="civil-organization">ГУЗ "Гродненский областной дом ребенка”</a>
-									<p class="civil-position">Воспитатель</p>
-								</div>
-								<div class="col-sm-2">
-									<div class="rating-box">
-										<span class="rating">4.46</span>
-										<a href="#" class="tippy" title="Оценить этого госслужащего"> &nbsp;<i class="fa fa-star-half-o" aria-hidden="true" ></i></a>
-										<p class="rate-number">244 оценки</p>
+							</div> <!-- END строка одного госслужащего -->
+							<div class="civil "> 
+								<div class="row">
+									<div class="col-sm-2">
+										<a href="one_official.html"><img class="img-responsive" src="img/lukashenko.jpg" alt="фото"></a>
+									</div>
+									<div class="col-lg-8 col-md-7 col-sm-8">
+										<a href="one_official.html" class="civil-name"><span>Колесник</span> Раиса Павловна</a>
+										<a href="one_organization.html" class="civil-organization">ГУЗ "Гродненский областной дом ребенка”</a>
+										<p class="civil-position">Воспитатель</p>
+									</div>
+									<div class="col-lg-2 col-md-3 col-sm-2">
+										<div class="rating-box">
+											<span class="rating">4.46</span>
+											<a href="#" class="tippy" title="Оценить этого госслужащего"> &nbsp;<i class="fa fa-star-half-o" aria-hidden="true" ></i></a>
+											<p class="rate-number">245 оценки</p>
+										</div>
 									</div>
 								</div>
-							</div>
-						</div> <!-- END строка одного госслужащего -->
-						<div class="civil "> 
-							<div class="row">
-								<div class="col-sm-2 ">
-									<a href="one_official.html"><img class="img-responsive" src="img/lukashenko.jpg" alt="фото"></a>
-								</div>
-								<div class="col-sm-8">
-									<a href="one_official.html" class="civil-name"><span>Колесник</span> Раиса Павловна</a>
-									<a href="one_organization.html" class="civil-organization">ГУЗ "Гродненский областной дом ребенка”</a>
-									<p class="civil-position">Воспитатель</p>
-								</div>
-								<div class="col-sm-2">
-									<div class="rating-box">
-										<span class="rating">4.46</span>
-										<a href="#" class="tippy" title="Оценить этого госслужащего"> &nbsp;<i class="fa fa-star-half-o" aria-hidden="true" ></i></a>
-										<p class="rate-number">244 оценки</p>
+							</div> <!-- END строка одного госслужащего -->
+							<div class="civil ">
+								<div class="row">
+									<div class="col-sm-2">
+										<a href="one_official.html"><img class="img-responsive" src="img/lukashenko.jpg" alt="фото"></a>
+									</div>
+									<div class="col-lg-8 col-md-7 col-sm-8">
+										<a href="one_official.html" class="civil-name"><span>Колесник</span> Раиса Павловна</a>
+										<a href="one_organization.html" class="civil-organization">ГУЗ "Гродненский областной дом ребенка”</a>
+										<p class="civil-position">Воспитатель</p>
+									</div>
+									<div class="col-lg-2 col-md-3 col-sm-2">
+										<div class="rating-box">
+											<span class="rating">4.46</span>
+											<a href="#" class="tippy" title="Оценить этого госслужащего"> &nbsp;<i class="fa fa-star-half-o" aria-hidden="true" ></i></a>
+											<p class="rate-number">245 оценки</p>
+										</div>
 									</div>
 								</div>
-							</div>
-						</div> <!-- END строка одного госслужащего -->
+							</div> <!-- END строка одного госслужащего -->
 						</div>
-					</div> <!-- топ 5 лучших -->
-					
+					</div> <!--/топ 5 лучших -->
 					<div class="top" id="top-worst">
 						<div class="content-header main-block gagalin">
 							<h2>Топ 5 худших госслужащих</h2>
 						</div> <!-- заголовок блока -->
 						<div class="content-box main-block block-pd mb-30">
-							<div class="civil "> 
+							<div class="civil ">
 								<div class="row">
-									<div class="col-sm-2 ">
+									<div class="col-sm-2">
 										<a href="one_official.html"><img class="img-responsive" src="img/lukashenko.jpg" alt="фото"></a>
 									</div>
-									<div class="col-sm-8">
+									<div class="col-lg-8 col-md-7 col-sm-8">
 										<a href="one_official.html" class="civil-name"><span>Колесник</span> Раиса Павловна</a>
-										<a href="#" class="civil-organization">ГУЗ "Гродненский областной дом ребенка”</a>
+										<a href="one_organization.html" class="civil-organization">ГУЗ "Гродненский областной дом ребенка”</a>
 										<p class="civil-position">Воспитатель</p>
 									</div>
-									<div class="col-sm-2">
+									<div class="col-lg-2 col-md-3 col-sm-2">
 										<div class="rating-box">
 											<span class="rating">4.46</span>
 											<a href="#" class="tippy" title="Оценить этого госслужащего"> &nbsp;<i class="fa fa-star-half-o" aria-hidden="true" ></i></a>
-											<p class="rate-number">244 оценки</p>
+											<p class="rate-number">245 оценки</p>
 										</div>
 									</div>
 								</div>
 							</div> <!-- END строка одного госслужащего -->
 							<div class="civil "> 
 								<div class="row">
-									<div class="col-sm-2 ">
+									<div class="col-sm-2">
 										<a href="one_official.html"><img class="img-responsive" src="img/lukashenko.jpg" alt="фото"></a>
 									</div>
-									<div class="col-sm-8">
+									<div class="col-lg-8 col-md-7 col-sm-8">
 										<a href="one_official.html" class="civil-name"><span>Колесник</span> Раиса Павловна</a>
-										<a href="#" class="civil-organization">ГУЗ "Гродненский областной дом ребенка”</a>
+										<a href="one_organization.html" class="civil-organization">ГУЗ "Гродненский областной дом ребенка”</a>
 										<p class="civil-position">Воспитатель</p>
 									</div>
-									<div class="col-sm-2">
+									<div class="col-lg-2 col-md-3 col-sm-2">
 										<div class="rating-box">
 											<span class="rating">4.46</span>
 											<a href="#" class="tippy" title="Оценить этого госслужащего"> &nbsp;<i class="fa fa-star-half-o" aria-hidden="true" ></i></a>
-											<p class="rate-number">244 оценки</p>
+											<p class="rate-number">245 оценки</p>
 										</div>
 									</div>
 								</div>
 							</div> <!-- END строка одного госслужащего -->
 							<div class="civil "> 
 								<div class="row">
-									<div class="col-sm-2 ">
+									<div class="col-sm-2">
 										<a href="one_official.html"><img class="img-responsive" src="img/lukashenko.jpg" alt="фото"></a>
 									</div>
-									<div class="col-sm-8">
+									<div class="col-lg-8 col-md-7 col-sm-8">
 										<a href="one_official.html" class="civil-name"><span>Колесник</span> Раиса Павловна</a>
-										<a href="#" class="civil-organization">ГУЗ "Гродненский областной дом ребенка”</a>
+										<a href="one_organization.html" class="civil-organization">ГУЗ "Гродненский областной дом ребенка</a>
 										<p class="civil-position">Воспитатель</p>
 									</div>
-									<div class="col-sm-2">
+									<div class="col-lg-2 col-md-3 col-sm-2">
 										<div class="rating-box">
 											<span class="rating">4.46</span>
 											<a href="#" class="tippy" title="Оценить этого госслужащего"> &nbsp;<i class="fa fa-star-half-o" aria-hidden="true" ></i></a>
-											<p class="rate-number">244 оценки</p>
+											<p class="rate-number">245 оценки</p>
 										</div>
 									</div>
 								</div>
 							</div> <!-- END строка одного госслужащего -->
 							<div class="civil "> 
 								<div class="row">
-									<div class="col-sm-2 ">
+									<div class="col-sm-2">
 										<a href="one_official.html"><img class="img-responsive" src="img/lukashenko.jpg" alt="фото"></a>
 									</div>
-									<div class="col-sm-8">
+									<div class="col-lg-8 col-md-7 col-sm-8">
 										<a href="one_official.html" class="civil-name"><span>Колесник</span> Раиса Павловна</a>
-										<a href="#" class="civil-organization">ГУЗ "Гродненский областной дом ребенка”</a>
+										<a href="one_organization.html" class="civil-organization">ГУЗ "Гродненский областной дом ребенка”</a>
 										<p class="civil-position">Воспитатель</p>
 									</div>
-									<div class="col-sm-2">
+									<div class="col-lg-2 col-md-3 col-sm-2">
 										<div class="rating-box">
 											<span class="rating">4.46</span>
 											<a href="#" class="tippy" title="Оценить этого госслужащего"> &nbsp;<i class="fa fa-star-half-o" aria-hidden="true" ></i></a>
-											<p class="rate-number">244 оценки</p>
+											<p class="rate-number">245 оценки</p>
 										</div>
 									</div>
 								</div>
 							</div> <!-- END строка одного госслужащего -->
-							<div class="civil "> 
+							<div class="civil ">
 								<div class="row">
-									<div class="col-sm-2 ">
+									<div class="col-sm-2">
 										<a href="one_official.html"><img class="img-responsive" src="img/lukashenko.jpg" alt="фото"></a>
 									</div>
-									<div class="col-sm-8">
+									<div class="col-lg-8 col-md-7 col-sm-8">
 										<a href="one_official.html" class="civil-name"><span>Колесник</span> Раиса Павловна</a>
-										<a href="#" class="civil-organization">ГУЗ "Гродненский областной дом ребенка”</a>
+										<a href="one_organization.html" class="civil-organization">ГУЗ "Гродненский областной дом ребенка”</a>
 										<p class="civil-position">Воспитатель</p>
 									</div>
-									<div class="col-sm-2">
+									<div class="col-lg-2 col-md-3 col-sm-2">
 										<div class="rating-box">
 											<span class="rating">4.46</span>
 											<a href="#" class="tippy" title="Оценить этого госслужащего"> &nbsp;<i class="fa fa-star-half-o" aria-hidden="true" ></i></a>
-											<p class="rate-number">1444 оценки</p>
+											<p class="rate-number">245 оценки</p>
 										</div>
 									</div>
 								</div>
@@ -466,7 +457,7 @@
 						</div>
 					</div> <!-- топ 5 худших -->
 				</div> <!-- Контент -->
-				
+
 				<!-- боковая колонка -->
 				<div class="col-md-4 aside">
 					<div class="content-header main-block gagalin">
@@ -543,21 +534,34 @@
 						<h2>Наши партнеры</h2>
 					</div> <!-- заголовок блока -->
 					<div class="main-partners">
-						<a href="https://orangeprojects.lt/en" target="blank">
+						<a href="https://orangeprojects.lt/en" target="_blank" rel="noopener">
 							<img src="img/banners/lvb_logo_en.png" alt="banner1">
 						</a>
-						<a href="https://vkurier.by/" target="blank">
+						<a href="https://vkurier.by/" target="_blank" rel="noopener">
 							<img src="img/banners/vk.png" alt="banner1">
 						</a>
-						<a href="https://urm.lt/en/" target="blank">
+						<a href="https://urm.lt/en/" target="_blank" rel="noopener">
 							<img src="img/banners/URM.png" alt="banner1">
 						</a>	
-	
 					</div><!-- Наши партнеры -->
 				</div> <!-- боковая колонка -->
 			</div>
 		</div>
 	</section>
+
+	<!-- ШАРИНГ -->
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="share">
+					<h4 class="gagalin share-header">Расскажите о нас в социальных сетях</h4>
+					<script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+					<script src="//yastatic.net/share2/share.js"></script>
+					<div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,gplus,twitter,viber,telegram" data-counter=""></div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 <!--    FOOTER    -->
 
@@ -565,7 +569,7 @@
  		<div class="footer-big">
  			<div class="container">
  				<div class="row">
- 					<div class="col-md-3 col-xs-6">
+ 					<div class="col-md-3 col-sm-6 col-xs-6">
  						<div class="footer-sections">
  							<h3 class="gagalin">разделы</h3>
  							<ul>
@@ -577,20 +581,20 @@
  							</ul>
  						</div>
  					</div>
- 					<div class="col-md-4 col-xs-12">
+ 					<div class="col-md-4 col-sm-6 col-xs-12">
  						<div class="footer-socials">
  							<h3 class="gagalin">ссылки</h3>
  							<ul>
- 								<li><a href="https://vk.com/club152437259" target="blank"><i class="fa fa-vk" aria-hidden="true"></i><span class="md-visible">Вконтакте</span></a></li>
- 								<li><a href="https://www.facebook.com/groups/chinovniki.info/" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i><span class="md-visible">Facebook</span></a></li>
- 								<li><a href="https://ok.ru/group/53359593652364" target="blank"><i class="fa fa-odnoklassniki" aria-hidden="true"></i><span class="md-visible">Одноклассники</span></a></li>
+ 								<li><a href="https://vk.com/club152437259" target="_blank" rel="noopener"><i class="fa fa-vk" aria-hidden="true"></i><span class="md-visible">Вконтакте</span></a></li>
+ 								<li><a href="https://www.facebook.com/groups/chinovniki.info/" target="_blank" rel="noopener"><i class="fa fa-facebook" aria-hidden="true"></i><span class="md-visible">Facebook</span></a></li>
+ 								<li><a href="https://ok.ru/group/53359593652364" target="_blank" rel="noopener"><i class="fa fa-odnoklassniki" aria-hidden="true"></i><span class="md-visible">Одноклассники</span></a></li>
  							</ul>
  						</div>
  					</div>
  					<div class="col-md-5 col-xs-12">
  						<div class="footer-about">
  							<h3 class="gagalin">инициатива</h3>
- 							<p><a href="https://nash-dom.info" target="blank"><strong>«Наш дом»</strong></a> &mdash;&nbsp;это международная общественная организация, зародившаяся в&nbsp;Беларуси в&nbsp;2002 году как гражданская кампания.</p>
+ 							<p><a href="https://nash-dom.info" target="_blank" rel="noopener"><strong>«Наш дом»</strong></a> &mdash;&nbsp;это международная общественная организация, зародившаяся в&nbsp;Беларуси в&nbsp;2002 году как гражданская кампания.</p>
  							<p>Гражданская Кампания поставила целью всемерное развитие гражданской активности в&nbsp;республике и&nbsp;защиту прав граждан, организация продолжает начатое дело.</p>
  						</div>
  						<div class="share-info">
@@ -600,7 +604,8 @@
  					</div>
  				</div>
  			</div>
-		</div> <!-- большой футер -->
+		</div>
+		<!-- маленький футер -->
  		<div class="footer-small">
 			<div class="container">
 				<div class="row">
@@ -610,7 +615,7 @@
 					</div>
 				</div>
 			</div>
- 		</div><!-- маленький футер -->
+ 		</div>
 	</footer>
 
 	<i class="fa fa-chevron-circle-up" id="go-top" aria-hidden="true"></i>
@@ -619,7 +624,6 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="libs/slick/slick.js"></script>
 	<script src="js/common.js"></script>
-
 
 </body>
 </html>

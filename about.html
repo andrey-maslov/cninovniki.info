@@ -12,10 +12,10 @@
 	<meta name="description" content=""/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta property="og:type" content="website">
-	  <meta property="og:title" content="" />
-      <meta property="og:description" content="" />
-      <meta property="og:url" content="" />
-      <meta property="og:image" content="" />
+	 	<meta property="og:title" content="" />
+	    <meta property="og:description" content="" />
+	    <meta property="og:url" content="" />
+	    <meta property="og:image" content="" />
 	
 	<title>Чиновники Инфо</title>
 	
@@ -38,7 +38,8 @@
 				<div class="row">
 					<div class="col-sm-4"> 
 						<div class="headerwrap-logo">
-							<img class="img-responsive" src="img/logo.png" alt="logotype">
+							<img class="img-responsive logo-img" src="img/logo.png" alt="logotype">
+							<img class="img-responsive logo-img-mobile" src="img/logo_mobile.png" alt="logotype">
 							<p class="mt-30">Расскажите нам, где и с каким результатом вы получали государственные услуги</p>
 						</div>
 					</div>
@@ -46,47 +47,40 @@
 						<div class="headerwrap-right">
 							<div class="col-sm-8 col-xs-6">
 								<div class="headerwrap-social">
-									<a target="blank" href="https://vk.com/club152437259">
+									<a target="_blank" rel="noopener" href="https://vk.com/club152437259">
 										<i class="fa fa-vk" aria-hidden="true"></i>
 									</a>
-									<a target="blank" href="https://www.facebook.com/groups/chinovniki.info/">	
+									<a target="_blank" rel="noopener" href="https://www.facebook.com/groups/chinovniki.info/">	
 										<i class="fa fa-facebook" aria-hidden="true"></i>
 									</a>
-									<a target="blank" href="https://ok.ru/group/53359593652364">
+									<a target="_blank" rel="noopener" href="https://ok.ru/group/53359593652364">
 										<i class="fa fa-odnoklassniki" aria-hidden="true"></i>
 									</a>
 								</div>
 							</div>
 							<div class="col-sm-4 col-xs-6">
 								<div class="headerwrap-enter">
-									<p class="logged"><!-- Здравствуйте, <span>Череззаборногузадерищенко</span> --></p>
+									<p class="logged"><!-- <span>Череззаборногузадерищенко</span> --></p>
 									<a href="#" class="gagalin" data-toggle="modal" data-target="#login">войти</a>
 									<a href="#" class="tippy" title="Авторизованный пользователь может ставить оценки госслужащим">&nbsp;&nbsp;<i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
-
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-8 col-sm-12">
+					<h1 class="gagalin">База данных белорусских госслужащих</h1>
 						<nav class="main-menu">
 							<ul class="main-menu-list">
 								<li class="main-menu-item"><a href="index.html">Главная</a></li>
 								<li class="main-menu-item"><a href="peoples.html#content">Госслужащие</a></li>
 								<li class="main-menu-item"><a href="organizations.html#content">Организации</a></li>
 								<li class="main-menu-item"><a  href="publications.html#content">Публикации</a></li>
-								<li class="main-menu-item"><a class="active"  href="about.html#content">О нас</a></li>
+								<li class="main-menu-item"><a class="active" href="about.html#content">О нас</a></li>
 								<li class="main-menu-item"><a href="contacts.html#content">Контакты</a></li>
-								<li class="main-menu-search">
-									<a id="open"  href="#">
-										<i class="fa fa-search search" aria-hidden="true"></i>
-										<i class="fa fa-times" aria-hidden="true"></i>
-									</a>
-								</li>
 							</ul>
 						</nav>
 					</div>
-
-						<!-- MOBILE MENU -->
+					<!-- MOBILE MENU -->
 					<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
 					  <div class="container-fluid">
 					    <!-- Brand and toggle get grouped for better mobile display -->
@@ -99,29 +93,22 @@
 					      </button>
 					      <a href="#" data-toggle="modal" data-target="#login" class="mobile-login">войти</a><span class="mobile_logged"><!-- Череззаборногузадерищенко --></span>
 					    </div>
-
 					    <!-- Collect the nav links, forms, and other content for toggling -->
 					    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					      <ul class="nav navbar-nav">
 					        <li><a href="index.html">ГЛАВНАЯ<span class="sr-only">(current)</span></a></li>
-					        <li><a href="search_result.html">ПУБЛИКАЦИИ</a></li>
-					        <li><a href="peoples.html">ГОССЛУЖАЩИЕ</a></li>
-					        <li><a href="about.html">О ПРОЕКТЕ</a></li>
-					        <li><a href="contacts.html">КОНТАКТЫ</a></li>
+					        <li><a href="peoples.html#content">ГОССЛУЖАЩИЕ</a></li>
+					        <li><a href="organizations.html#content">ОРГАНИЗАЦИИ</a></li>
+					        <li><a href="publications.html#content">ПУБЛИКАЦИИ</a></li>
+					        <li><a href="about.html#content">О НАС</a></li>
+					        <li><a href="contacts.html#content">КОНТАКТЫ</a></li>
 					      </ul>
-					      <form class="navbar-form navbar-left">
-					        <div class="form-group">
-					          <input type="text" class="form-control" placeholder="Поиск">
-					        </div>
-					        <button type="submit" class="btn btn-default">Искать</button>
-					      </form>
 					    </div><!-- /.navbar-collapse -->
 					  </div><!-- /.container-fluid -->
 					</nav><!-- /.mobile menu -->
 				</div>
 			</div>
 		</div><!--Headerwrap-->
-
 		<!-- LOGIN -->
 		<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		  <div class="modal-dialog">
@@ -132,6 +119,7 @@
 		      </div>
 		      <div class="modal-body">
 		        <form class="form-horizontal" role="form">
+		        	<p>Для того, чтобы иметь возможность оценить госслужащего, вам необходимо войти или зарегистрироваться на сайте.</p>
 				  <div class="form-group">
 				    <div class="col-sm-12">
 				      <input type="text" class="form-control" id="inputEmail3" placeholder="Имя">
@@ -139,14 +127,14 @@
 				  </div>
 				  <div class="form-group">
 				    <div class="col-sm-12">
-				      <input type="password" class="form-control" id="inputPassword3" placeholder="Пароль">
+				      <input type="password" class="form-control" id="inputPassword" placeholder="Пароль">
 				    </div>
 				  </div>
-				  <div class="form-group">
+<!-- 				  <div class="form-group">
 				    <div class="col-sm-12">
 				      <a class="dontRemember" href="#">Не помню пароль</a>
 				    </div>
-				  </div>
+				  </div> -->
 		  		  <div class="form-group">
 				    <div class="col-sm-6">
 				      <button type="submit" class="btn btn-primary orange-btn">Войти</button>
@@ -159,18 +147,18 @@
 				  </div>
 				</form>
 		      </div>
-				<div class="ulogin-container">
-					<h4 class="conde">Войти через социальную сеть</h4>
-					<script src="//ulogin.ru/js/ulogin.js"></script>
-					<div id="uLogin" data-ulogin="display=panel;theme=classic;fields=first_name,last_name;providers=vkontakte,odnoklassniki,mailru,facebook;hidden=other;redirect_uri=http%3A%2F%2F;mobilebuttons=0;"></div>
-				</div>
+		      <!-- ulogin -->
+			<div class="ulogin-container">
+				<h4 class="conde">Войти через социальную сеть</h4>
+				<script src="//ulogin.ru/js/ulogin.js"></script>
+				<div id="uLogin" data-ulogin="display=panel;theme=classic;fields=first_name,last_name;providers=vkontakte,odnoklassniki,mailru,facebook;hidden=other;redirect_uri=http%3A%2F%2F;mobilebuttons=0;"></div>
+			</div>
 		      <div class="modal-footer">
 		        <a type="button" class="btn btn-default" href="register.html">Регистрация</a>
 		      </div>
 		    </div>
 		  </div>
 		</div>
-
 		<!-- SEARCH -->
 		<div class="container">
 			<div class="row">
@@ -190,14 +178,6 @@
 				</div>
 			</div>
 		</div><!-- END SEARCH -->
-
-		<div class="container">
-			<div class="row ">
-				<div class="col-sm-12">
-					<h1 class="text-center gagalin">База данных белорусских чиновников</h1>
-				</div>
-			</div>
-		</div>
 	</header>
 
 	<!-- Statistics -->
@@ -212,7 +192,6 @@
 						<span class="gagalin">Всего на сайте</span>
 					</div>
 				</div>
-
 				<div class="col-md-8">
 					<div class="statistics-box">
 						<p class="statistics-box-number">25 638</p>
@@ -251,8 +230,8 @@
 						</div> <!-- заголовок блока -->
 						<div class="content-box main-block block-pd mb-30">
 							<div class="row">
-								<p><strong>&laquo;Chinovniki.info&raquo;</strong>&nbsp;&mdash; это народная википедия гражданского мониторинга и&nbsp;демократического аудита белорусской власти путем опубликования непредвзятой и&nbsp;объективной информации о&nbsp;работе государственных служащих и&nbsp;государственных организаций Беларуси. Проект строится на&nbsp;основе специальной интернет-платформы с&nbsp;адресом <a href="https://chinovniki.info">Chinovniki.info</a>, где аккумулируется пубичная и&nbsp;официальная информация о&nbsp;государственных служащих, а&nbsp;также документы о&nbsp;работе всей системы государственной власти Беларуси (местных администраций, правохранительных и&nbsp;силовых органов, судебной власти и&nbsp;т.д.). По&nbsp;своей сути данная интернет-платформа имеет принцип википедии, которую заполняют простые граждане, внося не&nbsp;только официальные данные (имена-фамилии-контакты), но&nbsp;еще и&nbsp;описание деятельности данного представителя власти вместе с&nbsp;официальными документами, а&nbsp;именно корреспонденцией, обращениями граждан, ответами на&nbsp;обращения граждан, судебными решениями и&nbsp;т.д. На&nbsp;сайте предусмотрено голосование, в&nbsp;том числе с&nbsp;целью оценить (позитивно или негативно) работу того или иного государственного служащего, а&nbsp;также отметить как позитивные качества государственных служащих Беларуси как &laquo;работа для граждан&raquo;, &laquo;устойчивость&raquo; и&nbsp;&laquo;профессионализм&raquo;, так и&nbsp;негативные качества (если они случаются).</p>
-								<p>Наш сайт создан для того, чтобы помочь государственным служащим реализовать один из&nbsp;основных принципов государственной службы, заложенных в&nbsp;Законе Республики Беларусь <a href="http://www.pravo.by/document/?guid=3871&p0=h10300204" target="blank">&laquo;О&nbsp;государственной службе&raquo;</a>&nbsp;&mdash; принцип гласности, а&nbsp;также дать стимул к&nbsp;реализации других принципов&nbsp;&mdash; законности, служения народу, гуманности и&nbsp;справедливости, приоритета прав и&nbsp;свобод человека, профессионализма и&nbsp;компетенции.</p>
+								<p><strong>&laquo;Chinovniki.info&raquo;</strong>&nbsp;&mdash; это народная википедия гражданского мониторинга и&nbsp;демократического аудита белорусской власти путем опубликования непредвзятой и&nbsp;объективной информации о&nbsp;работе государственных служащих и&nbsp;государственных организаций Беларуси. Проект строится на&nbsp;основе специальной интернет-платформы с&nbsp;адресом <a href="https://chinovniki.info" target="_blank" rel="noopener">Chinovniki.info</a>, где аккумулируется пубичная и&nbsp;официальная информация о&nbsp;государственных служащих, а&nbsp;также документы о&nbsp;работе всей системы государственной власти Беларуси (местных администраций, правохранительных и&nbsp;силовых органов, судебной власти и&nbsp;т.д.). По&nbsp;своей сути данная интернет-платформа имеет принцип википедии, которую заполняют простые граждане, внося не&nbsp;только официальные данные (имена-фамилии-контакты), но&nbsp;еще и&nbsp;описание деятельности данного представителя власти вместе с&nbsp;официальными документами, а&nbsp;именно корреспонденцией, обращениями граждан, ответами на&nbsp;обращения граждан, судебными решениями и&nbsp;т.д. На&nbsp;сайте предусмотрено голосование, в&nbsp;том числе с&nbsp;целью оценить (позитивно или негативно) работу того или иного государственного служащего, а&nbsp;также отметить как позитивные качества государственных служащих Беларуси как &laquo;работа для граждан&raquo;, &laquo;устойчивость&raquo; и&nbsp;&laquo;профессионализм&raquo;, так и&nbsp;негативные качества (если они случаются).</p>
+								<p>Наш сайт создан для того, чтобы помочь государственным служащим реализовать один из&nbsp;основных принципов государственной службы, заложенных в&nbsp;Законе Республики Беларусь <a href="http://www.pravo.by/document/?guid=3871&p0=h10300204" target="_blank" rel="noopener">&laquo;О&nbsp;государственной службе&raquo;</a>&nbsp;&mdash; принцип гласности, а&nbsp;также дать стимул к&nbsp;реализации других принципов&nbsp;&mdash; законности, служения народу, гуманности и&nbsp;справедливости, приоритета прав и&nbsp;свобод человека, профессионализма и&nbsp;компетенции.</p>
 								<p>Мы&nbsp;не&nbsp;ставим перед собой каких-либо деструктивных политических целей. Мы&nbsp;не&nbsp;собираемся кого-либо очернить или оклеветать. Мы&nbsp;не&nbsp;являемся чьим-либо инструментом или рупором. Мы&nbsp;фиксируем все: и&nbsp;хорошее, и&nbsp;плохое в&nbsp;деятельности государственных организаций. Наши принципы&nbsp;&mdash; ответственность, непредвзятость и&nbsp;объективность.</p>
 								<p>Все размещаемые сведения получены из&nbsp;официальных и&nbsp;публичных источников. Мы&nbsp;не&nbsp;публикуем слухи и&nbsp;доносы, не&nbsp;формируем &laquo;черные списки&raquo; и&nbsp;не&nbsp;оскорбляем государственных служащих, которые находятся у&nbsp;нас в&nbsp;базе. На&nbsp;нашем сайте размещаются только нейтральные, достоверные и&nbsp;задокументированные материалы.</p>
 								<p>Сайт <strong>&laquo;Чиновники.инфо&raquo;</strong>&nbsp;&mdash; свободная площадка, где может высказаться каждый желающий. Все материалы, вывешенные у&nbsp;нас, проходят тщательную проверку на&nbsp;достоверность изложенных фактов. Среди наших авторов&nbsp;&mdash; не&nbsp;только неравнодушные граждане, но&nbsp;и&nbsp;те&nbsp;государственные служащие, для которых небезразлично будущее нашей страны.</p>
@@ -262,21 +241,17 @@
 								<p>Если&nbsp;же у&nbsp;Вас есть информация, которой&nbsp;Вы хотели&nbsp;бы поделиться, то&nbsp;воспользуйтесь <a href="contacts.html#content">формой на&nbsp;странице контактов</a></p>
 							</div>
 						</div>
-					</div> <!-- Карта -->
-					
-
+					</div> 
 				</div> <!-- Контент -->
-				
-
+				<!-- боковая колонка -->
 				<div class="col-md-4 aside">
-					
 					<div class="content-header main-block gagalin">
 						<h2>Публикации</h2>
-					</div> <!-- заголовок блока -->
+					</div> <!--/ заголовок блока -->
 					<!-- публикации						 -->
 					<div class="news">
 						<div class="content-box main-block block-pd mb-30 ">
-							<!--боксы с публикациями - короткие и правильные!!! -->	
+							<!--боксы с публикациями -->	
 							<div class="news-box">
 								<div class="meta">
 									<span class="date">20 марта 2017</span>,
@@ -344,14 +319,14 @@
 						<h2>Наши партнеры</h2>
 					</div> <!-- заголовок блока -->
 					<div class="main-partners">
-						<a href="#" target="blank">
+						<a href="https://orangeprojects.lt/en" target="_blank" rel="noopener">
 							<img src="img/banners/lvb_logo_en.png" alt="banner1">
 						</a>
-						<a href="#" target="blank">
-							<img src="img/banners/LOGO_ENG_MFA.jpg" alt="banner1">
-						</a>	
-						<a href="https://vkurier.by/" target="blank">
+						<a href="https://vkurier.by/" target="_blank" rel="noopener">
 							<img src="img/banners/vk.png" alt="banner1">
+						</a>
+						<a href="https://urm.lt/en/" target="_blank" rel="noopener">
+							<img src="img/banners/URM.png" alt="banner1">
 						</a>	
 					</div><!-- Наши партнеры -->
 				</div> <!-- боковая колонка -->
@@ -365,7 +340,7 @@
  		<div class="footer-big">
  			<div class="container">
  				<div class="row">
- 					<div class="col-md-4 col-xs-6">
+ 					<div class="col-md-3 col-sm-6 col-xs-6">
  						<div class="footer-sections">
  							<h3 class="gagalin">разделы</h3>
  							<ul>
@@ -377,30 +352,31 @@
  							</ul>
  						</div>
  					</div>
- 					<div class="col-md-4 col-xs-12">
+ 					<div class="col-md-4 col-sm-6 col-xs-12">
  						<div class="footer-socials">
  							<h3 class="gagalin">ссылки</h3>
  							<ul>
- 								<li><a href="https://vk.com/club152437259" target="blank"><i class="fa fa-vk" aria-hidden="true"></i><span class="md-visible">Вконтакте</span></a></li>
- 								<li><a href="https://www.facebook.com/groups/chinovniki.info/" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;&nbsp;<span class="md-visible">Facebook</span></a></li>
- 								<li><a href="https://ok.ru/group/53359593652364" target="blank"><i class="fa fa-odnoklassniki" aria-hidden="true"></i>&nbsp;<span class="md-visible">Одноклассники</span></a></li>
+ 								<li><a href="https://vk.com/club152437259" target="_blank" rel="noopener"><i class="fa fa-vk" aria-hidden="true"></i><span class="md-visible">Вконтакте</span></a></li>
+ 								<li><a href="https://www.facebook.com/groups/chinovniki.info/" target="_blank" rel="noopener"><i class="fa fa-facebook" aria-hidden="true"></i><span class="md-visible">Facebook</span></a></li>
+ 								<li><a href="https://ok.ru/group/53359593652364" target="_blank" rel="noopener"><i class="fa fa-odnoklassniki" aria-hidden="true"></i><span class="md-visible">Одноклассники</span></a></li>
  							</ul>
  						</div>
  					</div>
- 					<div class="col-md-4 col-xs-12">
+ 					<div class="col-md-5 col-xs-12">
  						<div class="footer-about">
  							<h3 class="gagalin">инициатива</h3>
- 							<p><a href="https://nash-dom.info" target="blank"><strong>«Наш дом»</strong></a> &mdash;&nbsp;это международная общественная организация, зародившаяся в&nbsp;Беларуси в&nbsp;2002 году как гражданская кампания.</p>
+ 							<p><a href="https://nash-dom.info" target="_blank" rel="noopener"><strong>«Наш дом»</strong></a> &mdash;&nbsp;это международная общественная организация, зародившаяся в&nbsp;Беларуси в&nbsp;2002 году как гражданская кампания.</p>
  							<p>Гражданская Кампания поставила целью всемерное развитие гражданской активности в&nbsp;республике и&nbsp;защиту прав граждан, организация продолжает начатое дело.</p>
  						</div>
  						<div class="share-info">
  							<p>Хотите поделиться информацией?</p>
  							<a href="contacts.html#content">Поделиться!</a>
- 							</div>
+ 						</div>
  					</div>
  				</div>
  			</div>
-		</div> <!-- большой футер -->
+		</div>
+		<!-- маленький футер -->
  		<div class="footer-small">
 			<div class="container">
 				<div class="row">
@@ -410,16 +386,15 @@
 					</div>
 				</div>
 			</div>
- 		</div><!-- маленький футер -->
+ 		</div>
 	</footer>
 
 	<i class="fa fa-chevron-circle-up" id="go-top" aria-hidden="true"></i>
 
 	<script src="js/tippy.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/lightbox.min.js"></script>
+	<script src="libs/slick/slick.js"></script>
 	<script src="js/common.js"></script>
-
 
 </body>
 </html>

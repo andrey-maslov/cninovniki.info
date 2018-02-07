@@ -12,10 +12,10 @@
 	<meta name="description" content=""/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta property="og:type" content="website">
-	  <meta property="og:title" content="" />
-      <meta property="og:description" content="" />
-      <meta property="og:url" content="" />
-      <meta property="og:image" content="" />
+	 	<meta property="og:title" content="" />
+	    <meta property="og:description" content="" />
+	    <meta property="og:url" content="" />
+	    <meta property="og:image" content="" />
 	
 	<title>Чиновники Инфо</title>
 	
@@ -38,7 +38,8 @@
 				<div class="row">
 					<div class="col-sm-4"> 
 						<div class="headerwrap-logo">
-							<img class="img-responsive" src="img/logo.png" alt="logotype">
+							<img class="img-responsive logo-img" src="img/logo.png" alt="logotype">
+							<img class="img-responsive logo-img-mobile" src="img/logo_mobile.png" alt="logotype">
 							<p class="mt-30">Расскажите нам, где и с каким результатом вы получали государственные услуги</p>
 						</div>
 					</div>
@@ -46,28 +47,28 @@
 						<div class="headerwrap-right">
 							<div class="col-sm-8 col-xs-6">
 								<div class="headerwrap-social">
-									<a target="blank" href="https://vk.com/club152437259">
+									<a target="_blank" rel="noopener" href="https://vk.com/club152437259">
 										<i class="fa fa-vk" aria-hidden="true"></i>
 									</a>
-									<a target="blank" href="https://www.facebook.com/groups/chinovniki.info/">	
+									<a target="_blank" rel="noopener" href="https://www.facebook.com/groups/chinovniki.info/">	
 										<i class="fa fa-facebook" aria-hidden="true"></i>
 									</a>
-									<a target="blank" href="https://ok.ru/group/53359593652364">
+									<a target="_blank" rel="noopener" href="https://ok.ru/group/53359593652364">
 										<i class="fa fa-odnoklassniki" aria-hidden="true"></i>
 									</a>
 								</div>
 							</div>
 							<div class="col-sm-4 col-xs-6">
 								<div class="headerwrap-enter">
-									<p class="logged"><!-- Здравствуйте, <span>Череззаборногузадерищенко</span> --></p>
+									<p class="logged"><!-- <span>Череззаборногузадерищенко</span> --></p>
 									<a href="#" class="gagalin" data-toggle="modal" data-target="#login">войти</a>
 									<a href="#" class="tippy" title="Авторизованный пользователь может ставить оценки госслужащим">&nbsp;&nbsp;<i class="fa fa-question-circle-o" aria-hidden="true"></i></a>
-
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-8 col-sm-12">
+					<h1 class="gagalin">База данных белорусских госслужащих</h1>
 						<nav class="main-menu">
 							<ul class="main-menu-list">
 								<li class="main-menu-item"><a class="active" href="index.html">Главная</a></li>
@@ -76,17 +77,10 @@
 								<li class="main-menu-item"><a  href="publications.html#content">Публикации</a></li>
 								<li class="main-menu-item"><a href="about.html#content">О нас</a></li>
 								<li class="main-menu-item"><a href="contacts.html#content">Контакты</a></li>
-								<li class="main-menu-search">
-									<a id="open"  href="#">
-										<i class="fa fa-search search" aria-hidden="true"></i>
-										<i class="fa fa-times" aria-hidden="true"></i>
-									</a>
-								</li>
 							</ul>
 						</nav>
 					</div>
-
-						<!-- MOBILE MENU -->
+					<!-- MOBILE MENU -->
 					<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
 					  <div class="container-fluid">
 					    <!-- Brand and toggle get grouped for better mobile display -->
@@ -99,29 +93,22 @@
 					      </button>
 					      <a href="#" data-toggle="modal" data-target="#login" class="mobile-login">войти</a><span class="mobile_logged"><!-- Череззаборногузадерищенко --></span>
 					    </div>
-
 					    <!-- Collect the nav links, forms, and other content for toggling -->
 					    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					      <ul class="nav navbar-nav">
 					        <li><a href="index.html">ГЛАВНАЯ<span class="sr-only">(current)</span></a></li>
-					        <li><a href="search_result.html">ПУБЛИКАЦИИ</a></li>
-					        <li><a href="peoples.html">ГОССЛУЖАЩИЕ</a></li>
-					        <li><a href="about.html">О ПРОЕКТЕ</a></li>
-					        <li><a href="contacts.html">КОНТАКТЫ</a></li>
+					        <li><a href="peoples.html#content">ГОССЛУЖАЩИЕ</a></li>
+					        <li><a href="organizations.html#content">ОРГАНИЗАЦИИ</a></li>
+					        <li><a href="publications.html#content">ПУБЛИКАЦИИ</a></li>
+					        <li><a href="about.html#content">О НАС</a></li>
+					        <li><a href="contacts.html#content">КОНТАКТЫ</a></li>
 					      </ul>
-					      <form class="navbar-form navbar-left">
-					        <div class="form-group">
-					          <input type="text" class="form-control" placeholder="Поиск">
-					        </div>
-					        <button type="submit" class="btn btn-default">Искать</button>
-					      </form>
 					    </div><!-- /.navbar-collapse -->
 					  </div><!-- /.container-fluid -->
 					</nav><!-- /.mobile menu -->
 				</div>
 			</div>
 		</div><!--Headerwrap-->
-
 		<!-- LOGIN -->
 		<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		  <div class="modal-dialog">
@@ -132,6 +119,7 @@
 		      </div>
 		      <div class="modal-body">
 		        <form class="form-horizontal" role="form">
+		        	<p>Для того, чтобы иметь возможность оценить госслужащего, вам необходимо войти или зарегистрироваться на сайте.</p>
 				  <div class="form-group">
 				    <div class="col-sm-12">
 				      <input type="text" class="form-control" id="inputEmail3" placeholder="Имя">
@@ -139,14 +127,14 @@
 				  </div>
 				  <div class="form-group">
 				    <div class="col-sm-12">
-				      <input type="password" class="form-control" id="inputPassword3" placeholder="Пароль">
+				      <input type="password" class="form-control" id="inputPassword" placeholder="Пароль">
 				    </div>
 				  </div>
-				  <div class="form-group">
+<!-- 				  <div class="form-group">
 				    <div class="col-sm-12">
 				      <a class="dontRemember" href="#">Не помню пароль</a>
 				    </div>
-				  </div>
+				  </div> -->
 		  		  <div class="form-group">
 				    <div class="col-sm-6">
 				      <button type="submit" class="btn btn-primary orange-btn">Войти</button>
@@ -159,18 +147,18 @@
 				  </div>
 				</form>
 		      </div>
-				<div class="ulogin-container">
-					<h4 class="conde">Войти через социальную сеть</h4>
-					<script src="//ulogin.ru/js/ulogin.js"></script>
-					<div id="uLogin" data-ulogin="display=panel;theme=classic;fields=first_name,last_name;providers=vkontakte,odnoklassniki,mailru,facebook;hidden=other;redirect_uri=http%3A%2F%2F;mobilebuttons=0;"></div>
-				</div>
+		      <!-- ulogin -->
+			<div class="ulogin-container">
+				<h4 class="conde">Войти через социальную сеть</h4>
+				<script src="//ulogin.ru/js/ulogin.js"></script>
+				<div id="uLogin" data-ulogin="display=panel;theme=classic;fields=first_name,last_name;providers=vkontakte,odnoklassniki,mailru,facebook;hidden=other;redirect_uri=http%3A%2F%2F;mobilebuttons=0;"></div>
+			</div>
 		      <div class="modal-footer">
 		        <a type="button" class="btn btn-default" href="register.html">Регистрация</a>
 		      </div>
 		    </div>
 		  </div>
 		</div>
-
 		<!-- SEARCH -->
 		<div class="container">
 			<div class="row">
@@ -190,14 +178,6 @@
 				</div>
 			</div>
 		</div><!-- END SEARCH -->
-
-		<div class="container">
-			<div class="row ">
-				<div class="col-sm-12">
-					<h1 class="text-center gagalin">База данных белорусских чиновников</h1>
-				</div>
-			</div>
-		</div>
 	</header>
 
 	<!-- Statistics -->
@@ -212,7 +192,6 @@
 						<span class="gagalin">Всего на сайте</span>
 					</div>
 				</div>
-
 				<div class="col-md-8">
 					<div class="statistics-box">
 						<p class="statistics-box-number">25 638</p>
@@ -251,7 +230,7 @@
 						</div> <!-- заголовок блока -->
 						<div class="content-box main-block block-pd mb-30">
 							<div class="row">
-								<p>Для того, чтобы иметь возможность оценить госслужащего, вам следует зарегистрироваться на сайте. </p>
+								<p>Для того, чтобы иметь возможность оценить госслужащего, вам необходимо зарегистрироваться на сайте. </p>
 								<p>Будьте внимательны при заполнении полей и указывайте только достоверные данные.</p>
 								<p>*Поля, отмеченные звездочкой, <strong>обязательны для заполнения</strong>.</p>
 							</div>
@@ -266,20 +245,17 @@
 								</div>
 								<div class="form-group">
 									<label for="password">Выберите пароль*</label>
-									<input type="password" class="form-control" id="password" placeholder="" required>
+									<input type="password" class="form-control" id="password" required>
 								</div>
 								<div class="form-group">
 									<label for="password2">Повторите пароль*</label>
-									<input type="password" class="form-control" id="password2" placeholder="" required>
+									<input type="password" class="form-control" id="password2" required>
 								</div>
 								<button type="submit" class="btn btn-primary orange-btn">Зарегистрироваться</button>
 							</form>
 						</div>
-					</div> <!-- Карта -->
-					
-
-				</div> <!-- Контент -->
-				
+					</div> 
+				</div>
 			</div>
 		</div>
 	</section>
@@ -290,7 +266,7 @@
  		<div class="footer-big">
  			<div class="container">
  				<div class="row">
- 					<div class="col-md-4 col-xs-6">
+ 					<div class="col-md-3 col-sm-6 col-xs-6">
  						<div class="footer-sections">
  							<h3 class="gagalin">разделы</h3>
  							<ul>
@@ -302,20 +278,20 @@
  							</ul>
  						</div>
  					</div>
- 					<div class="col-md-4 col-xs-12">
+ 					<div class="col-md-4 col-sm-6 col-xs-12">
  						<div class="footer-socials">
  							<h3 class="gagalin">ссылки</h3>
  							<ul>
- 								<li><a href="https://vk.com/club152437259" target="blank"><i class="fa fa-vk" aria-hidden="true"></i><span class="md-visible">Вконтакте</span></a></li>
- 								<li><a href="https://www.facebook.com/groups/chinovniki.info/" target="blank"><i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;&nbsp;<span class="md-visible">Facebook</span></a></li>
- 								<li><a href="https://ok.ru/group/53359593652364" target="blank"><i class="fa fa-odnoklassniki" aria-hidden="true"></i>&nbsp;<span class="md-visible">Одноклассники</span></a></li>
+ 								<li><a href="https://vk.com/club152437259" target="_blank" rel="noopener"><i class="fa fa-vk" aria-hidden="true"></i><span class="md-visible">Вконтакте</span></a></li>
+ 								<li><a href="https://www.facebook.com/groups/chinovniki.info/" target="_blank" rel="noopener"><i class="fa fa-facebook" aria-hidden="true"></i><span class="md-visible">Facebook</span></a></li>
+ 								<li><a href="https://ok.ru/group/53359593652364" target="_blank" rel="noopener"><i class="fa fa-odnoklassniki" aria-hidden="true"></i><span class="md-visible">Одноклассники</span></a></li>
  							</ul>
  						</div>
  					</div>
- 					<div class="col-md-4 col-xs-12">
+ 					<div class="col-md-5 col-xs-12">
  						<div class="footer-about">
  							<h3 class="gagalin">инициатива</h3>
- 							<p><a href="https://nash-dom.info" target="blank"><strong>«Наш дом»</strong></a> &mdash;&nbsp;это международная общественная организация, зародившаяся в&nbsp;Беларуси в&nbsp;2002 году как гражданская кампания.</p>
+ 							<p><a href="https://nash-dom.info" target="_blank" rel="noopener"><strong>«Наш дом»</strong></a> &mdash;&nbsp;это международная общественная организация, зародившаяся в&nbsp;Беларуси в&nbsp;2002 году как гражданская кампания.</p>
  							<p>Гражданская Кампания поставила целью всемерное развитие гражданской активности в&nbsp;республике и&nbsp;защиту прав граждан, организация продолжает начатое дело.</p>
  						</div>
  						<div class="share-info">
@@ -325,7 +301,8 @@
  					</div>
  				</div>
  			</div>
-		</div> <!-- большой футер -->
+		</div>
+		<!-- маленький футер -->
  		<div class="footer-small">
 			<div class="container">
 				<div class="row">
@@ -335,7 +312,7 @@
 					</div>
 				</div>
 			</div>
- 		</div><!-- маленький футер -->
+ 		</div>
 	</footer>
 
 	<i class="fa fa-chevron-circle-up" id="go-top" aria-hidden="true"></i>
@@ -344,7 +321,6 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="libs/slick/slick.js"></script>
 	<script src="js/common.js"></script>
-
 
 </body>
 </html>
