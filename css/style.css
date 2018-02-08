@@ -452,6 +452,7 @@ a.active {
   height: 300px;
 }
 ul.region-list > li a {
+  display: block;
   color: #353535;
   font-size: 1.2rem;
   line-height: 3rem;
@@ -462,6 +463,12 @@ ul.region-list > li a:hover {
 ul.region-list > li i {
   font-size: .9rem;
   color: green;
+}
+.region-list li {
+  transition: all .3s;
+}
+.region-list li:hover {
+  background-color: #edf3d9;
 }
 /*** TOP **/
 .civil {
