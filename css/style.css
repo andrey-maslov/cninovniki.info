@@ -1423,3 +1423,15 @@ input[type="radio"]:checked + label:after {
   text-align: center;
   color: #016a3a;
 }
+.content-box div.map {
+  height: 400px;
+  max-width: 450px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  border: 2px solid #d0e19f;
+}
