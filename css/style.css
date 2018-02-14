@@ -481,6 +481,17 @@ ul.region-list > li i {
   height: 70px;
   border-radius: 50%;
 }
+.civil-img-wrapper {
+  display: block;
+  width: 70px;
+  height: 70px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  margin: 5px auto;
+}
 .content-box div:last-child {
   border-bottom: none;
 }
