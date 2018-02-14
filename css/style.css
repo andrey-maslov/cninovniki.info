@@ -477,7 +477,8 @@ ul.region-list > li i {
   border-bottom: 1px #d6d6d8 dashed;
 }
 .civil img {
-  max-width: 100px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
 }
 .content-box div:last-child {
@@ -856,6 +857,7 @@ ul.inner-table > li {
 .official-photo img {
   position: absolute;
   width: 200px;
+  height: 300px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -1030,6 +1032,8 @@ ul.inner-table > li {
 }
 .publication img {
   margin-bottom: 1rem;
+  max-height: 120px;
+  max-width: 160px;
 }
 div.publication-content a {
   color: #016a3a;
@@ -1183,7 +1187,8 @@ a.news-box-header {
   padding-left: 1rem;
 }
 #publications-search img {
-  max-width: 150px;
+  width: 100px;
+  height: 75px;
   border-radius: 5px;
 }
 #publications-search a.news-box-header {
