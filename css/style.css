@@ -1043,7 +1043,7 @@ ul.inner-table > li {
 .publication-content p {
   padding-top: 1rem;
 }
-.publication img {
+.publication-img {
   margin-bottom: 1rem;
   max-height: 120px;
   max-width: 160px;
@@ -1068,6 +1068,25 @@ div.publication-content a:hover {
 .criterion a {
   color: #ffffff;
   border-bottom: 1px #ffffff solid;
+}
+.content-box div.publication-doc-wrapper {
+  margin: 20px 0;
+  border: 1px #d0e19f solid;
+  padding: 20px 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+}
+.publication-doc-box img {
+  width: 100%;
+}
+.publication-doc-header {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #016a3a;
 }
 .criterion-negative {
   background-color: #ff7d7d;

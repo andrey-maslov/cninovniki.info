@@ -17,6 +17,9 @@
     .statistics-header-img {
       left: 1rem;
     }
+    .publication-img {
+        width: 140px; 
+    }
 }
 
 /* Medium Devices, Desktops */
