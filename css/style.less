@@ -1166,6 +1166,7 @@ div.publication-content a:hover {
 // Негативный и позитивный критерии различаются по классам
 .criterion-negative {
 	background-color: @red;
+	text-transform: lowercase;
 	a:hover {
 		color: lighten(@red,20%);
 		border-bottom: 1px lighten(@red,20%) solid;
@@ -1173,6 +1174,7 @@ div.publication-content a:hover {
 }
 .criterion-positive {
 	background-color: @lightgreen;
+	text-transform: lowercase;
 	a {
 		color: @green;
 		border-bottom: 1px @green solid;

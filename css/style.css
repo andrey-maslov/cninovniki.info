@@ -1071,6 +1071,7 @@ div.publication-content a:hover {
 }
 .criterion-negative {
   background-color: #ff7d7d;
+  text-transform: lowercase;
 }
 .criterion-negative a:hover {
   color: #ffe3e3;
@@ -1078,6 +1079,7 @@ div.publication-content a:hover {
 }
 .criterion-positive {
   background-color: #d0e19f;
+  text-transform: lowercase;
 }
 .criterion-positive a {
   color: #016a3a;
