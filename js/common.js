@@ -35,13 +35,5 @@ $(document).ready(function(){
         cssEase: 'linear'
     });
  
-
-    lightbox.option({
-      'resizeDuration': 100,
-      'wrapAround': false,
-      'alwaysShowNavOnTouchDevices' : true,
-      'albumLabel' :  "Изображение %1 из %2",
-      'positionFromTop' : 10,
-    })
 })
 
