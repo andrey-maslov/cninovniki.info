@@ -1,7 +1,8 @@
 tippy('.tippy')
 
 $(document).ready(function(){
-   
+
+ 
     // scroll top
     $('body').append('<a href="#" id="go-top" title="Вверх">Вверх</a>');
     
@@ -33,19 +34,14 @@ $(document).ready(function(){
         fade: true,
         cssEase: 'linear'
     });
+ 
 
-// SEARCH
-
-  // var searchBlock = $('#search');
-  // $(document).on('click', '#open', function () {
-  //   searchBlock.slideToggle();
-  //   $('.search').toggleClass('red');
-  //   $('.fa-times').toggleClass('show');
-
-  //   return false;
-  // });
-
-
-
+    lightbox.option({
+      'resizeDuration': 100,
+      'wrapAround': false,
+      'alwaysShowNavOnTouchDevices' : true,
+      'albumLabel' :  "Изображение %1 из %2",
+      'positionFromTop' : 10,
+    })
 })
 

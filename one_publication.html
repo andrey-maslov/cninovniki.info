@@ -19,13 +19,13 @@
 	
 	<title>Чиновники Инфо</title>
 	
-	<script src="libs/jquery-3.2.1.min.js"></script>
 	<link rel="shortcut icon" href="fav.ico" type="image/x-icon"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="libs/slick/slick.css">
 	<link rel="stylesheet" href="libs/slick/slick-theme.css">
+	<link rel="stylesheet" href="libs/lightbox2-master/css/lightbox.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/tippy.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -259,7 +259,7 @@
 									</div>
 								</div>
 							</div>
-							<!-- Документы -->
+							<!-- Документы Табы-->
 							<div class="publication-doc-wrapper">
 								<div class="row">
 									<!-- левая часть - вопрос -->
@@ -274,22 +274,22 @@
 											</ul>
 											<div class="tab-content">
 												<div id="q1" class="tab-pane fade in active">
-													<a href="img/docs/q1.jpg" target="_blank">
+													<a href="img/docs/q1.jpg" data-lightbox="question1">
 														<img src="img/docs/q1.jpg" alt="вопрос 1">
 													</a>
 												</div>
 												<div id="q2" class="tab-pane fade">
-													<a href="img/docs/q2.jpg" target="_blank">
+													<a href="img/docs/q2.jpg" data-lightbox="question1">
 														<img src="img/docs/q2.jpg" alt="вопрос 1">
 													</a>
 												</div>
 												<div id="q3" class="tab-pane fade">
-													<a href="img/docs/q3.jpg" target="_blank">
+													<a href="img/docs/q3.jpg" data-lightbox="question1">
 														<img src="img/docs/q3.jpg" alt="вопрос 1">
 													</a>
 												</div>
 												<div id="q4" class="tab-pane fade">
-													<a href="img/docs/q4.jpg" target="_blank">
+													<a href="img/docs/q4.jpg" data-lightbox="question1">
 														<img src="img/docs/q4.jpg" alt="вопрос 1">
 													</a>
 												</div>
@@ -306,12 +306,12 @@
 											</ul>
 											<div class="tab-content">
 												<div id="a1" class="tab-pane fade in active">
-													<a href="img/docs/q1.jpg" target="_blank">
+													<a href="img/docs/q1.jpg" data-lightbox="answer1">
 														<img src="img/docs/a1.jpg" alt="вопрос 1">
 													</a>
 												</div>
 												<div id="a2" class="tab-pane fade">
-													<a href="img/docs/q2.jpg" target="_blank">
+													<a href="img/docs/q2.jpg" data-lightbox="answer1">
 														<img src="img/docs/q2.jpg" alt="вопрос 1">
 													</a>
 												</div>
@@ -517,10 +517,11 @@
 	</footer>
 
 	<i class="fa fa-chevron-circle-up" id="go-top" aria-hidden="true"></i>
-
+	<script src="libs/jquery-3.2.1.min.js"></script>
 	<script src="js/tippy.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="libs/slick/slick.js"></script>
+	<script src="libs/lightbox2-master/js/lightbox.min.js"></script>
 	<script src="js/common.js"></script>
 
 </body>

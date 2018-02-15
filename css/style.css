@@ -1072,7 +1072,7 @@ div.publication-content a:hover {
 .content-box div.publication-doc-wrapper {
   margin: 20px 0;
   border: 1px #d0e19f solid;
-  padding: 20px 10px;
+  padding: 10px;
   background-color: rgba(255, 255, 255, 0.6);
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
@@ -1086,6 +1086,22 @@ div.publication-content a:hover {
 .publication-doc-header {
   text-align: center;
   margin-bottom: 20px;
+  margin-top: 20px;
+  color: #016a3a;
+}
+.carousel-control > i {
+  position: absolute;
+  top: 47%;
+  font-size: 30px;
+  color: rgba(1, 106, 58, 0.7);
+}
+.right > i {
+  right: 10px;
+}
+.left > i {
+  left: 10px;
+}
+h4.modal-title {
   color: #016a3a;
 }
 .criterion-negative {
