@@ -82,6 +82,7 @@ body a:active {
   color: #e64800;
 }
 button.orange-btn {
+  display: block;
   margin-top: 3rem;
   background-color: #ff7334;
   border: none;
