@@ -914,6 +914,7 @@ ul.inner-table > li {
   position: relative;
   text-align: center;
   padding-left: 20px;
+  padding-right: 5px;
   min-height: 4rem;
   line-height: 4.5rem;
   /**исправить!**/
