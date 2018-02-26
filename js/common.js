@@ -1,6 +1,18 @@
 tippy('.tippy')
 
+
 $(document).ready(function(){
+
+
+    // pagination
+      $(function() {
+          $('.pagination').pagination({
+              items: 200,
+              itemsOnPage: 10,
+              prevText : '&laquo;',
+              nextText : '&raquo;',
+          });
+      });
 
  
     // scroll top
@@ -35,5 +47,8 @@ $(document).ready(function(){
         cssEase: 'linear'
     });
  
+
+
+
 })
 

@@ -32,6 +32,7 @@
 	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
+	<!-- Прелоадер -->
 	<header>
 		<div class="headerwrap">
 			<div class="container">
@@ -265,7 +266,7 @@
 						<div class="content-box main-block block-pd mb-30">
 							<!-- Табы -->
 							<ul class="nav nav-pills">
-								<li class="active"><a class="pills-tab" data-toggle="pill" href="#officials-search">Госслужащие (44)</a></li>
+								<li class="active"><a class="pills-tab" data-toggle="pill" href="#officials-search">Госслужащие (<i class="fa fa-spinner fa-spin loader"></i>)</a></li>
 								<li><a class="pills-tab" data-toggle="pill" href="#organizations-search">Организации (13)</a></li>
 								<li><a class="pills-tab" data-toggle="pill" href="#publications-search">Публикации (777)</a></li>
 							</ul>
@@ -374,22 +375,14 @@
 									</ol>
 									<!-- Пагинация -->
 									<div class="pagination-wrapper text-center">
-										<div class="pagination">
-										  <a href="#">&laquo;</a>
-										  <a href="#"  class="active">1</a>
-										  <a href="#">2</a>
-										  <a href="#">3</a>
-										  <a href="#">4</a>
-										  <a href="#">5</a>
-										  <a href="#">&raquo;</a>
-										</div>
+										<ul class="pagination"></ul>
 									</div>
 								</div><!--END госслужащие -->
 								
 								<!-- организации -->
 								<div id="organizations-search" class="tab-pane fade">
 									<!-- организации -->
-									<ol class="search-list">
+									<ol class="search-list list">
 										<li class="search-list-item civil civil-padding">
 											<a href="one_organization.html" class="news-box-header">
 												Минский городской исполнительный комитет
@@ -413,19 +406,35 @@
 											<p class="connected-adress">
 												Минск, 220030, пр. Независимости, 8
 											</p>
-										</li> <!-- конец блока одной организации -->							
+										</li> <!-- конец блока одной организации -->
+										<li class="search-list-item civil civil-padding">
+											<a href="one_organization.html" class="news-box-header">
+												Минский городской исполнительный комитет
+											</a>
+											<p class="connected-adress">
+												Минск, 220030, пр. Независимости, 8
+											</p>
+										</li> <!-- конец блока одной организации -->
+										<li class="search-list-item civil civil-padding">
+											<a href="one_organization.html" class="news-box-header">
+												Государственное учреждение Центральная лаборатория микрофильмирования и реставрации
+											</a>
+											<p class="connected-adress">
+												Минск, 220005, ул. Козлова, д.26
+											</p>
+										</li> <!-- конец блока одной организации -->
+										<li class="search-list-item civil civil-padding">
+											<a href="one_organization.html" class="news-box-header">
+												Минский городской исполнительный комитет
+											</a>
+											<p class="connected-adress">
+												Минск, 220030, пр. Независимости, 8
+											</p>
+										</li> <!-- конец блока одной организации -->						
 									</ol>
 									<!-- Пагинация -->
 									<div class="pagination-wrapper text-center">
-										<div class="pagination">
-										  <a href="#">&laquo;</a>
-										  <a href="#"  class="active">1</a>
-										  <a href="#">2</a>
-										  <a href="#">3</a>
-										  <a href="#">4</a>
-										  <a href="#">5</a>
-										  <a href="#">&raquo;</a>
-										</div>
+										<ul class="pagination"></ul>
 									</div>
 								</div>
 
@@ -483,13 +492,6 @@
 									<!-- Пагинация -->
 									<div class="pagination-wrapper text-center">
 										<div class="pagination">
-										  <a href="#">&laquo;</a>
-										  <a href="#"  class="active">1</a>
-										  <a href="#">2</a>
-										  <a href="#">3</a>
-										  <a href="#">4</a>
-										  <a href="#">5</a>
-										  <a href="#">&raquo;</a>
 										</div>
 									</div>
 								</div>
@@ -558,6 +560,7 @@
 
 	<i class="fa fa-chevron-circle-up" id="go-top" aria-hidden="true"></i>
 
+	<script src="js/jquery.simplePagination.js"></script>
 	<script src="js/tippy.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="libs/slick/slick.js"></script>
