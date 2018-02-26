@@ -365,6 +365,7 @@ a.active {
 }
 #login .modal-dialog .ulogin-container {
   text-align: center;
+  padding: 15px;
 }
 #login .modal-dialog .ulogin-container h4 {
   margin-bottom: 1rem;
