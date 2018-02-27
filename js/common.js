@@ -7,7 +7,7 @@ $(document).ready(function(){
     // pagination
       $(function() {
           $('.pagination').pagination({
-              items: 200,
+              items: 500,
               itemsOnPage: 10,
               prevText : '&laquo;',
               nextText : '&raquo;',
