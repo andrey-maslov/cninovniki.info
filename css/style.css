@@ -252,7 +252,7 @@ body {
   color: #ffffff;
 }
 li.main-menu-item a:hover,
-a.active {
+li.main-menu-item a.active {
   border-bottom: 6px solid #d0e19f;
   background-color: #01512c;
 }
@@ -1499,4 +1499,14 @@ input[type="radio"]:checked + label:after {
   -o-border-radius: 7px;
   border-radius: 7px;
   border: 2px solid #d0e19f;
+}
+img.icon {
+  width: auto;
+  height: 1em;
+  vertical-align: middle;
+  cursor: pointer;
+  opacity: 0.3;
+}
+img.icon:hover {
+  opacity: 1;
 }
