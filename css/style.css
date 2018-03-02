@@ -69,17 +69,21 @@ p {
 body a:link {
   text-decoration: none;
   transition: 0.3s;
+  cursor: pointer;
 }
 body a:visited {
   text-decoration: none;
+  cursor: pointer;
 }
 body a:hover {
   text-decoration: none;
   color: #ff7334;
+  cursor: pointer;
 }
 body a:active {
   text-decoration: none;
   color: #e64800;
+  cursor: pointer;
 }
 button.orange-btn {
   display: block;
