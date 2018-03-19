@@ -444,6 +444,7 @@ li.main-menu-item a.active {
   padding: .7rem 0 .7rem 4rem;
   position: relative;
   margin-bottom: .7rem;
+  min-height: 40px;
   box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.23);
 }
 .content-header h2 {
