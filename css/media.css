@@ -54,7 +54,7 @@
     body {
         overflow-x: hidden;
     }
-    .main-menu {
+    .main-menu, .adminbar {
         display: none;
     }
     .logo-img {
